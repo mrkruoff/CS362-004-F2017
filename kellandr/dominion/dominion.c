@@ -651,7 +651,7 @@ int adventurerEffect(struct gameState *state){
   int z = 0;// this is the counter for the temp hand
 
   while(drawntreasure<2){
-    if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    if (state->deckCount[currentPlayer] <= 1){//if the deck is empty we need to shuffle discard and add to deck
       shuffle(currentPlayer, state);
     }
     
@@ -680,9 +680,10 @@ int smithyEffect(int currentPlayer, int handPos, struct gameState *state){
   for (int i = 0; i < 3; i++)
   {
     drawCard(currentPlayer, state);
+    //discard card from hand
+    discardCard(handPos, currentPlayer, state, 0);  
   }
-  //discard card from hand
-  discardCard(handPos, currentPlayer, state, 0);
+
   return 0;
 }
 
@@ -705,10 +706,8 @@ int treasure_mapEffect(int currentPlayer, int handPos, struct gameState *state){
   for (i = 0; i < state->handCount[currentPlayer]; i++)
   {
     if (state->hand[currentPlayer][i] == treasure_map && i != handPos)
-    {
       index = i;
       break;
-    }
   }
 
 
@@ -751,9 +750,7 @@ int tributeEffect (int currentPlayer, struct gameState *state){
         printf("No cards to reveal\n");
       }
     }
-  }
 
-  else{
     if (state->deckCount[nextPlayer] == 0){
       for (i = 0; i < state->discardCount[nextPlayer]; i++){
         state->deck[nextPlayer][i] = state->discard[nextPlayer][i];//Move to deck
