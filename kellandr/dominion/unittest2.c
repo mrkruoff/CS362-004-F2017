@@ -14,9 +14,10 @@
 #define NOISY_TEST 1
 
 //checks that the gamestate is the same for everything that should be unchanged
-int gameStateChanges(int player, int numPlayers, struct gameState *pre, struct gameState *post);
+int assertGameState(int player, int numPlayers, struct gameState *pre, struct gameState *post);
 int checkHandAndDeck(struct gameState* G, int p, int handCount, int hand[], int deckCount, int deck[]);
 
+void printTest(struct gameState *pre, struct gameState *G, int p);
 
 int main(void){
 
@@ -47,14 +48,16 @@ int main(void){
 			printf("TESTING VALID INPUT\n");
 
 //TEST 1: drawcard on full deck
-	handCount = pre.handCount[p];
-	deckCount = pre.deckCount[p];
 
-	if(NOISY_TEST) 
-		printf("Testing drawCard() on player %d, deck of size %d,\n", p, deckCount);
 	//copy pre gamestate
 	memcpy(&pre, &G, sizeof(struct gameState));
 
+	handCount = pre.handCount[p];
+	deckCount = pre.deckCount[p];
+	
+	if(NOISY_TEST) 
+		printf("Testing drawCard() on player %d, deck of size %d,\n", p, deckCount);
+	
 	//pop card off top of deck and into hand
 	pre.hand[p][handCount] = pre.deck[p][deckCount-1];
 	pre.handCount[p] += 1;
@@ -63,7 +66,7 @@ int main(void){
 	drawCard(p, &G);
 
 	//check gamestate changes
-	failures += gameStateChanges(p, numPlayers, &pre, &G);	
+	failures += assertGameState(p, numPlayers, &pre, &G);	
 	testCount += 11 + 6 * numPlayers;	
 
 
@@ -79,12 +82,12 @@ int main(void){
 	drawCard(p, &G);
 
 	//check gamestate changes
-	failures += gameStateChanges(p, numPlayers, &pre, &G);	
+	failures += assertGameState(p, numPlayers, &pre, &G);	
 	testCount += 11 + 6 * numPlayers;
 
 
 //TEST 3: if deck is empty and discard > 0, 
-//  new deckCount = discardCount-1, new hand = hand+1, new discard = 0
+// should shuffle discard into deck and draw 1 cards
 	
 	G.deckCount[p] = 0; 
 	G.discardCount[p] = 1;
@@ -95,19 +98,42 @@ int main(void){
 	//copy pre gamestate
 	memcpy(&pre, &G, sizeof(struct gameState));
 
-	handCount = pre.handCount[p];
-	pre.hand[p][handCount] = pre.discard[p][0];	
-	pre.handCount[p] += 1;
-	pre.deckCount[p] = 0;
-
 	drawCard(p, &G);
 
+	//move discard into deck
+	for(int i =0; i<pre.discardCount[p]; i++){
+		pre.deck[p][i] = pre.discard[p][i];
+		pre.discard[p][i] = -1;
+		pre.deckCount[p] += 1;
+	}
+	pre.discardCount[p] = 0;
+	shuffle(p, &pre);
+	//draw 1 card
+	handCount = pre.handCount[p];
+	pre.deckCount[p] -= 1;
+	deckCount = pre.deckCount[p];
+	pre.hand[p][handCount] = pre.deck[p][deckCount];
+	pre.handCount[p] += 1;
+
+	//will sort hand
+
 	//check gamestate changes
-	failures += gameStateChanges(p, numPlayers, &pre, &G);	
+	failures += assertGameState(p, numPlayers, &pre, &G);	
 	testCount += 11 + 6 * numPlayers;
 	
 
 //INVALID INPUT
+	if(NOISY_TEST){ 
+		printf("TESTING INVALID INPUT\nTesting drawCard() on player %d, deck of size %d, discard of size %d\n", 
+			p, G.deckCount[p], G.discardCount[p]);
+	}
+
+	memcpy(&pre, &G, sizeof(struct gameState));
+	drawCard(-1, &G);
+	//check gamestate changes
+	failures += assertGameState(p, numPlayers, &pre, &G);	
+	testCount += 11 + 6 * numPlayers;
+
 
 //print results
 	printf("%d Total Tests: %d Failures, %d Passes\n\n", testCount, failures, testCount-failures);
@@ -119,12 +145,29 @@ int main(void){
 
 //---------------------------     FUNCTIONS        --------------------------
 
+void printArr(char* name, int a[], int size){
+	printf("%s ",name);
+	for(int i=0; i<size; i++)
+		printf("%d, ", a[i]);
+	printf("\n");
+}
+
+void printTest(struct gameState *pre, struct gameState *G, int p){
+	printf("\npre: handCount: %d, deckCount: %d, discardCount: %d\n", pre->handCount[p], pre->deckCount[p], pre->discardCount[p]);
+	printf("G: handCount: %d, deckCount: %d, discardCount: %d\n", G->handCount[p], G->deckCount[p], G->discardCount[p]);
+	printArr("pre.hand[]:", pre->hand[p], 7);
+	printArr("G.hand[]:  ", G->hand[p], 7);
+	printArr("pre.deck[]:", pre->deck[p], 5);
+	printArr("G.deck[]:  ", G->deck[p], 5);
+	printArr("pre.discard[]:", pre->discard[p], 5);
+	printArr("G.discard[]  :", G->discard[p], 5);
+}
 
 //Helper Function: checks integer property of pre and post gameState
 int testStateInt(int prop1, int prop2, const char* name){
 	if (prop1 != prop2 ){
 		if (NOISY_TEST) 
-			printf(" FAIL: gameState.%s not as expected\n", name );
+			printf(" FAIL: gameState.%s = %d expected %d\n", name, prop2, prop1 );
 		return 1;
 	}
 	return 0;
@@ -135,7 +178,7 @@ int testStateInt(int prop1, int prop2, const char* name){
 int testStateArray(int a1[], int a2[], int size, const char* name){
 	if( memcmp(a1, a2, size) ){
 		if (NOISY_TEST) 
-			printf(" FAIL: gameState.%s not as expected\n", name);
+			printf(" FAIL: gameState.%s array did not match expected\n", name);
 		return 1;
 	}
 	return 0;
@@ -143,12 +186,12 @@ int testStateArray(int a1[], int a2[], int size, const char* name){
 
 
 /*   
-**	 gameStateChanges() checks any differences between pre and post gamstate 
-**   gameStateChanges() will return number of differences and 
+**	 assertGameState() checks any differences between pre and post gamstate 
+**   assertGameState() will return number of differences and 
 **     prints differences to console if( NOISY_TEST )
 **     performs 11 + 6 * numPlayers total tests
 */
-int gameStateChanges(int player, int numPlayers, struct gameState *pre, struct gameState *post){
+int assertGameState(int player, int numPlayers, struct gameState *pre, struct gameState *post){
 	
 	char buffer[100];
 
