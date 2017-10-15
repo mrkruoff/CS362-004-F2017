@@ -1,6 +1,6 @@
 /* 	Author: 	Andrius Kelly
 	Date:		10/13/2017
-	Description: Unit test for "discardCard" function
+	Description: Unit test for "discardCard()" function
 */
 
 #include "dominion.h"
@@ -14,7 +14,7 @@
 #define NOISY_TEST 1
 
 //checks that the gamestate is the same for everything that should be unchanged
-int gameStateChanges(int player, int numPlayers, struct gameState *pre, struct gameState *post);
+int assertGameState(int player, int numPlayers, struct gameState *pre, struct gameState *post);
 int checkHandAndDiscard(struct gameState* G, int p, int handCount, int hand[], int discardCount, int discard[]);
 
 int main(void) {
@@ -61,9 +61,10 @@ printf ("TESTING discardCard():\n");
 
 	testCount = failures = 0;
 
+	//copy pre gamestate
 	memcpy(&pre, &G, sizeof(struct gameState));
 
-	assert(handCount); //make sure hanCount > 0
+	assert(handCount); //make sure handCount > 0
 
 	//test discarding card discard in middle of hand
 		if(NOISY_TEST) {
@@ -103,8 +104,8 @@ printf ("TESTING discardCard():\n");
 		//check gameState
 	if(NOISY_TEST) 
 		printf("testing game states\n");
-	failures += gameStateChanges(p, numPlayers, &pre, &G);	
-	testCount += 11 + 6 * numPlayers - 4;			
+	failures += assertGameState(p, numPlayers, &pre, &G);	
+	testCount += 7 + 6 * numPlayers;			
 
 // -------- INVALID INPUT TESTS --------
 	if(NOISY_TEST) 
@@ -129,8 +130,8 @@ printf ("TESTING discardCard():\n");
 	//check gameState
 	if(NOISY_TEST) 
 		printf("testing game states\n");
-	failures += gameStateChanges(p, numPlayers, &pre, &G);	
-	testCount += 11 + 6 * numPlayers - 4;		
+	failures += assertGameState(p, numPlayers, &pre, &G);	
+	testCount += 7 + 6 * numPlayers;		
 
 //discardCard outside hand array should not do anything
 
@@ -159,8 +160,8 @@ printf ("TESTING discardCard():\n");
 	//check gameState
 	if(NOISY_TEST) 
 		printf("testing game states\n");
-	failures += gameStateChanges(p, numPlayers, &pre, &G);	
-	testCount += 11 + 6 * numPlayers - 4;	
+	failures += assertGameState(p, numPlayers, &pre, &G);	
+	testCount += 7 + 6 * numPlayers;	
 
 	//print results
 	printf("%d Total Tests: %d Failures, %d Passes\n\n", testCount, failures, testCount-failures);
@@ -173,7 +174,8 @@ printf ("TESTING discardCard():\n");
 
 //---------------------------     FUNCTIONS        --------------------------
 
-
+//Performs 4 checks: hand, handCount, discard, discardCount
+//returns number of failures
 int checkHandAndDiscard(struct gameState* G, int p, int handCount, int hand[], int discardCount, int discard[]) {
 	int failures = 0;
 	if(G->handCount[p] != handCount) {
@@ -191,8 +193,7 @@ int checkHandAndDiscard(struct gameState* G, int p, int handCount, int hand[], i
 		if (NOISY_TEST) 
 			printf(" FAIL: player %d, discardCount = %d, expected %d\n",p, G->discardCount[p], discardCount);
 	}
-	if ( memcmp(discard, G->discard[p], discardCount))
-	{
+	if ( memcmp(discard, G->discard[p], discardCount)){
 		failures++;
 		if (NOISY_TEST)
 			printf(" FAIL: player %d, discard array did not match expected\n", p );
@@ -223,12 +224,14 @@ int testStateArrayProp(int a1[], int a2[], int size, const char* name){
 }
 
 
-// gameStateChanges() checks any differences between pre and post gamstate 
-//   for ALL properties EXCEPT discard, discardCount, hand, handCount.
-// gameStateChanges() will return number of differences and 
-//   prints differences to console if( NOISY_TEST )
-//   performs 11 + 6 * numPlayers - 4 tests
-int gameStateChanges(int player, int numPlayers, struct gameState *pre, struct gameState *post){
+/*   
+**	 assertGameState() checks any differences between pre and post gamstate 
+**     for ALL properties EXCEPT currentPlayer discard, discardCount, hand, handCount.
+**   assertGameState() will return number of differences and 
+**     prints differences to console if( NOISY_TEST )
+**     performs 11 + 6 * numPlayers - 4 tests = 7 + 6 * numPlayers
+*/
+int assertGameState(int player, int numPlayers, struct gameState *pre, struct gameState *post){
 	
 	int changes = 0;
 	

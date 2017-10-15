@@ -1,6 +1,6 @@
 /* 	Author: 	Andrius Kelly
 	Date:		10/13/2017
-	Description: Unit test for "drawCard()" function
+	Description: Unit test for "buyCard()" function
 */
 
 #include "dominion.h"
@@ -13,12 +13,12 @@
 //set to 1 to remove prints on every test
 #define NOISY_TEST 1
 
-//checks that the gamestate is the same for everything that should be unchanged
 int assertGameState(int player, int numPlayers, struct gameState *pre, struct gameState *post);
-int checkHandAndDeck(struct gameState* G, int p, int handCount, int hand[], int deckCount, int deck[]);
+
+void buyHelper(struct gameState *G, struct gameState *pre, int cardnum);
 
 
-int main(void){
+int main (void){
 
 	//gamestate vars
 	int seed = 1000;
@@ -31,8 +31,6 @@ int main(void){
     int testCount;
     int failures;
     int p;
-    int handCount;
-    int deckCount;
 
 	testCount = failures = 0;
 
@@ -40,110 +38,117 @@ int main(void){
 	initializeGame(numPlayers, k, seed, &G);	
 	p = G.whoseTurn;
 
-	printf ("Testing drawCard():\n");
+	printf ("Testing buyCard():\n");
 
 //VALID INPUT
 	if(NOISY_TEST) 
 		printf("TESTING VALID INPUT\n");
 
-//TEST 1: drawcard on full deck
-
+//try to buy with zero buys left should do nothing
+	if(NOISY_TEST) 
+		printf("Testing buyCard() with numBuys=0\n");
+	G.numBuys = 0;
 	//copy pre gamestate
 	memcpy(&pre, &G, sizeof(struct gameState));
+	buyCard(adventurer, &G);
+	//test gamestate
+	failures = assertGameState(p, numPlayers, &pre, &G);
+	testCount += 11 + 6 * numPlayers;
 
-	handCount = pre.handCount[p];
-	deckCount = pre.deckCount[p];
-	
-	if(NOISY_TEST) 
-		printf("Testing drawCard() on player %d, deck of size %d,\n", p, deckCount);
-	
-	//pop card off top of deck and into hand
-	pre.hand[p][handCount] = pre.deck[p][deckCount-1];
-	pre.handCount[p] += 1;
-	pre.deckCount[p] -= 1;
-
-	drawCard(p, &G);
-
-	//check gamestate changes
-	failures += assertGameState(p, numPlayers, &pre, &G);	
-	testCount += 11 + 6 * numPlayers;	
-
-
-//TEST 2:  draw if deck and discard are empty (should do nothing)
-	G.deckCount[p] = G.discardCount[p] = 0; 
-
-	if(NOISY_TEST) 
-		printf("Testing drawCard() on player %d, deck of size %d, discard of size %d\n", p, G.deckCount[p], G.discardCount[p]);
-
+//try to buy card that's too expensive - should do nothing
+	G.numBuys = 1;
+	G.coins = 4;
 	//copy pre gamestate
 	memcpy(&pre, &G, sizeof(struct gameState));
+	if(NOISY_TEST) 
+		printf("Testing buyCard() with numBuys= %d, coins= %d, price= %d\n", 
+				G.numBuys, G.coins, getCost(adventurer));
 
-	drawCard(p, &G);
+	buyCard(adventurer, &G);
+	//test gamestate
+	failures = assertGameState(p, numPlayers, &pre, &G);
+	testCount += 11 + 6 * numPlayers;
 
-	//check gamestate changes
-	failures += assertGameState(p, numPlayers, &pre, &G);	
+//try to buy card with zero supply - should do nothing
+	G.numBuys = 1;
+	G.coins = 6;
+	G.supplyCount[adventurer] = 0;
+	//copy pre gamestate
+	memcpy(&pre, &G, sizeof(struct gameState));
+	if(NOISY_TEST) 
+		printf("Testing buyCard() with supply= %d\n", G.supplyCount[adventurer]);
+	buyCard(adventurer, &G);
+	//test gamestate
+	failures = assertGameState(p, numPlayers, &pre, &G);
 	testCount += 11 + 6 * numPlayers;
 
 
-//TEST 3: if deck is empty and discard > 0, 
-// should shuffle discard into deck and draw 1 cards
-	
-	G.deckCount[p] = 0; 
-	G.discardCount[p] = 1;
-
-	if(NOISY_TEST) 
-		printf("Testing drawCard() on player %d, deck of size %d, discard of size %d\n", p, G.deckCount[p], G.discardCount[p]);
-
+//try to buy exact price and buys = should be successful
+	G.numBuys = 1;
+	G.coins = getCost(adventurer);
 	//copy pre gamestate
 	memcpy(&pre, &G, sizeof(struct gameState));
 
-	drawCard(p, &G);
-
-	//move discard into deck
-	for(int i =0; i<pre.discardCount[p]; i++){
-		pre.deck[p][i] = pre.discard[p][i];
-		pre.discard[p][i] = -1;
-		pre.deckCount[p] += 1;
-	}
-	pre.discardCount[p] = 0;
-	shuffle(p, &pre);
-	//draw 1 card
-	handCount = pre.handCount[p];
-	pre.deckCount[p] -= 1;
-	deckCount = pre.deckCount[p];
-	pre.hand[p][handCount] = pre.deck[p][deckCount];
-	pre.handCount[p] += 1;
-
-	//will sort hand
-
-	//check gamestate changes
-	failures += assertGameState(p, numPlayers, &pre, &G);	
-	testCount += 11 + 6 * numPlayers;
+	buyHelper(&G, &pre, adventurer);
 	
+	//test gamestate
+	failures = assertGameState(p, numPlayers, &pre, &G);
+	testCount += 11 + 6 * numPlayers;
+
+
+//buy with extra coins and extra buys
+	//initialize new game
+	initializeGame(numPlayers, k, seed, &G);	
+	p = G.whoseTurn;
+
+	G.numBuys = 3;
+	G.coins = 10;
+	//copy pre gamestate
+	memcpy(&pre, &G, sizeof(struct gameState));
+	
+	buyHelper(&G, &pre, gardens);
+
+	//test gamestate
+	failures = assertGameState(p, numPlayers, &pre, &G);
+	testCount += 11 + 6 * numPlayers;
+
+	buyHelper(&G, &pre, gold);
+
+	//test gamestate
+	failures = assertGameState(p, numPlayers, &pre, &G);
+	testCount += 11 + 6 * numPlayers;
 
 //INVALID INPUT
-	if(NOISY_TEST){ 
-		printf("TESTING INVALID INPUT\nTesting drawCard() on player %d, deck of size %d, discard of size %d\n", 
-			p, G.deckCount[p], G.discardCount[p]);
-	}
+	//buy card not in game
 
-	memcpy(&pre, &G, sizeof(struct gameState));
-	drawCard(-1, &G);
-	//check gamestate changes
-	failures += assertGameState(p, numPlayers, &pre, &G);	
-	testCount += 11 + 6 * numPlayers;
+	//buy card not in array
 
 
-//print results
 	printf("%d Total Tests: %d Failures, %d Passes\n\n", testCount, failures, testCount-failures);
 
 	return 0;
 }
 
 
-
 //---------------------------     FUNCTIONS        --------------------------
 
+void buyHelper(struct gameState *G, struct gameState *pre, int cardnum){
+	
+	if(NOISY_TEST) 
+		printf("Testing buyCard() with numBuys= %d, coins= %d, price= %d\n", 
+				G->numBuys, G->coins, getCost(cardnum));
+
+	//buy gardens
+	buyCard(cardnum, G);
+
+	pre->coins -= getCost(cardnum);
+	pre->numBuys -= 1;
+
+	gainCard(cardnum, pre, 0, pre->whoseTurn);
+	
+	if (pre->numBuys < 1)
+		pre->phase = 1;
+}
 
 //Helper Function: checks integer property of pre and post gameState
 int testStateInt(int prop1, int prop2, const char* name){
