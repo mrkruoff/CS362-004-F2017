@@ -133,30 +133,24 @@ int main (void){
 	G.phase = 1; //set phase to buy	
 	p = G.whoseTurn;
 	G.numBuys = G.coins = 100;
-
+	memcpy(&pre, &G, sizeof(struct gameState));
+	
 	if(NOISY_TEST) 
 		printf("Testing buyCard() on all cards in k[]:\n");
 	//test valid kingdom cards;
 	for(int i=0; i<10; i++){
-		//copy pre gamestate
-		memcpy(&pre, &G, sizeof(struct gameState));
 		buyHelper(&G, &pre, k[i]);
-		//test gamestate
-		failures += assertGameState(p, numPlayers, &pre, &G);
-		testCount += 11 + 6 * numPlayers;
 	}
+	
 	if(NOISY_TEST) 
 		printf("Testing buyCard() on all victory and coin cards:\n");
 	
 	for(int i = estate; i <= gold; i++){
-		//copy pre gamestate
-		memcpy(&pre, &G, sizeof(struct gameState));
 		buyHelper(&G, &pre, i);
-		//test gamestate
-		failures += assertGameState(p, numPlayers, &pre, &G);
-		testCount += 11 + 6 * numPlayers;
 	}
-
+	//assert gamestate
+	failures += assertGameState(p, numPlayers, &pre, &G);
+	testCount += 11 + 6 * numPlayers;
 
 
 //INVALID INPUT

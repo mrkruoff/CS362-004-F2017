@@ -18,8 +18,11 @@
 int assertGameState(int player, int numPlayers, struct gameState *pre, struct gameState *post);
 int checkHandAndDiscard(struct gameState* G, int p, int handCount, int hand[], int discardCount, int discard[]);
 
-int compare1 (const void * a, const void * b) {
-	return ( *(int*)a < *(int*)b );
+//compare function adapted from http://www.cplusplus.com/reference/cstdlib/qsort/
+int comp (const void * a, const void * b) {
+  if ( *(int*)a  <  *(int*)b ) return -1;
+  if ( *(int*)a  >  *(int*)b ) return 1;
+  return 0;
 }
 
 int main(void) {
@@ -86,10 +89,10 @@ printf ("TESTING discardCard():\n");
 		discardCount++;
 
 		//sort hand and discard for both, to ignore order
-		qsort(G.hand[p], G.handCount[p], sizeof(int), compare1);
-		qsort(G.discard[p], G.discardCount[p], sizeof(int), compare1);
-		qsort(pre.hand[p], pre.handCount[p], sizeof(int), compare1);
-		qsort(pre.discard[p], pre.discardCount[p], sizeof(int), compare1);
+		qsort(G.hand[p], G.handCount[p], sizeof(int), comp);
+		qsort(G.discard[p], G.discardCount[p], sizeof(int), comp);
+		qsort(pre.hand[p], pre.handCount[p], sizeof(int), comp);
+		qsort(pre.discard[p], pre.discardCount[p], sizeof(int), comp);
 
 		failures = checkHandAndDiscard(&G, p, handCount,  hand,  discardCount,  discard);
 		testCount += 4;
