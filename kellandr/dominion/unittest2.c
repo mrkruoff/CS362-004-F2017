@@ -7,6 +7,7 @@
 #include "dominion_helpers.h"
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <assert.h>
 #include "rngs.h"
 
@@ -16,7 +17,7 @@
 //checks that the gamestate is the same for everything that should be unchanged
 int assertGameState(int player, int numPlayers, struct gameState *pre, struct gameState *post);
 int checkHandAndDeck(struct gameState* G, int p, int handCount, int hand[], int deckCount, int deck[]);
-
+void emptyDeckDraw(int numToDraw,  struct gameState *G, struct gameState *pre);
 
 int main(void){
 
@@ -55,7 +56,7 @@ int main(void){
 	deckCount = pre.deckCount[p];
 	
 	if(NOISY_TEST) 
-		printf("Testing drawCard() on player %d, deck of size %d,\n", p, deckCount);
+		printf(" Testing drawCard() on player %d, deck of size %d,\n", p, deckCount);
 	
 	//pop card off top of deck and into hand
 	pre.hand[p][handCount] = pre.deck[p][deckCount-1];
@@ -73,7 +74,7 @@ int main(void){
 	G.deckCount[p] = G.discardCount[p] = 0; 
 
 	if(NOISY_TEST) 
-		printf("Testing drawCard() on player %d, deck of size %d, discard of size %d\n", p, G.deckCount[p], G.discardCount[p]);
+		printf(" Testing drawCard() on player %d, deck of size %d, discard of size %d\n", p, G.deckCount[p], G.discardCount[p]);
 
 	//copy pre gamestate
 	memcpy(&pre, &G, sizeof(struct gameState));
@@ -85,45 +86,21 @@ int main(void){
 	testCount += 11 + 6 * numPlayers;
 
 
-//TEST 3: if deck is empty and discard > 0, 
-// should shuffle discard into deck and draw 1 cards
-	
-	G.deckCount[p] = 0; 
-	G.discardCount[p] = 1;
+//TEST 3: if deck is empty and discard > 0
 
-	if(NOISY_TEST) 
-		printf("Testing drawCard() on player %d, deck of size %d, discard of size %d\n", p, G.deckCount[p], G.discardCount[p]);
+	emptyDeckDraw( 1, &G, &pre);
+	//check gamestate changes
+	failures += assertGameState(p, numPlayers, &pre, &G);	
+	testCount += 11 + 6 * numPlayers;
 
-	//copy pre gamestate
-	memcpy(&pre, &G, sizeof(struct gameState));
-
-	drawCard(p, &G);
-
-	//move discard into deck
-	for(int i =0; i<pre.discardCount[p]; i++){
-		pre.deck[p][i] = pre.discard[p][i];
-		pre.discard[p][i] = -1;
-		pre.deckCount[p] += 1;
-	}
-	pre.discardCount[p] = 0;
-	shuffle(p, &pre);
-	//draw 1 card
-	handCount = pre.handCount[p];
-	pre.deckCount[p] -= 1;
-	deckCount = pre.deckCount[p];
-	pre.hand[p][handCount] = pre.deck[p][deckCount];
-	pre.handCount[p] += 1;
-
-	//will sort hand
-
+	emptyDeckDraw( 5, &G, &pre);
 	//check gamestate changes
 	failures += assertGameState(p, numPlayers, &pre, &G);	
 	testCount += 11 + 6 * numPlayers;
 	
-
 //INVALID INPUT
 	if(NOISY_TEST){ 
-		printf("TESTING INVALID INPUT\nTesting drawCard() on player %d, deck of size %d, discard of size %d\n", 
+		printf("TESTING INVALID INPUT\n Testing drawCard() on player %d, deck of size %d, discard of size %d\n", 
 			p, G.deckCount[p], G.discardCount[p]);
 	}
 
@@ -135,7 +112,7 @@ int main(void){
 
 
 //print results
-	printf("%d Total Tests: %d Failures, %d Passes\n\n", testCount, failures, testCount-failures);
+	printf("%d Total Checks: %d Failures, %d Passes\n\n", testCount, failures, testCount-failures);
 
 	return 0;
 }
@@ -144,12 +121,59 @@ int main(void){
 
 //---------------------------     FUNCTIONS        --------------------------
 
+//compare function adapted from http://www.cplusplus.com/reference/cstdlib/qsort/
+int comp (const void * a, const void * b) {
+  if ( *(int*)a  <  *(int*)b ) return -1;
+  if ( *(int*)a  >  *(int*)b ) return 1;
+  return 0;
+}
+
+
+//
+void emptyDeckDraw(int numToDraw,  struct gameState *G, struct gameState *pre){
+
+	int p = G->whoseTurn;
+
+	if(NOISY_TEST) 
+		printf(" Testing drawCard() on player %d, deck of size %d, discard of size %d\n", p, G->deckCount[p], numToDraw);
+	
+	G->deckCount[p] = 0; 
+	G->discardCount[p] = numToDraw;
+
+	//copy pre gamestate
+	memcpy(pre, G, sizeof(struct gameState));
+
+	//MUST draw full deck as random deck shuffling will create different hands
+	for(int i=0; i<numToDraw; i++ )
+		drawCard(p, G);
+
+	//move discard into deck
+	for(int i =0; i<pre->discardCount[p]; i++){
+		pre->deck[p][i] = pre->discard[p][i];
+		pre->discard[p][i] = -1;
+		pre->deckCount[p] += 1;
+	}
+	pre->discardCount[p] = 0;
+
+	//MUST draw full deck as random deck shuffling will create different hands
+	while(pre->deckCount[p] > 0){
+		pre->deckCount[p] -= 1;
+		pre->hand[p][pre->handCount[p]] = pre->deck[p][pre->deckCount[p]];
+		pre->handCount[p] += 1;		
+	}
+
+	//sort hands and decks to remove randomness from shuffle
+	qsort(G->deck[p], numToDraw, sizeof(int), comp);
+	qsort(pre->deck[p], numToDraw, sizeof(int), comp);
+	qsort(G->hand[p], G->handCount[p], sizeof(int), comp);
+	qsort(pre->hand[p], pre->handCount[p], sizeof(int), comp);
+}
 
 //Helper Function: checks integer property of pre and post gameState
 int testStateInt(int prop1, int prop2, const char* name){
 	if (prop1 != prop2 ){
 		if (NOISY_TEST) 
-			printf(" FAIL: gameState.%s = %d expected %d\n", name, prop2, prop1 );
+			printf("  FAIL: gameState.%s = %d expected %d\n", name, prop2, prop1 );
 		return 1;
 	}
 	return 0;
@@ -160,7 +184,7 @@ int testStateInt(int prop1, int prop2, const char* name){
 int testStateArray(int a1[], int a2[], int size, const char* name){
 	if( memcmp(a1, a2, size) ){
 		if (NOISY_TEST) 
-			printf(" FAIL: gameState.%s array did not match expected\n", name);
+			printf("  FAIL: gameState.%s array did not match expected\n", name);
 		return 1;
 	}
 	return 0;

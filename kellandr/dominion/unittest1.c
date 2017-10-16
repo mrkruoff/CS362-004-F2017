@@ -7,6 +7,7 @@
 #include "dominion_helpers.h"
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <assert.h>
 #include "rngs.h"
 
@@ -16,6 +17,10 @@
 //checks that the gamestate is the same for everything that should be unchanged
 int assertGameState(int player, int numPlayers, struct gameState *pre, struct gameState *post);
 int checkHandAndDiscard(struct gameState* G, int p, int handCount, int hand[], int discardCount, int discard[]);
+
+int compare1 (const void * a, const void * b) {
+	return ( *(int*)a < *(int*)b );
+}
 
 int main(void) {
 
@@ -69,7 +74,7 @@ printf ("TESTING discardCard():\n");
 	//test discarding card discard in middle of hand
 		if(NOISY_TEST) {
 			printf("TESTING VALID INPUT\n");
-			printf("discarding player %d hand of size %d at index %d\n", p, handCount, handCount/2 );
+			printf(" discarding player %d hand of size %d at index %d\n", p, handCount, handCount/2 );
 		}
 		//get the card number
 		card = G.hand[p][handCount/2];
@@ -80,15 +85,24 @@ printf ("TESTING discardCard():\n");
 		discard[discardCount] = card;
 		discardCount++;
 
+		//sort hand and discard for both, to ignore order
+		qsort(G.hand[p], G.handCount[p], sizeof(int), compare1);
+		qsort(G.discard[p], G.discardCount[p], sizeof(int), compare1);
+		qsort(pre.hand[p], pre.handCount[p], sizeof(int), compare1);
+		qsort(pre.discard[p], pre.discardCount[p], sizeof(int), compare1);
+
 		failures = checkHandAndDiscard(&G, p, handCount,  hand,  discardCount,  discard);
 		testCount += 4;
 
-		//iterate through hand, discarding top of hand until hand is empty
+	//iterate through hand, discarding top of hand until hand is empty
+		memcpy(&pre, &G, sizeof(struct gameState));
 		for(i = handCount-1; i >= 0; i--) {
+			//copy pre gamestate
+			
 			trashFlag = i % 2; //trash odd cards			
 			if(NOISY_TEST){
 				actionString = trashFlag ? trashString : discardString;
-				printf("%s player %d hand of size %d at index %d\n", actionString, p, handCount, i );
+				printf(" %s player %d hand of size %d at index %d\n", actionString, p, handCount, i );
 			}
 			discardCard( i, p, &G, trashFlag);
 			card = hand[i];
@@ -103,7 +117,7 @@ printf ("TESTING discardCard():\n");
 
 		//check gameState
 	if(NOISY_TEST) 
-		printf("testing game states\n");
+		printf(" checking game states\n");
 	failures += assertGameState(p, numPlayers, &pre, &G);	
 	testCount += 7 + 6 * numPlayers;			
 
@@ -121,7 +135,7 @@ printf ("TESTING discardCard():\n");
 // discardCard on empty hand should not do anything
 	for ( i=0; i<2; i++){
 		if (NOISY_TEST)
-			printf("discarding player %d hand of size %d at index %d\n", p, handCount, i);
+			printf(" discarding player %d hand of size %d at index %d\n", p, handCount, i);
 		discardCard( i, p, &G, 0);
 		failures += checkHandAndDiscard(&G, p, handCount,  hand,  discardCount,  discard);
 		testCount += 4;	
@@ -129,7 +143,7 @@ printf ("TESTING discardCard():\n");
 
 	//check gameState
 	if(NOISY_TEST) 
-		printf("testing game states\n");
+		printf(" checking game states\n");
 	failures += assertGameState(p, numPlayers, &pre, &G);	
 	testCount += 7 + 6 * numPlayers;		
 
@@ -146,20 +160,20 @@ printf ("TESTING discardCard():\n");
 	memcpy(discard, G.discard[p], discardCount);
 
 	if (NOISY_TEST)
-		printf("discarding player %d hand of size %d at index %d\n", p, handCount, -1);
+		printf(" discarding player %d hand of size %d at index %d\n", p, handCount, -1);
 	discardCard( -1, p, &G, 0);
 	failures += checkHandAndDiscard(&G, p, handCount,  hand,  discardCount,  discard);
 	testCount += 4;
 
 	if (NOISY_TEST)
-		printf("discarding player %d hand of size %d at index %d\n", p, handCount, handCount);
+		printf(" discarding player %d hand of size %d at index %d\n", p, handCount, handCount);
 	discardCard( handCount, p, &G, 0);
 	failures += checkHandAndDiscard(&G, p, handCount,  hand,  discardCount,  discard);
 	testCount += 4;	
 
 	//check gameState
 	if(NOISY_TEST) 
-		printf("testing game states\n");
+		printf(" testing game states\n");
 	failures += assertGameState(p, numPlayers, &pre, &G);	
 	testCount += 7 + 6 * numPlayers;	
 
@@ -177,26 +191,27 @@ printf ("TESTING discardCard():\n");
 //Performs 4 checks: hand, handCount, discard, discardCount
 //returns number of failures
 int checkHandAndDiscard(struct gameState* G, int p, int handCount, int hand[], int discardCount, int discard[]) {
+
 	int failures = 0;
 	if(G->handCount[p] != handCount) {
 		failures++;
 		if (NOISY_TEST) 
-			printf(" FAIL: player %d, handCount = %d, expected %d\n",p, G->handCount[p], handCount);
+			printf("  FAIL: player %d, handCount = %d, expected %d\n",p, G->handCount[p], handCount);
 	}
 	if( memcmp(hand, G->hand[p], handCount)){
 		failures++;
 		if (NOISY_TEST)
-			printf(" FAIL: player %d, hand array did not match expected\n", p );
+			printf("  FAIL: player %d, hand array did not match expected\n", p );
 	}
 	if (G->discardCount[p] != discardCount) {
 		failures++;
 		if (NOISY_TEST) 
-			printf(" FAIL: player %d, discardCount = %d, expected %d\n",p, G->discardCount[p], discardCount);
+			printf("  FAIL: player %d, discardCount = %d, expected %d\n",p, G->discardCount[p], discardCount);
 	}
 	if ( memcmp(discard, G->discard[p], discardCount)){
 		failures++;
 		if (NOISY_TEST)
-			printf(" FAIL: player %d, discard array did not match expected\n", p );
+			printf("  FAIL: player %d, discard array did not match expected\n", p );
 	}
 	return failures;
 }
@@ -206,7 +221,7 @@ int checkHandAndDiscard(struct gameState* G, int p, int handCount, int hand[], i
 int testStateIntProp(int prop1, int prop2, const char* name){
 	if (prop1 != prop2 ){
 		if (NOISY_TEST) 
-			printf(" FAIL: gameState.%s changed\n", name );
+			printf("  FAIL: gameState.%s changed\n", name );
 		return 1;
 	}
 	return 0;
@@ -217,7 +232,7 @@ int testStateIntProp(int prop1, int prop2, const char* name){
 int testStateArrayProp(int a1[], int a2[], int size, const char* name){
 	if( memcmp(a1, a2, size) ){
 		if (NOISY_TEST) 
-			printf(" FAIL: gameState.%s changed\n", name);
+			printf("  FAIL: gameState.%s changed\n", name);
 		return 1;
 	}
 	return 0;
