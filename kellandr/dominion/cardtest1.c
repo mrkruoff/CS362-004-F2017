@@ -38,7 +38,7 @@ int main(void){
    //vars for testing
     int handPos;
     int handCount;
-    int p;
+    int p = 0;
     int bonus = 0;
     
     int testCount;
@@ -71,7 +71,7 @@ int main(void){
 
 			memcpy(&pre, &G, sizeof(struct gameState));
 
-			cardEffect( smithy,  choice,  choice+1, choice * -1, &G,  handPos, &bonus);
+			cardEffect( smithy,  choice, choice, choice, &G,  handPos, &bonus);
 
 			smithyGameStateHelper(&pre, handPos);
 
@@ -117,9 +117,6 @@ void smithyGameStateHelper(struct gameState* pre, int handPos){
 		//smithy card should be removed from hand at handPos
 		pre->hand[player][handPos] = pre->hand[player][handCount];
 		handCount -= 1;
-
-		//should have one less action
-		pre->numActions -= 1;
 
 		//smithy should be added to playedCards
 		pre->playedCards[pre->playedCardCount] = smithy;
@@ -168,15 +165,15 @@ int assertGameState(struct gameState *pre, struct gameState *post){
 	int changes = 0;
 	
 	changes += testStateInt(pre->numPlayers, post->numPlayers, "numPlayers");
-	changes += testStateArray(pre->supplyCount, post->supplyCount, sizeof(pre->supplyCount), "supplyCount");
-	changes += testStateArray(pre->embargoTokens, post->embargoTokens, sizeof(pre->embargoTokens), "embargoTokens");
+	changes += testStateArray(pre->supplyCount, post->supplyCount, treasure_map+1, "supplyCount");
+	changes += testStateArray(pre->embargoTokens, post->embargoTokens, treasure_map+1, "embargoTokens");
 	changes += testStateInt(pre->outpostPlayed, post->outpostPlayed, "outpostPlayed");
 	changes += testStateInt(pre->whoseTurn, post->whoseTurn, "whoseTurn");
 	changes += testStateInt(pre->phase, post->phase, "phase");
 	changes += testStateInt(pre->numActions, post->numActions, "numActions");
 	changes += testStateInt(pre->coins, post->coins, "coins");
 	changes += testStateInt(pre->numBuys, post->numBuys, "numBuys");
-	changes += testStateArray(pre->playedCards, post->playedCards, sizeof(pre->playedCards), "playedCards");
+	changes += testStateArray(pre->playedCards, post->playedCards, pre->playedCardCount, "playedCards");
 	changes += testStateInt(pre->playedCardCount, post->playedCardCount, "playedCardCount");
 
 	for( int i=0; i < numPlayers; i++){
