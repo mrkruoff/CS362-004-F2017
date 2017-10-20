@@ -38,6 +38,7 @@ int main(void){
    //vars for testing
     int handPos;
     int handCount;
+    int deckCount;
     int p = 0;
     int bonus = 0;
     
@@ -48,23 +49,28 @@ int main(void){
 	//initialize new game
 	initializeGame(numPlayers, k, seed, &G);
 
+	printf ("Testing smithy card effect():\n");
+
 	//iterate through players
 	for(p=0; p < numPlayers; p++){
 
 		G.whoseTurn = p;
 		
-		//choices and bonus should have no effect, so iterate various choices
+		//choices and bonus should have no effect, so iterate various choice from -1 to 1s
 		for(int choice=-1; choice < 1; choice++){
 
 			G.numActions = 5;
 
 			//initialize hand for only smithy card
-			G.handCount[p] = 1;
+			handCount =  1;
 			handPos = 0;
+			deckCount = 10;
+
+			G.handCount[p] = handCount;
 			G.hand[p][handPos] = smithy;
 
 			//initialize deck with legal cards
-			G.deckCount[p] = 10;
+			G.deckCount[p] = deckCount;
 			for(int i = 0; i < G.deckCount[p]; i++){
 				G.deck[p][i] = k[i];
 			}
@@ -84,7 +90,24 @@ int main(void){
 			failures += assertGameState(&pre, &G);
 			testCount += 11 + 6 * numPlayers;
 
-			//print results
+			//make smithy middle card (position = 1) and play it
+			handPos = 1;
+			pre.hand[p][handPos] = smithy;
+			//copy pregamestate to G
+			memcpy(&G, &pre, sizeof(struct gameState));
+
+			cardEffect( smithy,  choice, choice, choice, &G,  handPos, &bonus);
+			smithyGameStateHelper(&pre, handPos);
+
+			//NOTE: order of drawing and discarding can effect hand order
+			// so need to sort hands before test
+			handCount = pre.handCount[p];
+			qsort(G.hand[p], handCount, sizeof(int), comp);
+			qsort(pre.hand[p], handCount, sizeof(int), comp);
+
+			failures += assertGameState(&pre, &G);
+			testCount += 11 + 6 * numPlayers;
+
 
 		}
 
@@ -178,7 +201,6 @@ int assertGameState(struct gameState *pre, struct gameState *post){
 
 	for( int i=0; i < numPlayers; i++){
 
-		//note: only checks	hand based on handsize, not whole array 
 		sprintf(buffer, "hand[] for player %d", i);	
 		changes += testStateArray(pre->hand[i], post->hand[i], pre->handCount[i], buffer);
 		
