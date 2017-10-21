@@ -221,7 +221,7 @@ void adventurerGameStateHelper(struct gameState *G, int handPos){
 	
 	int i;
 	int p = G->whoseTurn;
-printf("hand: %d, deck: %d, discard: %d\n", G->handCount[p], G->deckCount[p], G->discardCount[p]);
+//printf("hand: %d, deck: %d, discard: %d\n", G->handCount[p], G->deckCount[p], G->discardCount[p]);
 	//treasure picked flag
 	int t_flag = 0;
 	
@@ -280,7 +280,7 @@ printf("hand: %d, deck: %d, discard: %d\n", G->handCount[p], G->deckCount[p], G-
 	G->playedCards[ G->playedCardCount ] = adventurer;
 	G->playedCardCount += 1;
 
-printf("hand: %d, deck: %d, discard: %d\n", G->handCount[p], G->deckCount[p], G->discardCount[p]);
+//printf("hand: %d, deck: %d, discard: %d\n", G->handCount[p], G->deckCount[p], G->discardCount[p]);
 
 }
 

@@ -1,6 +1,7 @@
 /* 	Author: 	Andrius Kelly
 	Date:		10/13/2017
 	Description: Unit test for "smithy" card
+	Player should draw three cards, then remove smithy card from hand and add to played cards array
 */
 
 #include "dominion.h"
