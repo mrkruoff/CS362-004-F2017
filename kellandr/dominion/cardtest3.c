@@ -43,7 +43,7 @@ int main(void){
 	initializeGame(numPlayers, k, seed, &G);
 
 	//iterate through players
-	for( p = 0; p < 1; p++){
+	for( p = 0; p < numPlayers; p++){
 	
 		//choice shouldn't matter, so increment to find faults
 		choice++;	
@@ -57,7 +57,7 @@ int main(void){
 		G.handCount[p] = 10;
 
 	//TEST 1  - test with two treasuremap
-		if(NOISY_TEST) printf(" Testing treasure_map with two treasure_map cards in hand\n");
+		if(NOISY_TEST) printf(" Testing player %d p with two treasure_map cards in hand\n",p);
 		
 		handPos = 3;
 		G.hand[p][2] = G.hand[p][handPos] = treasure_map;
@@ -75,7 +75,7 @@ int main(void){
 		memcpy(&G, &pre, sizeof(struct gameState));
 		
 	//TEST 2  - test with one treasuremap
-		if(NOISY_TEST) printf(" Testing treasure_map with one treasure_map card in hand\n");
+		if(NOISY_TEST) printf(" Testing player %d with one treasure_map card in hand\n",p);
 		//test with one treasuremap in hand and one outside hand
 		handPos = 3;
 		G.hand[p][G.handCount[p]] = G.hand[p][handPos] = treasure_map;
@@ -99,7 +99,7 @@ int main(void){
 		G.handCount[p] = 10;
 
 	//TEST 3  -  gold supply = 3
-		if(NOISY_TEST) printf(" Testing treasure_map with two treasure cards and gold supply = 3\n");
+		if(NOISY_TEST) printf(" Testing player %d with two treasure cards and gold supply = 3\n",p);
 		//test with two treasuremap, one at last index in hand
 		handPos = G.handCount[p]-1;
 		G.hand[p][3] = G.hand[p][handPos] = treasure_map;
@@ -119,7 +119,7 @@ int main(void){
 		memcpy(&G, &pre, sizeof(struct gameState));
 
 	//TEST 4  - gold supply = 0;
-		if(NOISY_TEST) printf(" Testing treasure_map with two treasure cards and gold supply = 0\n");
+		if(NOISY_TEST) printf(" Testing player %d with two treasure cards and gold supply = 0\n", p);
 		//test with two treasuremap
 		handPos = 3;
 		G.hand[p][0] = G.hand[p][handPos] = treasure_map;
@@ -150,7 +150,7 @@ void treasuremapGameStateHelper(struct gameState *G, int handPos){
 	int p = G->whoseTurn;
 	int i;
 
-	printf("hand: %d, deck: %d, supplyCount: %d\n", G->handCount[p], G->deckCount[p], G->supplyCount[gold]);
+if(NOISY_TEST) printf("  Pre:  hand: %d, deck: %d, supplyCount: %d\n", G->handCount[p], G->deckCount[p], G->supplyCount[gold]);
 
 	//trash the treasuremap card
 	G->hand[p][handPos] = G->hand[p][ G->handCount[p]-1 ];
@@ -179,8 +179,7 @@ void treasuremapGameStateHelper(struct gameState *G, int handPos){
 			}
 		}
 	}
-
-	printf("hand: %d, deck: %d, supplyCount: %d\n", G->handCount[p], G->deckCount[p], G->supplyCount[gold]);
+if(NOISY_TEST) printf("  Post: hand: %d, deck: %d, supplyCount: %d\n", G->handCount[p], G->deckCount[p], G->supplyCount[gold]);
 
 }
 
