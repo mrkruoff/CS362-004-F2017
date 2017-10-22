@@ -205,8 +205,11 @@ void buyHelper(struct gameState *G, struct gameState *pre, int cardenum){
 	//manually "buy" card for pre gamestate
 	pre->coins -= getCost(cardenum);
 	pre->numBuys -= 1;
-	gainCard(cardenum, pre, 0, pre->whoseTurn);
-	
+
+	int p = pre->whoseTurn;
+	pre->discard[p][ pre->discardCount[p] ] = cardenum;
+	pre->discardCount[p] += 1;
+	pre->supplyCount[cardenum] -= 1;	
 }
 
 //Helper Function: checks integer property of pre and post gameState
