@@ -96,25 +96,34 @@ printf ("TESTING discardCard():\n");
 
 		failures = checkHandAndDiscard(&G, p, handCount,  hand,  discardCount,  discard);
 		testCount += 4;
+		
+	//copy pre gamestate
+	memcpy(&pre, &G, sizeof(struct gameState));
 
 	//iterate through hand, discarding top of hand until hand is empty
-		memcpy(&pre, &G, sizeof(struct gameState));
 		for(i = handCount-1; i >= 0; i--) {
-			//copy pre gamestate
-			
+		
+			//copy expected result to avoid cascading errors
+			memcpy(&G, &pre, sizeof(struct gameState));
+
 			trashFlag = i % 2; //trash odd cards			
+			
 			if(NOISY_TEST){
 				actionString = trashFlag ? trashString : discardString;
 				printf(" %s player %d hand of size %d at index %d\n", actionString, p, handCount, i );
 			}
+			
 			discardCard( i, p, &G, trashFlag);
-			card = hand[i];
-			handCount--;
-			if ( !trashFlag ) {
-				discard[discardCount] = card;
-				discardCount++;
+			
+			card = pre.hand[p][pre.handCount[p]];
+			pre.handCount[p] -= 1;
+			if ( trashFlag == 0 ) {
+				pre.discard[p][pre.discardCount[p]] = card;
+				pre.discardCount[p]++;
 			}
-			failures += checkHandAndDiscard(&G, p, handCount,  hand,  discardCount,  discard);
+			
+			failures += checkHandAndDiscard(&G, p, pre.handCount[p],  pre.hand[p],  pre.discardCount[p],  pre.discard[p]);
+			
 			testCount += 4;
 		}
 
@@ -167,18 +176,23 @@ printf ("TESTING discardCard():\n");
 	discardCard( -1, p, &G, 0);
 	failures += checkHandAndDiscard(&G, p, handCount,  hand,  discardCount,  discard);
 	testCount += 4;
+	//reinitialize G to expected to prevent cascading failures
+	memcpy(&G, &pre, sizeof(struct gameState));
 
 	if (NOISY_TEST)
 		printf(" discarding player %d hand of size %d at index %d\n", p, handCount, handCount);
 	discardCard( handCount, p, &G, 0);
 	failures += checkHandAndDiscard(&G, p, handCount,  hand,  discardCount,  discard);
 	testCount += 4;	
+	//reinitialize G to expected to prevent cascading failures
+	memcpy(&G, &pre, sizeof(struct gameState));
 
 	//check gameState
 	if(NOISY_TEST) 
 		printf(" testing game states\n");
 	failures += assertGameState(p, numPlayers, &pre, &G);	
 	testCount += 7 + 6 * numPlayers;	
+
 
 	//print results
 	printf("%d Total Tests: %d Failures, %d Passes\n\n", testCount, failures, testCount-failures);
