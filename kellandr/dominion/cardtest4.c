@@ -59,16 +59,19 @@ int main(void){
 	handPos = G.handCount[p] - 1;
 
 	memcpy(&pre, &G, sizeof(struct gameState));
-
+	if (NOISY_TEST){
+		printf("  Before: Discardtop: %d, Decktop: %d\n", 
+		G.discard[1][G.discardCount[1]-1], G.deck[1][G.deckCount[1]-1]);
+	}
 	cardEffect( sea_hag,  choice,  choice, choice, &G,  handPos, &choice);
-
 	seahagHelper(&pre,  handPos);
-
+	if (NOISY_TEST){
+		printf("  After Discardtop expected: %d, actual: %d Decktop expected: %d, actual: %d\n", 
+		pre.discard[1][pre.discardCount[1]-1], G.discard[1][G.discardCount[1]-1],
+		pre.deck[1][pre.deckCount[1]-1], G.deck[1][G.deckCount[1]-1]);
+	}
 	failures += assertGameState(&pre, &G);
-
-
-
-	testCount += 11 + 5 * numPlayers;
+	testCount += 11 + 6 * numPlayers;
 
 
 //TEST 2 - testing seahag at front of hand for player 2
@@ -94,10 +97,20 @@ int main(void){
 	G.hand[p][ handPos ] = sea_hag;
 
 	memcpy(&pre, &G, sizeof(struct gameState));
+	if (NOISY_TEST){
+		printf("  Before: Discardtop: %d, Decktop: %d\n", 
+		G.discard[1][G.discardCount[1]-1], G.deck[1][G.deckCount[1]-1]);
+	}
 	cardEffect( sea_hag,  choice,  choice, choice, &G,  handPos, &choice);
 	seahagHelper(&pre,  handPos);
+	if (NOISY_TEST){
+		printf("  After Discardtop expected: %d, actual: %d Decktop expected: %d, actual: %d\n", 
+		pre.discard[1][pre.discardCount[1]-1], G.discard[1][G.discardCount[1]-1],
+		pre.deck[1][pre.deckCount[1]-1], G.deck[1][G.deckCount[1]-1]);
+	}
+
 	failures +=  assertGameState(&pre, &G);
-	testCount += 11 + 5 * numPlayers;
+	testCount += 11 + 6 * numPlayers;
 
 
 
@@ -128,10 +141,20 @@ int main(void){
 		G.handCount[p] = numCards;
 
 		memcpy(&pre, &G, sizeof(struct gameState));
+		if (NOISY_TEST){
+		printf("  Before: Discardtop: %d, Decktop: %d\n", 
+		G.discard[1][G.discardCount[1]-1], G.deck[1][G.deckCount[1]-1]);
+		}
 		cardEffect( sea_hag,  choice,  choice, choice, &G,  handPos, &choice);
 		seahagHelper(&pre,  handPos);
+		if (NOISY_TEST){	
+			printf("  After Discardtop expected: %d, actual: %d Decktop expected: %d, actual: %d\n", 
+			pre.discard[1][pre.discardCount[1]-1], G.discard[1][G.discardCount[1]-1],
+			pre.deck[1][pre.deckCount[1]-1], G.deck[1][G.deckCount[1]-1]);
+		}
+
 		failures += assertGameState(&pre, &G);
-		testCount += 11 + 5 * numPlayers;
+		testCount += 11 + 6 * numPlayers;
 
 	}	
 
@@ -225,10 +248,10 @@ int testStateArray(int a1[], int a2[], int size, const char* name){
 /*   
 **	 assertGameState() checks between pre and post gamstate and returns differences
 **   prints differences to console if( NOISY_TEST )
-**     performs 11 + 5 * numPlayers total tests
+**     performs 11 + 6 * numPlayers total tests
 */
 int assertGameState(struct gameState *pre, struct gameState *post){
-	
+
 	int numPlayers = pre->numPlayers;
 
 	char buffer[100];
@@ -237,6 +260,7 @@ int assertGameState(struct gameState *pre, struct gameState *post){
 	
 	changes += testStateInt(pre->numPlayers, post->numPlayers, "numPlayers");
 	changes += testStateArray(pre->supplyCount, post->supplyCount, treasure_map+1, "supplyCount");
+	changes += testStateInt(pre->supplyCount[curse], post->supplyCount[curse], "supplyCount[curse]");
 	changes += testStateArray(pre->embargoTokens, post->embargoTokens, treasure_map+1, "embargoTokens");
 	changes += testStateInt(pre->outpostPlayed, post->outpostPlayed, "outpostPlayed");
 	changes += testStateInt(pre->whoseTurn, post->whoseTurn, "whoseTurn");
