@@ -217,6 +217,8 @@ int assertDeckAndDiscard(struct gameState *G, struct gameState *pre, int p){
 	}
 	return failures;
 }
+
+//sets the gamestate to its expected value based on the card effect
 void adventurerGameStateHelper(struct gameState *G, int handPos){
 	
 	int i;

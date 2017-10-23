@@ -101,6 +101,7 @@ printf ("TESTING discardCard():\n");
 	memcpy(&pre, &G, sizeof(struct gameState));
 
 	//iterate through hand, discarding top of hand until hand is empty
+		handCount = pre.handCount[p];
 		for(i = handCount-1; i >= 0; i--) {
 		
 			//copy expected result to avoid cascading errors
@@ -110,7 +111,7 @@ printf ("TESTING discardCard():\n");
 			
 			if(NOISY_TEST){
 				actionString = trashFlag ? trashString : discardString;
-				printf(" %s player %d hand of size %d at index %d\n", actionString, p, handCount, i );
+				printf(" %s player %d hand of size %d at index %d\n", actionString, p, pre.handCount[p], i );
 			}
 			
 			discardCard( i, p, &G, trashFlag);
