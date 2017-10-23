@@ -115,10 +115,10 @@ int main(void){
 
 
 //TEST 3:  2 player game
-	if(NOISY_TEST) printf(" Testing sea_hag for player %d in %d player game. One player has empty deck.\n", p, numPlayers);
-
 	numPlayers = 2;
 	initializeGame(numPlayers, k, seed, &G);
+	
+	if(NOISY_TEST) printf(" Testing sea_hag for player %d in %d player game.  player 2 has empty deck.\n", p, numPlayers);
 	
 	//move Second player's deck to discard
 	for(int i=0; i < G.deckCount[1]; i++){
