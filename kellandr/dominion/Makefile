@@ -1,5 +1,42 @@
 CFLAGS = -Wall -fpic -coverage -lm
 
+default: unittestresults.out
+
+unittestresults.out: cardtest1 cardtest2 cardtest3 cardtest4 unittest1 unittest2 unittest3 unittest4
+	echo "Result for unit tests:" >> unittestresults.out
+
+	echo "unittest1.c" >> unittestresults.out
+	./unittest1 >> unittestresults.out
+	gcov unittest1.c >> unittestresults.out
+
+	echo "unittest2.c" >> unittestresults.out
+	./unittest2 >> unittestresults.out
+	gcov unittest2 >> unittestresults.out
+
+	echo "unittest3.c" >> unittestresults.out
+	./unittest3 >> unittestresults.out
+	gcov unittest3 >> unittestresults.out
+
+	echo "unittest4.c" >> unittestresults.out
+	./unittest4 >> unittestresults.out
+	gcov unittest4 >> unittestresults.out
+
+	echo "cardtest1.c" >> unittestresults.out
+	./cardtest1 >> unittestresults.out
+	gcov cardtest1 >> unittestresults.out
+
+	echo "cardtest2.c" >> unittestresults.out
+	./cardtest2 >> unittestresults.out
+	gcov cardtest2 >> unittestresults.out
+
+	echo "cardtest3.c" >> unittestresults.out
+	./cardtest3 >> unittestresults.out
+	gcov cardtest3 >> unittestresults.out
+
+	echo "cardtest4.c" >> unittestresults.out
+	./cardtest4 >> unittestresults.out
+	gcov cardtest4 >> unittestresults.out
+
 cardtest4: cardtest4.c dominion.o rngs.o
 	gcc -o cardtest4 -g  cardtest4.c dominion.o rngs.o $(CFLAGS)
 
@@ -60,4 +97,4 @@ player: player.c interface.o
 all: playdom player testDrawCard testBuyCard badTestDrawCard
 
 clean:
-	rm -f *.o playdom.exe playdom player player.exe *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe
+	rm -f *.o  playdom.exe playdom player player.exe *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe cardtest1 cardtest2 cardtest3 cardtest4 unittest1 unittest2 unittest3 unittest4
