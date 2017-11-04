@@ -1,9 +1,12 @@
 CFLAGS = -Wall -fpic -coverage -lm
 
-default: randomtest1
+default: randomtestcard1 randomtestcard2
 
-randomtest1: randomtestcard1.c dominion.o rngs.o
-	gcc -o randomtest1 -g randomtestcard1.c dominion.o rngs.o $(CFLAGS)
+randomtestcard2: randomtestcard2.c dominion.o rngs.o
+	gcc -o randomtestcard2 -g randomtestcard2.c dominion.o rngs.o $(CFLAGS)
+
+randomtestcard1: randomtestcard1.c dominion.o rngs.o
+	gcc -o randomtestcard1 -g randomtestcard1.c dominion.o rngs.o $(CFLAGS)
 
 unittestresults.out: cardtest1 cardtest2 cardtest3 cardtest4 unittest1 unittest2 unittest3 unittest4
 	echo "Result for unit tests:" >> unittestresults.out

@@ -1,6 +1,6 @@
 /* 	Author: 	Andrius Kelly
 	Date:		10/28/2017
-	Description: Random test for "adventurer" card
+	Description: Random test for "treasure_map" card
 */
 
 
@@ -24,10 +24,9 @@
 #endif
 
 void validRandomGameState(struct gameState* G);
-int assertGameState(struct gameState *pre, struct gameState *post); 
-void adventurerGameStateHelper(struct gameState *G, int handPos);
-int assertDeckAndDiscard(struct gameState *G, struct gameState *pre, int p);
+int assertGameState(struct gameState *pre, struct gameState *post);
 void printCardLocation(int size, int arr[], int card);
+void treasuremapGameStateHelper(struct gameState *G, int handPos);
 
 int main(int argc, char* argv[]){
 
@@ -45,7 +44,7 @@ int main(int argc, char* argv[]){
 
 	struct gameState G;
 	struct gameState oracle;	//to test post conditions agains
-    struct gameState pre;		//to kep track of preconditions
+    struct gameState pre;		//to keep track of preconditions
     int handPos;
     int whoseTurn;
     int bonus;
@@ -55,7 +54,7 @@ int main(int argc, char* argv[]){
     numTests = NUM_TESTS;
 
 	for(int i=0; i < numTests; i++){
-
+		
 		//create random gameState
 		validRandomGameState(&G);
 		whoseTurn = G.whoseTurn;
@@ -65,32 +64,23 @@ int main(int argc, char* argv[]){
 		memcpy(&oracle, &G, sizeof(struct gameState));
 		memcpy(&pre, &G, sizeof(struct gameState));
 
-		cardEffect( adventurer,  rand(),  rand(), rand(), &G,  handPos, &bonus);
-		adventurerGameStateHelper(&oracle, handPos);
+		cardEffect( treasure_map,  rand(),  rand(), rand(), &G,  handPos, &bonus);
+		treasuremapGameStateHelper(&oracle, handPos);
 		
-		checkFails = assertGameState( &oracle, &G) + assertDeckAndDiscard(&G, &oracle, whoseTurn);
+		checkFails = assertGameState( &oracle, &G);
 
 		if (checkFails > 0){
 			testFails++;
 			if(NOISY_TEST) {
-				printf("FAIL player: %d\n deckCount: %d discardCount:%d\n", whoseTurn, pre.deckCount[whoseTurn], pre.discardCount[whoseTurn]);
-				if(pre.deckCount[whoseTurn] > 0) {
-					printf("  Copper in deck index: ");
-					printCardLocation(pre.deckCount[whoseTurn], pre.deck[whoseTurn], copper);
-					printf("  Silver in deck index: ");
-					printCardLocation(pre.deckCount[whoseTurn], pre.deck[whoseTurn], silver);
-					printf("  Gold in deck index: ");
-					printCardLocation(pre.deckCount[whoseTurn], pre.deck[whoseTurn], gold);
-				}
-				if(pre.discardCount[whoseTurn] > 0) {
-					printf("  Copper in discard index: ");
-					printCardLocation(pre.discardCount[whoseTurn], pre.discard[whoseTurn], copper);
-					printf("  Silver in discard index: ");
-					printCardLocation(pre.discardCount[whoseTurn], pre.discard[whoseTurn], silver);
-					printf("  Gold in discard index: ");
-					printCardLocation(pre.discardCount[whoseTurn], pre.discard[whoseTurn], gold);
-				}
+				printf("FAIL:  hand: %d, deck: %d, gold supply: %d treasure_map at index:", pre.handCount[whoseTurn], pre.deckCount[whoseTurn], pre.supplyCount[gold]);
+				printCardLocation(pre.handCount[whoseTurn], pre.hand[whoseTurn], treasure_map);
+
 			}
+		}
+		//print success
+		else if (NOISY_TEST){
+				printf("SUCCESS:  hand: %d, deck: %d, gold supply: %d treasure_map at index:", pre.handCount[whoseTurn], pre.deckCount[whoseTurn], pre.supplyCount[gold]);
+				printCardLocation(pre.handCount[whoseTurn], pre.hand[whoseTurn], treasure_map);
 		}
 	}
 
@@ -115,8 +105,47 @@ void printCardLocation(int size, int arr[], int card){
 	if (foundFlag == 0){
 		printf("None");
 	}
-	
 	printf("\n");
+}
+
+
+//sets gamestate oracle for treasuremap card 
+void treasuremapGameStateHelper(struct gameState *G, int handPos){
+	int p = G->whoseTurn;
+	int i;
+
+//if(NOISY_TEST) printf("  Pre:  hand: %d, deck: %d, supplyCount: %d\n", G->handCount[p], G->deckCount[p], G->supplyCount[gold]);
+
+	//trash the treasuremap card
+	G->hand[p][handPos] = G->hand[p][ G->handCount[p]-1 ];
+	G->handCount[p] -= 1;
+	
+	//look for another treasuremap, if found, trash that card and gain 4 gold
+	if(G->handCount[p] > 0){
+		
+		for(i=0; i < G->handCount[p]; i++){
+			
+			if(G->hand[p][i] == treasure_map){
+				
+				//trash card
+				G->hand[p][i] = G->hand[p][ G->handCount[p]-1 ];
+				G->handCount[p] -= 1;
+
+				//add up to four gold to deck
+				for(i = 0; G->supplyCount[gold] > 0 && i < 4; i++ ){
+					G->deck[p][G->deckCount[p] + i] = gold;
+					G->supplyCount[gold] -= 1;
+				}
+				
+				G->deckCount[p] += i;
+				
+				break;
+			}
+		}
+	}
+
+//if(NOISY_TEST) printf("  Post: hand: %d, deck: %d, supplyCount: %d\n", G->handCount[p], G->deckCount[p], G->supplyCount[gold]);
+
 }
 
 
@@ -128,7 +157,7 @@ void printCardLocation(int size, int arr[], int card){
 void validRandomGameState(struct gameState* G){
 
 	int i, j;
-	
+
 	G->numPlayers = rand() % MAX_PLAYERS + 1;
 	
 	for( i = 0; i<treasure_map+1; i++){
@@ -140,9 +169,9 @@ void validRandomGameState(struct gameState* G){
 	G->outpostTurn = rand() % G->numPlayers;
 	G->whoseTurn = rand() % G->numPlayers;
 	G->phase = rand() % 2;
-	G->numActions = rand() % (MAX_SUPPLY + 1); 
-	G->coins = rand() % (MAX_SUPPLY + 1);
-	G->numBuys = rand() % (MAX_SUPPLY + 1); 
+	G->numActions = rand() % (MAX_SUPPLY + 1); /* Starts at 1 each turn */
+	G->coins = rand() % (MAX_SUPPLY + 1); /* Use as you see fit! */
+	G->numBuys = rand() % (MAX_SUPPLY + 1); /* Starts at 1 each turn */
 
 	for ( i = 0; i < MAX_PLAYERS; i++){
 		G->handCount[i] = rand() % MAX_HAND;
@@ -155,92 +184,14 @@ void validRandomGameState(struct gameState* G){
 			G->discard[i][j] = rand() % (treasure_map + 1);
 		}
 	}
+
 	for( j = 0; j < MAX_DECK; j++)
 		G->playedCards[i] = rand() % (treasure_map + 1);
-}
-
-
-int assertDeckAndDiscard(struct gameState *G, struct gameState *pre, int p){
-	int failures = 0;
-	if (G->deckCount[p] != pre->deckCount[p] ){
-		failures++;
-		if (NOISY_TEST) printf("  FAIL: gameState.deckCount = %d expected %d\n", G->deckCount[p], pre->deckCount[p] );	
-	}
-	if (G->discardCount[p] != pre->discardCount[p] ){
-		failures++;
-		if (NOISY_TEST) printf("  FAIL: gameState.discardCount = %d expected %d\n", G->discardCount[p], pre->discardCount[p] );	
-	}
-	return failures;
-}
-
-
-//sets the gamestate to its expected value based on the card effect
-void adventurerGameStateHelper(struct gameState *G, int handPos){
-	
-	int i;
-	int p = G->whoseTurn;
-//printf("hand: %d, deck: %d, discard: %d\n", G->handCount[p], G->deckCount[p], G->discardCount[p]);
-	//treasure picked flag
-	int t_flag = 0;
-	
-	//drawn array to store drawn cards
-	int drawnCard;
-	int drawn[MAX_DECK];
-	int drawnCount = 0;
-
-	while(t_flag < 2 ) {
-
-		if ( G->deckCount[p] == 0 ){
-						
-			if ( G->discardCount[p] == 0 ){
-				//nothing to do, so break
-
-				break;
-			} 
-
-			else {
-				//add discarded cards to deck
-				for( i = 0 ; i < G->discardCount[p]; i++ ){
-					G->deck[p][i] = G->discard[p][i];
-				}
-				G->deckCount[p] = G->discardCount[p];
-				G->discardCount[p] = 0;
-			}
-
-		}
-
-		//draw until treasure cards are picked
-		drawnCard = G->deck[p][ G->deckCount[p]-1 ];
-		G->deckCount[p] -= 1;
-
-		//if treasure picked, add to hand
-		if( drawnCard == copper || drawnCard == silver || drawnCard == gold){
-			t_flag++;
-			G->hand[p][ G->handCount[p] ] = drawnCard;
-			G->handCount[p] += 1;
-		}
-		else{		//else add to drawn
-			drawn[drawnCount] = drawnCard;
-			drawnCount++;
-		}
-	}
-
-	//add drawn cards to discard pile
-	for( i = 0 ; i < drawnCount; i++){
-		G->discard[p][ G->discardCount[p] ] = drawn[i];
-		G->discardCount[p] += 1;
-	}
-
-	//remove adventurer card from hand and add to played
-	G->hand[p][handPos] = G->hand[p][ G->handCount[p]-1 ];
-	G->handCount[p] -= 1;
-
-	G->playedCards[ G->playedCardCount ] = adventurer;
-	G->playedCardCount += 1;
-
-//printf("hand: %d, deck: %d, discard: %d\n", G->handCount[p], G->deckCount[p], G->discardCount[p]);
 
 }
+
+
+
 
 //Helper Function: checks integer property of pre and post gameState
 int testStateInt(int prop1, int prop2, const char* name){
@@ -251,7 +202,6 @@ int testStateInt(int prop1, int prop2, const char* name){
 	}
 	return 0;
 }
-
 
 //Helper Function: checks array property of pre and post gameState
 int testStateArray(int a1[], int a2[], int size, const char* name){
@@ -264,8 +214,6 @@ int testStateArray(int a1[], int a2[], int size, const char* name){
 	}
 	return 0;
 }
-
-
 /*   
 **	 assertGameState() checks between pre and post gamstate and returns differences
 **   prints differences to console if( NOISY_TEST )
@@ -301,7 +249,19 @@ int assertGameState(struct gameState *pre, struct gameState *post){
 		sprintf(buffer, "handCount for player %d", i);	
 		changes += testStateInt(pre->handCount[i], post->handCount[i], buffer);
 
+		sprintf(buffer, "discardCount for player %d", i);
+		changes += testStateInt(pre->discardCount[i], post->discardCount[i], buffer);
+
+		sprintf(buffer, "discard[] for player %d", i);
+		changes += testStateArray(pre->discard[i], post->discard[i], pre->discardCount[i], buffer);
+
+		sprintf(buffer, "deckCount for player %d", i);
+		changes += testStateInt(pre->deckCount[i], post->deckCount[i], buffer);
+
+		sprintf(buffer, "deck[] for player %d", i);
+		changes += testStateArray( pre->deck[i], post->deck[i], pre->deckCount[i], buffer);
 	}
 
+	return changes;
 	return changes;
 } 
