@@ -1,6 +1,9 @@
 CFLAGS = -Wall -fpic -coverage -lm
 
-default: randomtestcard1 randomtestcard2
+default: randomtestcard1 randomtestcard2 randomtestcard3
+
+randomtestcard3: randomtestcard3.c dominion.o rngs.o
+	gcc -o randomtestcard3 -g randomtestcard3.c dominion.o rngs.o $(CFLAGS)
 
 randomtestcard2: randomtestcard2.c dominion.o rngs.o
 	gcc -o randomtestcard2 -g randomtestcard2.c dominion.o rngs.o $(CFLAGS)
