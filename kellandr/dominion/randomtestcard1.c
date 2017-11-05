@@ -1,6 +1,6 @@
 /* 	Author: 	Andrius Kelly
 	Date:		10/28/2017
-	Description: Random test for "adventurer" card
+	Description: Random test for "sea_hag" card
 */
 
 
@@ -12,8 +12,9 @@
 #include <assert.h>
 #include "rngs.h"
 
+
 #ifndef NOISY_TEST
-	#define NOISY_TEST 2 //set to 0 for summary, 1 to print relevent state, 2 to print full state failures
+	#define NOISY_TEST 1 //set to 0 for summary, 1 to print relevent state, 2 to print full state failures
 #endif
 #ifndef NUM_TESTS 
 	#define NUM_TESTS 1000
@@ -24,9 +25,9 @@
 #endif
 
 void validRandomGameState(struct gameState* G);
-int assertGameState(struct gameState *pre, struct gameState *post); 
-void adventurerGameStateHelper(struct gameState *G, int handPos);
-void printCardLocation(int size, int arr[], int card);
+int assertGameState(struct gameState *pre, struct gameState *post);
+void printPlayerInfo(struct gameState *G);
+void seahagHelper(struct gameState *G, int handPos);
 
 int main(int argc, char* argv[]){
 
@@ -44,7 +45,7 @@ int main(int argc, char* argv[]){
 
 	struct gameState G;
 	struct gameState oracle;	//to test post conditions agains
-    struct gameState pre;		//to kep track of preconditions
+    struct gameState pre;		//to keep track of preconditions
     int handPos;
     int whoseTurn;
     int bonus;
@@ -54,55 +55,38 @@ int main(int argc, char* argv[]){
     numTests = NUM_TESTS;
 
 	for(int i=0; i < numTests; i++){
-
+		
 		//create random gameState
+		bonus = rand();
 		validRandomGameState(&G);
+		
 		whoseTurn = G.whoseTurn;
 		handPos = rand() % (G.handCount[whoseTurn] + 1) - 1; //prevent divide by zero
 		handPos = (handPos < 0) ? 0 : handPos;
-		G.hand[whoseTurn][handPos] = sea_hag;
-		bonus = rand();
+		G.hand[whoseTurn][handPos] = sea_hag;		
 
 		memcpy(&oracle, &G, sizeof(struct gameState));
 		memcpy(&pre, &G, sizeof(struct gameState));
 
-		cardEffect( adventurer,  rand(),  rand(), rand(), &G,  handPos, &bonus);
-		adventurerGameStateHelper(&oracle, handPos);
+		cardEffect( sea_hag,  rand(),  rand(), rand(), &G,  handPos, &bonus);
+		seahagHelper(&oracle, handPos);
 		
 		checkFails = assertGameState( &oracle, &G);
 
 		if (checkFails > 0){
 			testFails++;
-			if(NOISY_TEST) 
-				printf("FAIL \n");
-		}
-		else if(NOISY_TEST) {
-			printf("SUCCESS \n");
-		}
-		if(NOISY_TEST) {
-			printf(" player: %d\n handCount: %d deckCount: %d discardCount: %d\n", whoseTurn, pre.handCount[whoseTurn], pre.deckCount[whoseTurn], pre.discardCount[whoseTurn]);
-			if(pre.deckCount[whoseTurn] > 0) {
-				printf("  Copper in deck index: ");
-				printCardLocation(pre.deckCount[whoseTurn], pre.deck[whoseTurn], copper);
-				printf("  Silver in deck index: ");
-				printCardLocation(pre.deckCount[whoseTurn], pre.deck[whoseTurn], silver);
-				printf("  Gold in deck index: ");
-				printCardLocation(pre.deckCount[whoseTurn], pre.deck[whoseTurn], gold);
+			if(NOISY_TEST) {
+				printf("FAIL:\n");
+				printPlayerInfo(&pre);
 			}
-			if(pre.discardCount[whoseTurn] > 0) {
-				printf("  Copper in discard index: ");
-				printCardLocation(pre.discardCount[whoseTurn], pre.discard[whoseTurn], copper);
-				printf("  Silver in discard index: ");
-				printCardLocation(pre.discardCount[whoseTurn], pre.discard[whoseTurn], silver);
-				printf("  Gold in discard index: ");
-				printCardLocation(pre.discardCount[whoseTurn], pre.discard[whoseTurn], gold);
-			}
-			printf("\n");
 		}
-		
+		else if (NOISY_TEST){ //print success
+				printf("SUCCESS:\n");
+				printPlayerInfo(&pre);
+		}
 	}
 
-	printf("%d Total Tests with %d Failures for adventurer\n\n", numTests, testFails);
+	printf("%d Total Tests with %d Failures for sea_hag\n\n", numTests, testFails);
 
 	return 0;
 }
@@ -111,22 +95,57 @@ int main(int argc, char* argv[]){
 
 // ----------------------------FUNCTIONS-----------------------------
 
+//for debugging
+void printPlayerInfo(struct gameState *G){
+	for(int i=0; i < G->numPlayers; i++){
+		printf("player %d hand: %d, deck: %d, discard: %d\n", 
+			i, G->handCount[i], G->deckCount[i], G->discardCount[i]);
+	}
+	printf("Curses: %d\n\n", G->supplyCount[curse]);
+}
 
+//creates expected gamestate for seahag effect
+void seahagHelper(struct gameState *G, int handPos) {
+	int p = G->whoseTurn;
+	int n = G->numPlayers;
+	int deckTop;
+	int discardCount;
+	//cycle through other characters
+	for (int i=0; i < n; i++){
+		if( i != p){
+			//each player discards top deck to discard
+			//if deck is empty, add discard to deck
+			if(G->deckCount[i] <= 0){
+				for(int j = 0; j < G->discardCount[p]; j++){
+					G->deck[i][j] = G->discard[i][j];
+					G->deckCount[i] = G->discardCount[i];
+					G->discardCount[i] = 0;
+				}
+			}
 
-//prints location of given cardType in array, if any
-void printCardLocation(int size, int arr[], int card){
-	int foundFlag = 0;
-	for(int i = size-1; i >= 0; i--){
-		if( arr[i] == card){
-			printf("%d ", i);
-			foundFlag = 1;
+			deckTop = G->deckCount[i] - 1;
+			discardCount = G->discardCount[i];
+
+			G->discard[i][discardCount] = G->deck[i][deckTop];
+			G->discardCount[i] += 1;
+			G->deckCount[i] = deckTop;
+
+			//gain curse to top of deck
+			if(G->supplyCount[curse] > 0){
+				G->deck[i][deckTop] = curse;
+				G->deckCount[i] = deckTop + 1;
+				G->supplyCount[curse] -= 1;
+			}			
 		}
 	}
-	if (foundFlag == 0){
-		printf("None");
-	}
-	
-	printf("\n");
+
+	//remove seahag from player's hand
+	G->hand[p][handPos] = G->hand[p][ G->handCount[p] ];
+	G->handCount[p] -= 1;
+
+	//add seahag to played array 
+	G->playedCards [ G->playedCardCount ] = sea_hag;
+	G->playedCardCount += 1; 
 }
 
 
@@ -138,7 +157,7 @@ void printCardLocation(int size, int arr[], int card){
 void validRandomGameState(struct gameState* G){
 
 	int i, j;
-	
+
 	G->numPlayers = rand() % MAX_PLAYERS + 1;
 	
 	for( i = 0; i<treasure_map+1; i++){
@@ -150,9 +169,9 @@ void validRandomGameState(struct gameState* G){
 	G->outpostTurn = rand() % G->numPlayers;
 	G->whoseTurn = rand() % G->numPlayers;
 	G->phase = rand() % 2;
-	G->numActions = rand() % (MAX_SUPPLY + 1); 
-	G->coins = rand() % (MAX_SUPPLY + 1);
-	G->numBuys = rand() % (MAX_SUPPLY + 1); 
+	G->numActions = rand() % (MAX_SUPPLY + 1); /* Starts at 1 each turn */
+	G->coins = rand() % (MAX_SUPPLY + 1); /* Use as you see fit! */
+	G->numBuys = rand() % (MAX_SUPPLY + 1); /* Starts at 1 each turn */
 
 	for ( i = 0; i < MAX_PLAYERS; i++){
 		G->handCount[i] = rand() % MAX_HAND + 1;
@@ -169,104 +188,32 @@ void validRandomGameState(struct gameState* G){
 		G->playedCards[i] = rand() % (treasure_map + 1);
 }
 
-//sets the gamestate to its expected value based on the card effect
-void adventurerGameStateHelper(struct gameState *G, int handPos){
-	
-	int i;
-	int p = G->whoseTurn;
-//printf("hand: %d, deck: %d, discard: %d\n", G->handCount[p], G->deckCount[p], G->discardCount[p]);
-	//treasure picked flag
-	int t_flag = 0;
-	
-	//drawn array to store drawn cards
-	int drawnCard;
-	int drawn[MAX_DECK];
-	int drawnCount = 0;
-
-	while(t_flag < 2 ) {
-
-		if ( G->deckCount[p] == 0 ){
-						
-			if ( G->discardCount[p] == 0 ){
-				//nothing to do, so break
-
-				break;
-			} 
-
-			else {
-				//add discarded cards to deck
-				for( i = 0 ; i < G->discardCount[p]; i++ ){
-					G->deck[p][i] = G->discard[p][i];
-				}
-				G->deckCount[p] = G->discardCount[p];
-				G->discardCount[p] = 0;
-			}
-
-		}
-
-		//draw until treasure cards are picked
-		drawnCard = G->deck[p][ G->deckCount[p]-1 ];
-		G->deckCount[p] -= 1;
-
-		//if treasure picked, add to hand
-		if( drawnCard == copper || drawnCard == silver || drawnCard == gold){
-			t_flag++;
-			G->hand[p][ G->handCount[p] ] = drawnCard;
-			G->handCount[p] += 1;
-		}
-		else{		//else add to drawn
-			drawn[drawnCount] = drawnCard;
-			drawnCount++;
-		}
-	}
-
-	//add drawn cards to discard pile
-	for( i = 0 ; i < drawnCount; i++){
-		G->discard[p][ G->discardCount[p] ] = drawn[i];
-		G->discardCount[p] += 1;
-	}
-
-	//remove adventurer card from hand and add to played
-	G->hand[p][handPos] = G->hand[p][ G->handCount[p]-1 ];
-	G->handCount[p] -= 1;
-
-	G->playedCards[ G->playedCardCount ] = adventurer;
-	G->playedCardCount += 1;
-
-//printf("hand: %d, deck: %d, discard: %d\n", G->handCount[p], G->deckCount[p], G->discardCount[p]);
-
-}
 
 //Helper Function: checks integer property of pre and post gameState
 int testStateInt(int prop1, int prop2, const char* name){
 	if (prop1 != prop2 ){
 		if (NOISY_TEST > 1) 
-			printf("FAIL: gameState.%s = %d expected %d\n", name, prop2, prop1 );
+			printf("  FAIL: gameState.%s = %d expected %d\n", name, prop2, prop1 );
 		return 1;
 	}
 	return 0;
 }
-
 
 //Helper Function: checks array property of pre and post gameState
 int testStateArray(int a1[], int a2[], int size, const char* name){
 	for(int i=0; i< size; i++ ) {
 		if ( a1[i] != a2[i] ) {
 			if (NOISY_TEST > 1) 
-				printf("FAIL: gameState.%s array did not match expected\n", name);
+				printf("  FAIL: gameState.%s array did not match expected\n", name);
 			return 1;
 		}
 	}
 	return 0;
 }
-
-
 /*   
 **	 assertGameState() checks between pre and post gamstate and returns differences
 **   prints differences to console if( NOISY_TEST )
-**     performs 11 + 2 * numPlayers total tests
-**
-**	 NOTE: cannot compare deck and discardelements due to randomness of shuffling
+**   NOTE: cannot compare deck and discard arrays due to shuffling
 */
 int assertGameState(struct gameState *pre, struct gameState *post){
 	
@@ -296,11 +243,20 @@ int assertGameState(struct gameState *pre, struct gameState *post){
 		sprintf(buffer, "handCount for player %d", i);	
 		changes += testStateInt(pre->handCount[i], post->handCount[i], buffer);
 
-		//due to shuffling, can only compare deck + discard totals
-		sprintf(buffer, "discard+deck for player %d", i);
-		changes += testStateInt(pre->discardCount[i] + pre->deckCount[i], post->discardCount[i] + post->deckCount[i], buffer);
+		sprintf(buffer, "discardCount for player %d", i);
+		changes += testStateInt(pre->discardCount[i], post->discardCount[i], buffer);
 
-	}
+		sprintf(buffer, "deckCount for player %d", i);
+		changes += testStateInt(pre->deckCount[i], post->deckCount[i], buffer);
+
+/*  //Can't compare deck and discard arrays due to shuffling
+
+		sprintf(buffer, "discard[] for player %d", i);
+		changes += testStateArray(pre->discard[i], post->discard[i], pre->discardCount[i], buffer);
+
+		sprintf(buffer, "deck[] for player %d", i);
+		changes += testStateArray( pre->deck[i], post->deck[i], pre->deckCount[i], buffer);
+*/	}
 
 	return changes;
 } 
