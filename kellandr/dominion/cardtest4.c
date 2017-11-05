@@ -70,8 +70,8 @@ int main(void){
 		pre.discard[1][pre.discardCount[1]-1], G.discard[1][G.discardCount[1]-1],
 		pre.deck[1][pre.deckCount[1]-1], G.deck[1][G.deckCount[1]-1]);
 	}
-	failures += assertGameState(&pre, &G);
-	testCount += 11 + 6 * numPlayers;
+	if (assertGameState(&pre, &G)) failures++;
+	testCount++;
 
 
 //TEST 2 - testing seahag at front of hand for player 2
@@ -109,8 +109,8 @@ int main(void){
 		pre.deck[1][pre.deckCount[1]-1], G.deck[1][G.deckCount[1]-1]);
 	}
 
-	failures +=  assertGameState(&pre, &G);
-	testCount += 11 + 6 * numPlayers;
+	if (assertGameState(&pre, &G)) failures++;;
+	testCount++;
 
 
 
@@ -153,12 +153,12 @@ int main(void){
 			pre.deck[1][pre.deckCount[1]-1], G.deck[1][G.deckCount[1]-1]);
 		}
 
-		failures += assertGameState(&pre, &G);
-		testCount += 11 + 6 * numPlayers;
+		if (assertGameState(&pre, &G)) failures++;
+		testCount++;
 
 	}	
 
-	printf("%d Total Checks: %d Failures, %d Passes\n\n", testCount, failures, testCount-failures);
+	printf("%d Total Tests  %d Failures for sea_hag\n\n", testCount, failures);
 
 	return 0;
 }
@@ -282,8 +282,8 @@ int assertGameState(struct gameState *pre, struct gameState *post){
 		sprintf(buffer, "discardCount for player %d", i);
 		changes += testStateInt(pre->discardCount[i], post->discardCount[i], buffer);
 
-		sprintf(buffer, "discard[] for player %d", i);
-		changes += testStateArray(pre->discard[i], post->discard[i], pre->discardCount[i], buffer);
+//		sprintf(buffer, "discard[] for player %d", i);
+//		changes += testStateArray(pre->discard[i], post->discard[i], pre->discardCount[i], buffer);
 
 		sprintf(buffer, "deckCount for player %d", i);
 		changes += testStateInt(pre->deckCount[i], post->deckCount[i], buffer);

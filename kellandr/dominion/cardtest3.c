@@ -68,8 +68,8 @@ int main(void){
 		//manually change pre gamestate to expected
 		treasuremapGameStateHelper(&pre, handPos);
 		//check for failures
-		failures += assertGameState( &pre, &G);
-		testCount += 11 + 6 * numPlayers;
+		if(assertGameState( &pre, &G)) failures++;
+		testCount++;
 
 		//reset gamestate G to expected
 		memcpy(&G, &pre, sizeof(struct gameState));
@@ -86,8 +86,8 @@ int main(void){
 		//manually change pre gamestate to expected
 		treasuremapGameStateHelper(&pre, handPos);
 		//check for failures
-		failures += assertGameState( &pre, &G);
-		testCount += 11 + 6 * numPlayers;
+		if(assertGameState( &pre, &G)) failures++;
+		testCount++;
 
 		//reset gamestate G to expected
 		memcpy(&G, &pre, sizeof(struct gameState));
@@ -112,8 +112,8 @@ int main(void){
 		//manually change pre gamestate to expected
 		treasuremapGameStateHelper(&pre, handPos);
 		//check for failures
-		failures += assertGameState( &pre, &G);
-		testCount += 11 + 6 * numPlayers;
+		if(assertGameState( &pre, &G)) failures++;
+		testCount++;
 
 		//reset gamestate G to expected
 		memcpy(&G, &pre, sizeof(struct gameState));
@@ -132,12 +132,12 @@ int main(void){
 		//manually change pre gamestate to expected
 		treasuremapGameStateHelper(&pre, handPos);
 		//check for failures
-		failures += assertGameState( &pre, &G);
-		testCount += 11 + 6 * numPlayers;
+		if(assertGameState( &pre, &G)) failures++;
+		testCount++;
 
 	}
 
-	printf("%d Total Checks: %d Failures, %d Passes\n\n", testCount, failures, testCount-failures);
+	printf("%d Total Tests  %d Failures for treasure_map\n\n", testCount, failures);
 
 
 	return 0;

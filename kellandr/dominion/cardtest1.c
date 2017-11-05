@@ -88,8 +88,10 @@ int main(void){
 			qsort(G.hand[p], handCount, sizeof(int), comp);
 			qsort(pre.hand[p], handCount, sizeof(int), comp);
 
-			failures += assertGameState(&pre, &G);
-			testCount += 11 + 6 * numPlayers;
+			if (assertGameState(&pre, &G)){
+				failures++
+			}
+			testCount++;
 
 			//make smithy middle card (position = 1) and play it
 			handPos = 1;
@@ -106,15 +108,17 @@ int main(void){
 			qsort(G.hand[p], handCount, sizeof(int), comp);
 			qsort(pre.hand[p], handCount, sizeof(int), comp);
 
-			failures += assertGameState(&pre, &G);
-			testCount += 11 + 6 * numPlayers;
+			if (assertGameState(&pre, &G)){
+				failures++
+			}
+			testCount++;
 
 
 		}
 
 	}
 	
-	printf("%d Total Checks: %d Failures, %d Passes\n\n", testCount, failures, testCount-failures);
+	printf("%d Tests %d Failures for smithy\n\n", testCount, failures);
 
 	return 0;
 }

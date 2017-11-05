@@ -13,20 +13,19 @@
 #include "rngs.h"
 
 #ifndef NOISY_TEST
-#define NOISY_TEST 1 //set to 0, 1 or 2 for increasing levels of detail
+	#define NOISY_TEST 2 //set to 0 for summary, 1 to print relevent state, 2 to print full state failures
 #endif
 #ifndef NUM_TESTS 
-#define NUM_TESTS 1000
+	#define NUM_TESTS 1000
 #endif
 //definine max supply to 60, for valid test
 #ifndef MAX_SUPPLY
-#define MAX_SUPPLY 60
+	#define MAX_SUPPLY 60
 #endif
 
 void validRandomGameState(struct gameState* G);
 int assertGameState(struct gameState *pre, struct gameState *post); 
 void adventurerGameStateHelper(struct gameState *G, int handPos);
-int assertDeckAndDiscard(struct gameState *G, struct gameState *pre, int p);
 void printCardLocation(int size, int arr[], int card);
 
 int main(int argc, char* argv[]){
@@ -59,7 +58,9 @@ int main(int argc, char* argv[]){
 		//create random gameState
 		validRandomGameState(&G);
 		whoseTurn = G.whoseTurn;
-		handPos = rand() % (G.handCount[whoseTurn] + 1);
+		handPos = rand() % (G.handCount[whoseTurn] + 1) - 1; //prevent divide by zero
+		handPos = (handPos < 0) ? 0 : handPos;
+		G.hand[whoseTurn][handPos] = sea_hag;
 		bonus = rand();
 
 		memcpy(&oracle, &G, sizeof(struct gameState));
@@ -68,9 +69,7 @@ int main(int argc, char* argv[]){
 		cardEffect( adventurer,  rand(),  rand(), rand(), &G,  handPos, &bonus);
 		adventurerGameStateHelper(&oracle, handPos);
 		
-		checkFails = assertGameState( &oracle, &G) + assertDeckAndDiscard(&G, &oracle, whoseTurn);
-
-
+		checkFails = assertGameState( &oracle, &G);
 
 		if (checkFails > 0){
 			testFails++;
@@ -81,7 +80,7 @@ int main(int argc, char* argv[]){
 			printf("SUCCESS \n");
 		}
 		if(NOISY_TEST) {
-			printf(" player: %d\n deckCount: %d discardCount:%d\n", whoseTurn, pre.deckCount[whoseTurn], pre.discardCount[whoseTurn]);
+			printf(" player: %d\n handCount: %d deckCount: %d discardCount: %d\n", whoseTurn, pre.handCount[whoseTurn], pre.deckCount[whoseTurn], pre.discardCount[whoseTurn]);
 			if(pre.deckCount[whoseTurn] > 0) {
 				printf("  Copper in deck index: ");
 				printCardLocation(pre.deckCount[whoseTurn], pre.deck[whoseTurn], copper);
@@ -98,11 +97,12 @@ int main(int argc, char* argv[]){
 				printf("  Gold in discard index: ");
 				printCardLocation(pre.discardCount[whoseTurn], pre.discard[whoseTurn], gold);
 			}
+			printf("\n");
 		}
 		
 	}
 
-	printf("%d Total Tests with %d Failures\n\n", numTests, testFails);
+	printf("%d Total Tests with %d Failures for adventurer\n\n", numTests, testFails);
 
 	return 0;
 }
@@ -110,6 +110,8 @@ int main(int argc, char* argv[]){
 
 
 // ----------------------------FUNCTIONS-----------------------------
+
+
 
 //prints location of given cardType in array, if any
 void printCardLocation(int size, int arr[], int card){
@@ -153,7 +155,7 @@ void validRandomGameState(struct gameState* G){
 	G->numBuys = rand() % (MAX_SUPPLY + 1); 
 
 	for ( i = 0; i < MAX_PLAYERS; i++){
-		G->handCount[i] = rand() % MAX_HAND;
+		G->handCount[i] = rand() % MAX_HAND + 1;
 		G->deckCount[i] = rand() % MAX_DECK;
 		G->discardCount[i] = rand() % MAX_DECK;
 
@@ -166,21 +168,6 @@ void validRandomGameState(struct gameState* G){
 	for( j = 0; j < MAX_DECK; j++)
 		G->playedCards[i] = rand() % (treasure_map + 1);
 }
-
-
-int assertDeckAndDiscard(struct gameState *G, struct gameState *pre, int p){
-	int failures = 0;
-	if (G->deckCount[p] != pre->deckCount[p] ){
-		failures++;
-		if (NOISY_TEST) printf("  FAIL: gameState.deckCount = %d expected %d\n", G->deckCount[p], pre->deckCount[p] );	
-	}
-	if (G->discardCount[p] != pre->discardCount[p] ){
-		failures++;
-		if (NOISY_TEST) printf("  FAIL: gameState.discardCount = %d expected %d\n", G->discardCount[p], pre->discardCount[p] );	
-	}
-	return failures;
-}
-
 
 //sets the gamestate to its expected value based on the card effect
 void adventurerGameStateHelper(struct gameState *G, int handPos){
@@ -254,7 +241,7 @@ void adventurerGameStateHelper(struct gameState *G, int handPos){
 int testStateInt(int prop1, int prop2, const char* name){
 	if (prop1 != prop2 ){
 		if (NOISY_TEST > 1) 
-			printf("  FAIL: gameState.%s = %d expected %d\n", name, prop2, prop1 );
+			printf("FAIL: gameState.%s = %d expected %d\n", name, prop2, prop1 );
 		return 1;
 	}
 	return 0;
@@ -266,7 +253,7 @@ int testStateArray(int a1[], int a2[], int size, const char* name){
 	for(int i=0; i< size; i++ ) {
 		if ( a1[i] != a2[i] ) {
 			if (NOISY_TEST > 1) 
-				printf("  FAIL: gameState.%s array did not match expected\n", name);
+				printf("FAIL: gameState.%s array did not match expected\n", name);
 			return 1;
 		}
 	}
@@ -308,6 +295,10 @@ int assertGameState(struct gameState *pre, struct gameState *post){
 		
 		sprintf(buffer, "handCount for player %d", i);	
 		changes += testStateInt(pre->handCount[i], post->handCount[i], buffer);
+
+		//due to shuffling, can only compare deck + discard totals
+		sprintf(buffer, "discard+deck for player %d", i);
+		changes += testStateInt(pre->discardCount[i] + pre->deckCount[i], post->discardCount[i] + post->deckCount[i], buffer);
 
 	}
 

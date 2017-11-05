@@ -75,12 +75,13 @@ int main(void){
 			//manually change pre gamestate to expected
 			adventurerGameStateHelper(&pre, handPos);
 			//check for failures
-			failures += assertGameState( &pre, &G);
-			testCount += 11 + 2 * numPlayers;
+			if (assertGameState( &pre, &G))
+				failures++;
+			testCount++;
 
 			//decksize and discardsize should be equal
-			failures += assertDeckAndDiscard(&G, &pre, p);
-			testCount += 2;
+			if (assertDeckAndDiscard(&G, &pre, p)) failures++;
+
 
 
 		//TEST 2
@@ -100,11 +101,12 @@ int main(void){
 			//manually change pre gamestate to expected
 			adventurerGameStateHelper(&pre, handPos);
 			//check for failures
-			failures += assertGameState( &pre, &G);
-			testCount += 11 + 2 * numPlayers;
+			if (assertGameState( &pre, &G))
+				failures++;
+			testCount++;
 			//decksize and discardsize should be equal
-			failures += assertDeckAndDiscard(&G, &pre, p);
-			testCount += 2;
+			if (assertDeckAndDiscard(&G, &pre, p)) failures++;
+
 
 		//TEST 3
 			//put one in deck one in discard
@@ -134,8 +136,9 @@ int main(void){
 			adventurerGameStateHelper(&pre, handPos);
 
 			//check for failures
-			failures += assertGameState( &pre, &G);
-			testCount += 11 + 2 * numPlayers;
+			if (assertGameState( &pre, &G))
+				failures++;
+			testCount++;
 
 		//TEST 4
 			//put both treasures in discard
@@ -164,8 +167,9 @@ int main(void){
 			//manually change pre gamestate to expected
 			adventurerGameStateHelper(&pre, handPos);
 			//check for failures
-			failures += assertGameState( &pre, &G);
-			testCount += 11 + 2 * numPlayers;
+			if (assertGameState( &pre, &G))
+				failures++;
+			testCount++;
 
 		//TEST 4
 			//no treasures
@@ -188,16 +192,17 @@ int main(void){
 			//manually change pre gamestate to expected
 			adventurerGameStateHelper(&pre, handPos);
 			//check for failures
-			failures += assertGameState( &pre, &G);
-			testCount += 11 + 2 * numPlayers;
+			if (assertGameState( &pre, &G))
+				failures++;
+			testCount++;
 			//decksize and discardsize should be equal
-			failures += assertDeckAndDiscard(&G, &pre, p);
-			testCount += 2;
+			if (assertDeckAndDiscard(&G, &pre, p)) failures++;
+
 		}
 
 	}
 
-	printf("%d Total Checks: %d Failures, %d Passes\n\n", testCount, failures, testCount-failures);
+	printf("%d Total Tests  %d Failures for adventurer\n\n", testCount, failures);
 
 	return 0;
 }

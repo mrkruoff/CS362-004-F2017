@@ -13,14 +13,14 @@
 #include "rngs.h"
 
 #ifndef NOISY_TEST
-#define NOISY_TEST 1
+	#define NOISY_TEST 2 //set to 0 for summary, 1 to print relevent state, 2 to print full state failures
 #endif
 #ifndef NUM_TESTS 
-#define NUM_TESTS 1000
+	#define NUM_TESTS 1000
 #endif
 //definine max supply to 60, for valid test
 #ifndef MAX_SUPPLY
-#define MAX_SUPPLY 60
+	#define MAX_SUPPLY 60
 #endif
 
 void validRandomGameState(struct gameState* G);
@@ -58,7 +58,9 @@ int main(int argc, char* argv[]){
 		//create random gameState
 		validRandomGameState(&G);
 		whoseTurn = G.whoseTurn;
-		handPos = rand() % (G.handCount[whoseTurn] + 1);
+		handPos = rand() % (G.handCount[whoseTurn] + 1) - 1; //prevent divide by zero
+		handPos = (handPos < 0) ? 0 : handPos;
+		G.hand[whoseTurn][handPos] = treasure_map;
 		bonus = rand();
 
 		memcpy(&oracle, &G, sizeof(struct gameState));
@@ -72,26 +74,32 @@ int main(int argc, char* argv[]){
 		if (checkFails > 0){
 			testFails++;
 			if(NOISY_TEST) {
-				printf("FAIL:  hand: %d, deck: %d, gold supply: %d treasure_map at index:", pre.handCount[whoseTurn], pre.deckCount[whoseTurn], pre.supplyCount[gold]);
-				printCardLocation(pre.handCount[whoseTurn], pre.hand[whoseTurn], treasure_map);
-
+				printf("FAIL:\n");
 			}
 		}
-		//print success
 		else if (NOISY_TEST){
-				printf("SUCCESS:  hand: %d, deck: %d, gold supply: %d treasure_map at index:", pre.handCount[whoseTurn], pre.deckCount[whoseTurn], pre.supplyCount[gold]);
-				printCardLocation(pre.handCount[whoseTurn], pre.hand[whoseTurn], treasure_map);
+				printf("SUCCESS:\n");
 		}
+		if (NOISY_TEST){
+			printf("player %d hand: %d, deck: %d, gold supply: %d treasure_map at index:", whoseTurn, pre.handCount[whoseTurn], pre.deckCount[whoseTurn], pre.supplyCount[gold]);
+				printCardLocation(pre.handCount[whoseTurn], pre.hand[whoseTurn], treasure_map);
+				printf("\n");
+		}
+
 	}
 
-	printf("%d Total Tests with %d Failures\n\n", numTests, testFails);
+	printf("%d Total Tests with %d Failures for treasure_map\n\n", numTests, testFails);
 
 	return 0;
 }
 
 
 
+
 // ----------------------------FUNCTIONS-----------------------------
+
+
+
 
 //prints location of given cardType in array, if any
 void printCardLocation(int size, int arr[], int card){
@@ -174,7 +182,7 @@ void validRandomGameState(struct gameState* G){
 	G->numBuys = rand() % (MAX_SUPPLY + 1); /* Starts at 1 each turn */
 
 	for ( i = 0; i < MAX_PLAYERS; i++){
-		G->handCount[i] = rand() % MAX_HAND;
+		G->handCount[i] = rand() % MAX_HAND + 1;
 		G->deckCount[i] = rand() % MAX_DECK;
 		G->discardCount[i] = rand() % MAX_DECK;
 
@@ -197,7 +205,7 @@ void validRandomGameState(struct gameState* G){
 int testStateInt(int prop1, int prop2, const char* name){
 	if (prop1 != prop2 ){
 		if (NOISY_TEST > 1) 
-			printf("  FAIL: gameState.%s = %d expected %d\n", name, prop2, prop1 );
+			printf("FAIL: gameState.%s = %d expected %d\n", name, prop2, prop1 );
 		return 1;
 	}
 	return 0;
@@ -208,7 +216,7 @@ int testStateArray(int a1[], int a2[], int size, const char* name){
 	for(int i=0; i< size; i++ ) {
 		if ( a1[i] != a2[i] ) {
 			if (NOISY_TEST > 1) 
-				printf("  FAIL: gameState.%s array did not match expected\n", name);
+				printf("FAIL: gameState.%s array did not match expected\n", name);
 			return 1;
 		}
 	}
