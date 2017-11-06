@@ -646,7 +646,7 @@ int getCost(int cardNumber)
 int smithyfunc(int currentPlayer, struct gameState *state, int handPos)
 {
 	 int i;
-	 currentPlayer--;
+	 //currentPlayer--;
 	 //+3 Cards
       for (i = 0; i < 3; i++)
 	{
