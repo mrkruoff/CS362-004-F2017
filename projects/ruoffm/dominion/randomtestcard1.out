@@ -1,0 +1,5374 @@
+Testing Village Card
+Test: 0 
+Initial States
+number of actions 1 handcount 415
+States after play
+number of actions 2 handcount 415
+testing handcounts end up equal after play, before=415 after=415
+testing return value
+Test Passed
+Test: 1 
+Initial States
+number of actions 1 handcount 149
+States after play
+number of actions 2 handcount 149
+testing handcounts end up equal after play, before=149 after=149
+testing return value
+Test Passed
+Test: 2 
+Initial States
+number of actions 1 handcount 59
+States after play
+number of actions 2 handcount 59
+testing handcounts end up equal after play, before=59 after=59
+testing return value
+Test Passed
+Test: 3 
+Initial States
+number of actions 1 handcount 172
+States after play
+number of actions 2 handcount 172
+testing handcounts end up equal after play, before=172 after=172
+testing return value
+Test Passed
+Test: 4 
+Initial States
+number of actions 1 handcount 429
+States after play
+number of actions 2 handcount 429
+testing handcounts end up equal after play, before=429 after=429
+testing return value
+Test Passed
+Test: 5 
+Initial States
+number of actions 1 handcount 67
+States after play
+number of actions 2 handcount 67
+testing handcounts end up equal after play, before=67 after=67
+testing return value
+Test Passed
+Test: 6 
+Initial States
+number of actions 1 handcount 58
+States after play
+number of actions 2 handcount 58
+testing handcounts end up equal after play, before=58 after=58
+testing return value
+Test Passed
+Test: 7 
+Initial States
+number of actions 1 handcount 11
+States after play
+number of actions 2 handcount 11
+testing handcounts end up equal after play, before=11 after=11
+testing return value
+Test Passed
+Test: 8 
+Initial States
+number of actions 1 handcount 419
+States after play
+number of actions 2 handcount 419
+testing handcounts end up equal after play, before=419 after=419
+testing return value
+Test Passed
+Test: 9 
+Initial States
+number of actions 1 handcount 315
+States after play
+number of actions 2 handcount 315
+testing handcounts end up equal after play, before=315 after=315
+testing return value
+Test Passed
+Test: 10 
+Initial States
+number of actions 1 handcount 480
+States after play
+number of actions 2 handcount 480
+testing handcounts end up equal after play, before=480 after=480
+testing return value
+Test Passed
+Test: 11 
+Initial States
+number of actions 1 handcount 496
+States after play
+number of actions 2 handcount 496
+testing handcounts end up equal after play, before=496 after=496
+testing return value
+Test Passed
+Test: 12 
+Initial States
+number of actions 1 handcount 327
+States after play
+number of actions 2 handcount 327
+testing handcounts end up equal after play, before=327 after=327
+testing return value
+Test Passed
+Test: 13 
+Initial States
+number of actions 1 handcount 313
+States after play
+number of actions 2 handcount 313
+testing handcounts end up equal after play, before=313 after=313
+testing return value
+Test Passed
+Test: 14 
+Initial States
+number of actions 2 handcount 45
+States after play
+number of actions 3 handcount 45
+testing handcounts end up equal after play, before=45 after=45
+testing return value
+Test Passed
+Test: 15 
+Initial States
+number of actions 1 handcount 43
+States after play
+number of actions 2 handcount 43
+testing handcounts end up equal after play, before=43 after=43
+testing return value
+Test Passed
+Test: 16 
+Initial States
+number of actions 1 handcount 178
+States after play
+number of actions 2 handcount 178
+testing handcounts end up equal after play, before=178 after=178
+testing return value
+Test Passed
+Test: 17 
+Initial States
+number of actions 2 handcount 254
+States after play
+number of actions 3 handcount 254
+testing handcounts end up equal after play, before=254 after=254
+testing return value
+Test Passed
+Test: 18 
+Initial States
+number of actions 3 handcount 368
+States after play
+number of actions 4 handcount 368
+testing handcounts end up equal after play, before=368 after=368
+testing return value
+Test Passed
+Test: 19 
+Initial States
+number of actions 4 handcount 94
+States after play
+number of actions 5 handcount 94
+testing handcounts end up equal after play, before=94 after=94
+testing return value
+Test Passed
+Test: 20 
+Initial States
+number of actions 1 handcount 378
+States after play
+number of actions 2 handcount 378
+testing handcounts end up equal after play, before=378 after=378
+testing return value
+Test Passed
+Test: 21 
+Initial States
+number of actions 1 handcount 317
+States after play
+number of actions 2 handcount 317
+testing handcounts end up equal after play, before=317 after=317
+testing return value
+Test Passed
+Test: 22 
+Initial States
+number of actions 2 handcount 280
+States after play
+number of actions 3 handcount 280
+testing handcounts end up equal after play, before=280 after=280
+testing return value
+Test Passed
+Test: 23 
+Initial States
+number of actions 1 handcount 444
+States after play
+number of actions 2 handcount 444
+testing handcounts end up equal after play, before=444 after=444
+testing return value
+Test Passed
+Test: 24 
+Initial States
+number of actions 2 handcount 117
+States after play
+number of actions 3 handcount 117
+testing handcounts end up equal after play, before=117 after=117
+testing return value
+Test Passed
+Test: 25 
+Initial States
+number of actions 1 handcount 209
+States after play
+number of actions 2 handcount 209
+testing handcounts end up equal after play, before=209 after=209
+testing return value
+Test Passed
+Test: 26 
+Initial States
+number of actions 1 handcount 353
+States after play
+number of actions 2 handcount 353
+testing handcounts end up equal after play, before=353 after=353
+testing return value
+Test Passed
+Test: 27 
+Initial States
+number of actions 1 handcount 219
+States after play
+number of actions 2 handcount 219
+testing handcounts end up equal after play, before=219 after=219
+testing return value
+Test Passed
+Test: 28 
+Initial States
+number of actions 2 handcount 329
+States after play
+number of actions 3 handcount 329
+testing handcounts end up equal after play, before=329 after=329
+testing return value
+Test Passed
+Test: 29 
+Initial States
+number of actions 1 handcount 208
+States after play
+number of actions 2 handcount 208
+testing handcounts end up equal after play, before=208 after=208
+testing return value
+Test Passed
+Test: 30 
+Initial States
+number of actions 2 handcount 223
+States after play
+number of actions 3 handcount 223
+testing handcounts end up equal after play, before=223 after=223
+testing return value
+Test Passed
+Test: 31 
+Initial States
+number of actions 1 handcount 421
+States after play
+number of actions 2 handcount 421
+testing handcounts end up equal after play, before=421 after=421
+testing return value
+Test Passed
+Test: 32 
+Initial States
+number of actions 1 handcount 228
+States after play
+number of actions 2 handcount 228
+testing handcounts end up equal after play, before=228 after=228
+testing return value
+Test Passed
+Test: 33 
+Initial States
+number of actions 1 handcount 34
+States after play
+number of actions 2 handcount 34
+testing handcounts end up equal after play, before=34 after=34
+testing return value
+Test Passed
+Test: 34 
+Initial States
+number of actions 2 handcount 356
+States after play
+number of actions 3 handcount 356
+testing handcounts end up equal after play, before=356 after=356
+testing return value
+Test Passed
+Test: 35 
+Initial States
+number of actions 1 handcount 359
+States after play
+number of actions 2 handcount 359
+testing handcounts end up equal after play, before=359 after=359
+testing return value
+Test Passed
+Test: 36 
+Initial States
+number of actions 2 handcount 228
+States after play
+number of actions 3 handcount 228
+testing handcounts end up equal after play, before=228 after=228
+testing return value
+Test Passed
+Test: 37 
+Initial States
+number of actions 1 handcount 358
+States after play
+number of actions 2 handcount 358
+testing handcounts end up equal after play, before=358 after=358
+testing return value
+Test Passed
+Test: 38 
+Initial States
+number of actions 1 handcount 293
+States after play
+number of actions 2 handcount 293
+testing handcounts end up equal after play, before=293 after=293
+testing return value
+Test Passed
+Test: 39 
+Initial States
+number of actions 2 handcount 428
+States after play
+number of actions 3 handcount 428
+testing handcounts end up equal after play, before=428 after=428
+testing return value
+Test Passed
+Test: 40 
+Initial States
+number of actions 3 handcount 263
+States after play
+number of actions 4 handcount 263
+testing handcounts end up equal after play, before=263 after=263
+testing return value
+Test Passed
+Test: 41 
+Initial States
+number of actions 1 handcount 404
+States after play
+number of actions 2 handcount 404
+testing handcounts end up equal after play, before=404 after=404
+testing return value
+Test Passed
+Test: 42 
+Initial States
+number of actions 2 handcount 417
+States after play
+number of actions 3 handcount 417
+testing handcounts end up equal after play, before=417 after=417
+testing return value
+Test Passed
+Test: 43 
+Initial States
+number of actions 3 handcount 470
+States after play
+number of actions 4 handcount 470
+testing handcounts end up equal after play, before=470 after=470
+testing return value
+Test Passed
+Test: 44 
+Initial States
+number of actions 1 handcount 225
+States after play
+number of actions 2 handcount 225
+testing handcounts end up equal after play, before=225 after=225
+testing return value
+Test Passed
+Test: 45 
+Initial States
+number of actions 1 handcount 454
+States after play
+number of actions 2 handcount 454
+testing handcounts end up equal after play, before=454 after=454
+testing return value
+Test Passed
+Test: 46 
+Initial States
+number of actions 1 handcount 464
+States after play
+number of actions 2 handcount 464
+testing handcounts end up equal after play, before=464 after=464
+testing return value
+Test Passed
+Test: 47 
+Initial States
+number of actions 1 handcount 348
+States after play
+number of actions 2 handcount 348
+testing handcounts end up equal after play, before=348 after=348
+testing return value
+Test Passed
+Test: 48 
+Initial States
+number of actions 1 handcount 343
+States after play
+number of actions 2 handcount 343
+testing handcounts end up equal after play, before=343 after=343
+testing return value
+Test Passed
+Test: 49 
+Initial States
+number of actions 2 handcount 311
+States after play
+number of actions 3 handcount 311
+testing handcounts end up equal after play, before=311 after=311
+testing return value
+Test Passed
+Test: 50 
+Initial States
+number of actions 1 handcount 230
+States after play
+number of actions 2 handcount 230
+testing handcounts end up equal after play, before=230 after=230
+testing return value
+Test Passed
+Test: 51 
+Initial States
+number of actions 1 handcount 444
+States after play
+number of actions 2 handcount 444
+testing handcounts end up equal after play, before=444 after=444
+testing return value
+Test Passed
+Test: 52 
+Initial States
+number of actions 1 handcount 416
+States after play
+number of actions 2 handcount 416
+testing handcounts end up equal after play, before=416 after=416
+testing return value
+Test Passed
+Test: 53 
+Initial States
+number of actions 1 handcount 62
+States after play
+number of actions 2 handcount 62
+testing handcounts end up equal after play, before=62 after=62
+testing return value
+Test Passed
+Test: 54 
+Initial States
+number of actions 2 handcount 399
+States after play
+number of actions 3 handcount 399
+testing handcounts end up equal after play, before=399 after=399
+testing return value
+Test Passed
+Test: 55 
+Initial States
+number of actions 1 handcount 473
+States after play
+number of actions 2 handcount 473
+testing handcounts end up equal after play, before=473 after=473
+testing return value
+Test Passed
+Test: 56 
+Initial States
+number of actions 1 handcount 394
+States after play
+number of actions 2 handcount 394
+testing handcounts end up equal after play, before=394 after=394
+testing return value
+Test Passed
+Test: 57 
+Initial States
+number of actions 1 handcount 399
+States after play
+number of actions 2 handcount 399
+testing handcounts end up equal after play, before=399 after=399
+testing return value
+Test Passed
+Test: 58 
+Initial States
+number of actions 1 handcount 168
+States after play
+number of actions 2 handcount 168
+testing handcounts end up equal after play, before=168 after=168
+testing return value
+Test Passed
+Test: 59 
+Initial States
+number of actions 1 handcount 84
+States after play
+number of actions 2 handcount 84
+testing handcounts end up equal after play, before=84 after=84
+testing return value
+Test Passed
+Test: 60 
+Initial States
+number of actions 1 handcount 42
+States after play
+number of actions 2 handcount 42
+testing handcounts end up equal after play, before=42 after=42
+testing return value
+Test Passed
+Test: 61 
+Initial States
+number of actions 1 handcount 179
+States after play
+number of actions 2 handcount 179
+testing handcounts end up equal after play, before=179 after=179
+testing return value
+Test Passed
+Test: 62 
+Initial States
+number of actions 1 handcount 172
+States after play
+number of actions 2 handcount 172
+testing handcounts end up equal after play, before=172 after=172
+testing return value
+Test Passed
+Test: 63 
+Initial States
+number of actions 1 handcount 342
+States after play
+number of actions 2 handcount 342
+testing handcounts end up equal after play, before=342 after=342
+testing return value
+Test Passed
+Test: 64 
+Initial States
+number of actions 1 handcount 372
+States after play
+number of actions 2 handcount 372
+testing handcounts end up equal after play, before=372 after=372
+testing return value
+Test Passed
+Test: 65 
+Initial States
+number of actions 1 handcount 221
+States after play
+number of actions 2 handcount 221
+testing handcounts end up equal after play, before=221 after=221
+testing return value
+Test Passed
+Test: 66 
+Initial States
+number of actions 1 handcount 167
+States after play
+number of actions 2 handcount 167
+testing handcounts end up equal after play, before=167 after=167
+testing return value
+Test Passed
+Test: 67 
+Initial States
+number of actions 2 handcount 484
+States after play
+number of actions 3 handcount 484
+testing handcounts end up equal after play, before=484 after=484
+testing return value
+Test Passed
+Test: 68 
+Initial States
+number of actions 3 handcount 269
+States after play
+number of actions 4 handcount 269
+testing handcounts end up equal after play, before=269 after=269
+testing return value
+Test Passed
+Test: 69 
+Initial States
+number of actions 1 handcount 292
+States after play
+number of actions 2 handcount 292
+testing handcounts end up equal after play, before=292 after=292
+testing return value
+Test Passed
+Test: 70 
+Initial States
+number of actions 2 handcount 385
+States after play
+number of actions 3 handcount 385
+testing handcounts end up equal after play, before=385 after=385
+testing return value
+Test Passed
+Test: 71 
+Initial States
+number of actions 1 handcount 398
+States after play
+number of actions 2 handcount 398
+testing handcounts end up equal after play, before=398 after=398
+testing return value
+Test Passed
+Test: 72 
+Initial States
+number of actions 1 handcount 90
+States after play
+number of actions 2 handcount 90
+testing handcounts end up equal after play, before=90 after=90
+testing return value
+Test Passed
+Test: 73 
+Initial States
+number of actions 1 handcount 232
+States after play
+number of actions 2 handcount 232
+testing handcounts end up equal after play, before=232 after=232
+testing return value
+Test Passed
+Test: 74 
+Initial States
+number of actions 1 handcount 269
+States after play
+number of actions 2 handcount 269
+testing handcounts end up equal after play, before=269 after=269
+testing return value
+Test Passed
+Test: 75 
+Initial States
+number of actions 2 handcount 360
+States after play
+number of actions 3 handcount 360
+testing handcounts end up equal after play, before=360 after=360
+testing return value
+Test Passed
+Test: 76 
+Initial States
+number of actions 1 handcount 205
+States after play
+number of actions 2 handcount 205
+testing handcounts end up equal after play, before=205 after=205
+testing return value
+Test Passed
+Test: 77 
+Initial States
+number of actions 1 handcount 461
+States after play
+number of actions 2 handcount 461
+testing handcounts end up equal after play, before=461 after=461
+testing return value
+Test Passed
+Test: 78 
+Initial States
+number of actions 1 handcount 202
+States after play
+number of actions 2 handcount 202
+testing handcounts end up equal after play, before=202 after=202
+testing return value
+Test Passed
+Test: 79 
+Initial States
+number of actions 1 handcount 342
+States after play
+number of actions 2 handcount 342
+testing handcounts end up equal after play, before=342 after=342
+testing return value
+Test Passed
+Test: 80 
+Initial States
+number of actions 2 handcount 408
+States after play
+number of actions 3 handcount 408
+testing handcounts end up equal after play, before=408 after=408
+testing return value
+Test Passed
+Test: 81 
+Initial States
+number of actions 1 handcount 253
+States after play
+number of actions 2 handcount 253
+testing handcounts end up equal after play, before=253 after=253
+testing return value
+Test Passed
+Test: 82 
+Initial States
+number of actions 1 handcount 148
+States after play
+number of actions 2 handcount 148
+testing handcounts end up equal after play, before=148 after=148
+testing return value
+Test Passed
+Test: 83 
+Initial States
+number of actions 1 handcount 368
+States after play
+number of actions 2 handcount 368
+testing handcounts end up equal after play, before=368 after=368
+testing return value
+Test Passed
+Test: 84 
+Initial States
+number of actions 2 handcount 297
+States after play
+number of actions 3 handcount 297
+testing handcounts end up equal after play, before=297 after=297
+testing return value
+Test Passed
+Test: 85 
+Initial States
+number of actions 1 handcount 363
+States after play
+number of actions 2 handcount 363
+testing handcounts end up equal after play, before=363 after=363
+testing return value
+Test Passed
+Test: 86 
+Initial States
+number of actions 1 handcount 125
+States after play
+number of actions 2 handcount 125
+testing handcounts end up equal after play, before=125 after=125
+testing return value
+Test Passed
+Test: 87 
+Initial States
+number of actions 2 handcount 157
+States after play
+number of actions 3 handcount 157
+testing handcounts end up equal after play, before=157 after=157
+testing return value
+Test Passed
+Test: 88 
+Initial States
+number of actions 3 handcount 421
+States after play
+number of actions 4 handcount 421
+testing handcounts end up equal after play, before=421 after=421
+testing return value
+Test Passed
+Test: 89 
+Initial States
+number of actions 4 handcount 50
+States after play
+number of actions 5 handcount 50
+testing handcounts end up equal after play, before=50 after=50
+testing return value
+Test Passed
+Test: 90 
+Initial States
+number of actions 5 handcount 197
+States after play
+number of actions 6 handcount 197
+testing handcounts end up equal after play, before=197 after=197
+testing return value
+Test Passed
+Test: 91 
+Initial States
+number of actions 1 handcount 428
+States after play
+number of actions 2 handcount 428
+testing handcounts end up equal after play, before=428 after=428
+testing return value
+Test Passed
+Test: 92 
+Initial States
+number of actions 2 handcount 38
+States after play
+number of actions 3 handcount 38
+testing handcounts end up equal after play, before=38 after=38
+testing return value
+Test Passed
+Test: 93 
+Initial States
+number of actions 1 handcount 339
+States after play
+number of actions 2 handcount 339
+testing handcounts end up equal after play, before=339 after=339
+testing return value
+Test Passed
+Test: 94 
+Initial States
+number of actions 1 handcount 129
+States after play
+number of actions 2 handcount 129
+testing handcounts end up equal after play, before=129 after=129
+testing return value
+Test Passed
+Test: 95 
+Initial States
+number of actions 2 handcount 343
+States after play
+number of actions 3 handcount 343
+testing handcounts end up equal after play, before=343 after=343
+testing return value
+Test Passed
+Test: 96 
+Initial States
+number of actions 1 handcount 471
+States after play
+number of actions 2 handcount 471
+testing handcounts end up equal after play, before=471 after=471
+testing return value
+Test Passed
+Test: 97 
+Initial States
+number of actions 1 handcount 292
+States after play
+number of actions 2 handcount 292
+testing handcounts end up equal after play, before=292 after=292
+testing return value
+Test Passed
+Test: 98 
+Initial States
+number of actions 1 handcount 390
+States after play
+number of actions 2 handcount 390
+testing handcounts end up equal after play, before=390 after=390
+testing return value
+Test Passed
+Test: 99 
+Initial States
+number of actions 2 handcount 326
+States after play
+number of actions 3 handcount 326
+testing handcounts end up equal after play, before=326 after=326
+testing return value
+Test Passed
+Test: 100 
+Initial States
+number of actions 1 handcount 117
+States after play
+number of actions 2 handcount 117
+testing handcounts end up equal after play, before=117 after=117
+testing return value
+Test Passed
+Test: 101 
+Initial States
+number of actions 1 handcount 190
+States after play
+number of actions 2 handcount 190
+testing handcounts end up equal after play, before=190 after=190
+testing return value
+Test Passed
+Test: 102 
+Initial States
+number of actions 2 handcount 234
+States after play
+number of actions 3 handcount 234
+testing handcounts end up equal after play, before=234 after=234
+testing return value
+Test Passed
+Test: 103 
+Initial States
+number of actions 1 handcount 114
+States after play
+number of actions 2 handcount 114
+testing handcounts end up equal after play, before=114 after=114
+testing return value
+Test Passed
+Test: 104 
+Initial States
+number of actions 1 handcount 386
+States after play
+number of actions 2 handcount 386
+testing handcounts end up equal after play, before=386 after=386
+testing return value
+Test Passed
+Test: 105 
+Initial States
+number of actions 1 handcount 416
+States after play
+number of actions 2 handcount 416
+testing handcounts end up equal after play, before=416 after=416
+testing return value
+Test Passed
+Test: 106 
+Initial States
+number of actions 1 handcount 290
+States after play
+number of actions 2 handcount 290
+testing handcounts end up equal after play, before=290 after=290
+testing return value
+Test Passed
+Test: 107 
+Initial States
+number of actions 1 handcount 131
+States after play
+number of actions 2 handcount 131
+testing handcounts end up equal after play, before=131 after=131
+testing return value
+Test Passed
+Test: 108 
+Initial States
+number of actions 1 handcount 386
+States after play
+number of actions 2 handcount 386
+testing handcounts end up equal after play, before=386 after=386
+testing return value
+Test Passed
+Test: 109 
+Initial States
+number of actions 1 handcount 412
+States after play
+number of actions 2 handcount 412
+testing handcounts end up equal after play, before=412 after=412
+testing return value
+Test Passed
+Test: 110 
+Initial States
+number of actions 1 handcount 274
+States after play
+number of actions 2 handcount 274
+testing handcounts end up equal after play, before=274 after=274
+testing return value
+Test Passed
+Test: 111 
+Initial States
+number of actions 1 handcount 487
+States after play
+number of actions 2 handcount 487
+testing handcounts end up equal after play, before=487 after=487
+testing return value
+Test Passed
+Test: 112 
+Initial States
+number of actions 1 handcount 284
+States after play
+number of actions 2 handcount 284
+testing handcounts end up equal after play, before=284 after=284
+testing return value
+Test Passed
+Test: 113 
+Initial States
+number of actions 1 handcount 349
+States after play
+number of actions 2 handcount 349
+testing handcounts end up equal after play, before=349 after=349
+testing return value
+Test Passed
+Test: 114 
+Initial States
+number of actions 1 handcount 18
+States after play
+number of actions 2 handcount 18
+testing handcounts end up equal after play, before=18 after=18
+testing return value
+Test Passed
+Test: 115 
+Initial States
+number of actions 1 handcount 373
+States after play
+number of actions 2 handcount 373
+testing handcounts end up equal after play, before=373 after=373
+testing return value
+Test Passed
+Test: 116 
+Initial States
+number of actions 1 handcount 478
+States after play
+number of actions 2 handcount 478
+testing handcounts end up equal after play, before=478 after=478
+testing return value
+Test Passed
+Test: 117 
+Initial States
+number of actions 1 handcount 100
+States after play
+number of actions 2 handcount 100
+testing handcounts end up equal after play, before=100 after=100
+testing return value
+Test Passed
+Test: 118 
+Initial States
+number of actions 1 handcount 388
+States after play
+number of actions 2 handcount 388
+testing handcounts end up equal after play, before=388 after=388
+testing return value
+Test Passed
+Test: 119 
+Initial States
+number of actions 1 handcount 493
+States after play
+number of actions 2 handcount 493
+testing handcounts end up equal after play, before=493 after=493
+testing return value
+Test Passed
+Test: 120 
+Initial States
+number of actions 1 handcount 339
+States after play
+number of actions 2 handcount 339
+testing handcounts end up equal after play, before=339 after=339
+testing return value
+Test Passed
+Test: 121 
+Initial States
+number of actions 1 handcount 173
+States after play
+number of actions 2 handcount 173
+testing handcounts end up equal after play, before=173 after=173
+testing return value
+Test Passed
+Test: 122 
+Initial States
+number of actions 1 handcount 390
+States after play
+number of actions 2 handcount 390
+testing handcounts end up equal after play, before=390 after=390
+testing return value
+Test Passed
+Test: 123 
+Initial States
+number of actions 1 handcount 21
+States after play
+number of actions 2 handcount 21
+testing handcounts end up equal after play, before=21 after=21
+testing return value
+Test Passed
+Test: 124 
+Initial States
+number of actions 1 handcount 451
+States after play
+number of actions 2 handcount 451
+testing handcounts end up equal after play, before=451 after=451
+testing return value
+Test Passed
+Test: 125 
+Initial States
+number of actions 1 handcount 54
+States after play
+number of actions 2 handcount 54
+testing handcounts end up equal after play, before=54 after=54
+testing return value
+Test Passed
+Test: 126 
+Initial States
+number of actions 1 handcount 16
+States after play
+number of actions 2 handcount 16
+testing handcounts end up equal after play, before=16 after=16
+testing return value
+Test Passed
+Test: 127 
+Initial States
+number of actions 1 handcount 296
+States after play
+number of actions 2 handcount 296
+testing handcounts end up equal after play, before=296 after=296
+testing return value
+Test Passed
+Test: 128 
+Initial States
+number of actions 1 handcount 21
+States after play
+number of actions 2 handcount 21
+testing handcounts end up equal after play, before=21 after=21
+testing return value
+Test Passed
+Test: 129 
+Initial States
+number of actions 1 handcount 477
+States after play
+number of actions 2 handcount 477
+testing handcounts end up equal after play, before=477 after=477
+testing return value
+Test Passed
+Test: 130 
+Initial States
+number of actions 2 handcount 483
+States after play
+number of actions 3 handcount 483
+testing handcounts end up equal after play, before=483 after=483
+testing return value
+Test Passed
+Test: 131 
+Initial States
+number of actions 1 handcount 499
+States after play
+number of actions 2 handcount 499
+testing handcounts end up equal after play, before=499 after=499
+testing return value
+Test Passed
+Test: 132 
+Initial States
+number of actions 1 handcount 60
+States after play
+number of actions 2 handcount 60
+testing handcounts end up equal after play, before=60 after=60
+testing return value
+Test Passed
+Test: 133 
+Initial States
+number of actions 1 handcount 244
+States after play
+number of actions 2 handcount 244
+testing handcounts end up equal after play, before=244 after=244
+testing return value
+Test Passed
+Test: 134 
+Initial States
+number of actions 1 handcount 375
+States after play
+number of actions 2 handcount 375
+testing handcounts end up equal after play, before=375 after=375
+testing return value
+Test Passed
+Test: 135 
+Initial States
+number of actions 1 handcount 493
+States after play
+number of actions 2 handcount 493
+testing handcounts end up equal after play, before=493 after=493
+testing return value
+Test Passed
+Test: 136 
+Initial States
+number of actions 1 handcount 482
+States after play
+number of actions 2 handcount 482
+testing handcounts end up equal after play, before=482 after=482
+testing return value
+Test Passed
+Test: 137 
+Initial States
+number of actions 1 handcount 126
+States after play
+number of actions 2 handcount 126
+testing handcounts end up equal after play, before=126 after=126
+testing return value
+Test Passed
+Test: 138 
+Initial States
+number of actions 1 handcount 74
+States after play
+number of actions 2 handcount 74
+testing handcounts end up equal after play, before=74 after=74
+testing return value
+Test Passed
+Test: 139 
+Initial States
+number of actions 1 handcount 262
+States after play
+number of actions 2 handcount 262
+testing handcounts end up equal after play, before=262 after=262
+testing return value
+Test Passed
+Test: 140 
+Initial States
+number of actions 2 handcount 232
+States after play
+number of actions 3 handcount 232
+testing handcounts end up equal after play, before=232 after=232
+testing return value
+Test Passed
+Test: 141 
+Initial States
+number of actions 1 handcount 137
+States after play
+number of actions 2 handcount 137
+testing handcounts end up equal after play, before=137 after=137
+testing return value
+Test Passed
+Test: 142 
+Initial States
+number of actions 1 handcount 328
+States after play
+number of actions 2 handcount 328
+testing handcounts end up equal after play, before=328 after=328
+testing return value
+Test Passed
+Test: 143 
+Initial States
+number of actions 1 handcount 217
+States after play
+number of actions 2 handcount 217
+testing handcounts end up equal after play, before=217 after=217
+testing return value
+Test Passed
+Test: 144 
+Initial States
+number of actions 1 handcount 358
+States after play
+number of actions 2 handcount 358
+testing handcounts end up equal after play, before=358 after=358
+testing return value
+Test Passed
+Test: 145 
+Initial States
+number of actions 2 handcount 133
+States after play
+number of actions 3 handcount 133
+testing handcounts end up equal after play, before=133 after=133
+testing return value
+Test Passed
+Test: 146 
+Initial States
+number of actions 1 handcount 351
+States after play
+number of actions 2 handcount 351
+testing handcounts end up equal after play, before=351 after=351
+testing return value
+Test Passed
+Test: 147 
+Initial States
+number of actions 1 handcount 485
+States after play
+number of actions 2 handcount 485
+testing handcounts end up equal after play, before=485 after=485
+testing return value
+Test Passed
+Test: 148 
+Initial States
+number of actions 1 handcount 120
+States after play
+number of actions 2 handcount 120
+testing handcounts end up equal after play, before=120 after=120
+testing return value
+Test Passed
+Test: 149 
+Initial States
+number of actions 1 handcount 96
+States after play
+number of actions 2 handcount 96
+testing handcounts end up equal after play, before=96 after=96
+testing return value
+Test Passed
+Test: 150 
+Initial States
+number of actions 1 handcount 455
+States after play
+number of actions 2 handcount 455
+testing handcounts end up equal after play, before=455 after=455
+testing return value
+Test Passed
+Test: 151 
+Initial States
+number of actions 1 handcount 32
+States after play
+number of actions 2 handcount 32
+testing handcounts end up equal after play, before=32 after=32
+testing return value
+Test Passed
+Test: 152 
+Initial States
+number of actions 1 handcount 484
+States after play
+number of actions 2 handcount 484
+testing handcounts end up equal after play, before=484 after=484
+testing return value
+Test Passed
+Test: 153 
+Initial States
+number of actions 1 handcount 283
+States after play
+number of actions 2 handcount 283
+testing handcounts end up equal after play, before=283 after=283
+testing return value
+Test Passed
+Test: 154 
+Initial States
+number of actions 1 handcount 347
+States after play
+number of actions 2 handcount 347
+testing handcounts end up equal after play, before=347 after=347
+testing return value
+Test Passed
+Test: 155 
+Initial States
+number of actions 1 handcount 59
+States after play
+number of actions 2 handcount 59
+testing handcounts end up equal after play, before=59 after=59
+testing return value
+Test Passed
+Test: 156 
+Initial States
+number of actions 1 handcount 435
+States after play
+number of actions 2 handcount 435
+testing handcounts end up equal after play, before=435 after=435
+testing return value
+Test Passed
+Test: 157 
+Initial States
+number of actions 2 handcount 398
+States after play
+number of actions 3 handcount 398
+testing handcounts end up equal after play, before=398 after=398
+testing return value
+Test Passed
+Test: 158 
+Initial States
+number of actions 3 handcount 262
+States after play
+number of actions 4 handcount 262
+testing handcounts end up equal after play, before=262 after=262
+testing return value
+Test Passed
+Test: 159 
+Initial States
+number of actions 1 handcount 223
+States after play
+number of actions 2 handcount 223
+testing handcounts end up equal after play, before=223 after=223
+testing return value
+Test Passed
+Test: 160 
+Initial States
+number of actions 2 handcount 335
+States after play
+number of actions 3 handcount 335
+testing handcounts end up equal after play, before=335 after=335
+testing return value
+Test Passed
+Test: 161 
+Initial States
+number of actions 1 handcount 171
+States after play
+number of actions 2 handcount 171
+testing handcounts end up equal after play, before=171 after=171
+testing return value
+Test Passed
+Test: 162 
+Initial States
+number of actions 1 handcount 203
+States after play
+number of actions 2 handcount 203
+testing handcounts end up equal after play, before=203 after=203
+testing return value
+Test Passed
+Test: 163 
+Initial States
+number of actions 1 handcount 228
+States after play
+number of actions 2 handcount 228
+testing handcounts end up equal after play, before=228 after=228
+testing return value
+Test Passed
+Test: 164 
+Initial States
+number of actions 1 handcount 308
+States after play
+number of actions 2 handcount 308
+testing handcounts end up equal after play, before=308 after=308
+testing return value
+Test Passed
+Test: 165 
+Initial States
+number of actions 1 handcount 398
+States after play
+number of actions 2 handcount 398
+testing handcounts end up equal after play, before=398 after=398
+testing return value
+Test Passed
+Test: 166 
+Initial States
+number of actions 2 handcount 59
+States after play
+number of actions 3 handcount 59
+testing handcounts end up equal after play, before=59 after=59
+testing return value
+Test Passed
+Test: 167 
+Initial States
+number of actions 1 handcount 109
+States after play
+number of actions 2 handcount 109
+testing handcounts end up equal after play, before=109 after=109
+testing return value
+Test Passed
+Test: 168 
+Initial States
+number of actions 2 handcount 53
+States after play
+number of actions 3 handcount 53
+testing handcounts end up equal after play, before=53 after=53
+testing return value
+Test Passed
+Test: 169 
+Initial States
+number of actions 1 handcount 426
+States after play
+number of actions 2 handcount 426
+testing handcounts end up equal after play, before=426 after=426
+testing return value
+Test Passed
+Test: 170 
+Initial States
+number of actions 1 handcount 231
+States after play
+number of actions 2 handcount 231
+testing handcounts end up equal after play, before=231 after=231
+testing return value
+Test Passed
+Test: 171 
+Initial States
+number of actions 1 handcount 350
+States after play
+number of actions 2 handcount 350
+testing handcounts end up equal after play, before=350 after=350
+testing return value
+Test Passed
+Test: 172 
+Initial States
+number of actions 1 handcount 131
+States after play
+number of actions 2 handcount 131
+testing handcounts end up equal after play, before=131 after=131
+testing return value
+Test Passed
+Test: 173 
+Initial States
+number of actions 1 handcount 81
+States after play
+number of actions 2 handcount 81
+testing handcounts end up equal after play, before=81 after=81
+testing return value
+Test Passed
+Test: 174 
+Initial States
+number of actions 2 handcount 181
+States after play
+number of actions 3 handcount 181
+testing handcounts end up equal after play, before=181 after=181
+testing return value
+Test Passed
+Test: 175 
+Initial States
+number of actions 1 handcount 404
+States after play
+number of actions 2 handcount 404
+testing handcounts end up equal after play, before=404 after=404
+testing return value
+Test Passed
+Test: 176 
+Initial States
+number of actions 2 handcount 32
+States after play
+number of actions 3 handcount 32
+testing handcounts end up equal after play, before=32 after=32
+testing return value
+Test Passed
+Test: 177 
+Initial States
+number of actions 1 handcount 57
+States after play
+number of actions 2 handcount 57
+testing handcounts end up equal after play, before=57 after=57
+testing return value
+Test Passed
+Test: 178 
+Initial States
+number of actions 1 handcount 297
+States after play
+number of actions 2 handcount 297
+testing handcounts end up equal after play, before=297 after=297
+testing return value
+Test Passed
+Test: 179 
+Initial States
+number of actions 2 handcount 309
+States after play
+number of actions 3 handcount 309
+testing handcounts end up equal after play, before=309 after=309
+testing return value
+Test Passed
+Test: 180 
+Initial States
+number of actions 3 handcount 266
+States after play
+number of actions 4 handcount 266
+testing handcounts end up equal after play, before=266 after=266
+testing return value
+Test Passed
+Test: 181 
+Initial States
+number of actions 4 handcount 185
+States after play
+number of actions 5 handcount 185
+testing handcounts end up equal after play, before=185 after=185
+testing return value
+Test Passed
+Test: 182 
+Initial States
+number of actions 1 handcount 83
+States after play
+number of actions 2 handcount 83
+testing handcounts end up equal after play, before=83 after=83
+testing return value
+Test Passed
+Test: 183 
+Initial States
+number of actions 2 handcount 392
+States after play
+number of actions 3 handcount 392
+testing handcounts end up equal after play, before=392 after=392
+testing return value
+Test Passed
+Test: 184 
+Initial States
+number of actions 3 handcount 490
+States after play
+number of actions 4 handcount 490
+testing handcounts end up equal after play, before=490 after=490
+testing return value
+Test Passed
+Test: 185 
+Initial States
+number of actions 4 handcount 337
+States after play
+number of actions 5 handcount 337
+testing handcounts end up equal after play, before=337 after=337
+testing return value
+Test Passed
+Test: 186 
+Initial States
+number of actions 1 handcount 455
+States after play
+number of actions 2 handcount 455
+testing handcounts end up equal after play, before=455 after=455
+testing return value
+Test Passed
+Test: 187 
+Initial States
+number of actions 1 handcount 437
+States after play
+number of actions 2 handcount 437
+testing handcounts end up equal after play, before=437 after=437
+testing return value
+Test Passed
+Test: 188 
+Initial States
+number of actions 2 handcount 350
+States after play
+number of actions 3 handcount 350
+testing handcounts end up equal after play, before=350 after=350
+testing return value
+Test Passed
+Test: 189 
+Initial States
+number of actions 1 handcount 269
+States after play
+number of actions 2 handcount 269
+testing handcounts end up equal after play, before=269 after=269
+testing return value
+Test Passed
+Test: 190 
+Initial States
+number of actions 1 handcount 28
+States after play
+number of actions 2 handcount 28
+testing handcounts end up equal after play, before=28 after=28
+testing return value
+Test Passed
+Test: 191 
+Initial States
+number of actions 1 handcount 393
+States after play
+number of actions 2 handcount 393
+testing handcounts end up equal after play, before=393 after=393
+testing return value
+Test Passed
+Test: 192 
+Initial States
+number of actions 1 handcount 52
+States after play
+number of actions 2 handcount 52
+testing handcounts end up equal after play, before=52 after=52
+testing return value
+Test Passed
+Test: 193 
+Initial States
+number of actions 1 handcount 157
+States after play
+number of actions 2 handcount 157
+testing handcounts end up equal after play, before=157 after=157
+testing return value
+Test Passed
+Test: 194 
+Initial States
+number of actions 2 handcount 235
+States after play
+number of actions 3 handcount 235
+testing handcounts end up equal after play, before=235 after=235
+testing return value
+Test Passed
+Test: 195 
+Initial States
+number of actions 1 handcount 276
+States after play
+number of actions 2 handcount 276
+testing handcounts end up equal after play, before=276 after=276
+testing return value
+Test Passed
+Test: 196 
+Initial States
+number of actions 1 handcount 28
+States after play
+number of actions 2 handcount 28
+testing handcounts end up equal after play, before=28 after=28
+testing return value
+Test Passed
+Test: 197 
+Initial States
+number of actions 1 handcount 55
+States after play
+number of actions 2 handcount 55
+testing handcounts end up equal after play, before=55 after=55
+testing return value
+Test Passed
+Test: 198 
+Initial States
+number of actions 1 handcount 325
+States after play
+number of actions 2 handcount 325
+testing handcounts end up equal after play, before=325 after=325
+testing return value
+Test Passed
+Test: 199 
+Initial States
+number of actions 1 handcount 382
+States after play
+number of actions 2 handcount 382
+testing handcounts end up equal after play, before=382 after=382
+testing return value
+Test Passed
+Test: 200 
+Initial States
+number of actions 1 handcount 334
+States after play
+number of actions 2 handcount 334
+testing handcounts end up equal after play, before=334 after=334
+testing return value
+Test Passed
+Test: 201 
+Initial States
+number of actions 1 handcount 354
+States after play
+number of actions 2 handcount 354
+testing handcounts end up equal after play, before=354 after=354
+testing return value
+Test Passed
+Test: 202 
+Initial States
+number of actions 1 handcount 216
+States after play
+number of actions 2 handcount 216
+testing handcounts end up equal after play, before=216 after=216
+testing return value
+Test Passed
+Test: 203 
+Initial States
+number of actions 1 handcount 399
+States after play
+number of actions 2 handcount 399
+testing handcounts end up equal after play, before=399 after=399
+testing return value
+Test Passed
+Test: 204 
+Initial States
+number of actions 1 handcount 6
+States after play
+number of actions 2 handcount 6
+testing handcounts end up equal after play, before=6 after=6
+testing return value
+Test Passed
+Test: 205 
+Initial States
+number of actions 2 handcount 491
+States after play
+number of actions 3 handcount 491
+testing handcounts end up equal after play, before=491 after=491
+testing return value
+Test Passed
+Test: 206 
+Initial States
+number of actions 1 handcount 328
+States after play
+number of actions 2 handcount 328
+testing handcounts end up equal after play, before=328 after=328
+testing return value
+Test Passed
+Test: 207 
+Initial States
+number of actions 2 handcount 90
+States after play
+number of actions 3 handcount 90
+testing handcounts end up equal after play, before=90 after=90
+testing return value
+Test Passed
+Test: 208 
+Initial States
+number of actions 1 handcount 11
+States after play
+number of actions 2 handcount 11
+testing handcounts end up equal after play, before=11 after=11
+testing return value
+Test Passed
+Test: 209 
+Initial States
+number of actions 1 handcount 351
+States after play
+number of actions 2 handcount 351
+testing handcounts end up equal after play, before=351 after=351
+testing return value
+Test Passed
+Test: 210 
+Initial States
+number of actions 2 handcount 167
+States after play
+number of actions 3 handcount 167
+testing handcounts end up equal after play, before=167 after=167
+testing return value
+Test Passed
+Test: 211 
+Initial States
+number of actions 1 handcount 104
+States after play
+number of actions 2 handcount 104
+testing handcounts end up equal after play, before=104 after=104
+testing return value
+Test Passed
+Test: 212 
+Initial States
+number of actions 1 handcount 38
+States after play
+number of actions 2 handcount 38
+testing handcounts end up equal after play, before=38 after=38
+testing return value
+Test Passed
+Test: 213 
+Initial States
+number of actions 2 handcount 344
+States after play
+number of actions 3 handcount 344
+testing handcounts end up equal after play, before=344 after=344
+testing return value
+Test Passed
+Test: 214 
+Initial States
+number of actions 1 handcount 314
+States after play
+number of actions 2 handcount 314
+testing handcounts end up equal after play, before=314 after=314
+testing return value
+Test Passed
+Test: 215 
+Initial States
+number of actions 1 handcount 469
+States after play
+number of actions 2 handcount 469
+testing handcounts end up equal after play, before=469 after=469
+testing return value
+Test Passed
+Test: 216 
+Initial States
+number of actions 2 handcount 290
+States after play
+number of actions 3 handcount 290
+testing handcounts end up equal after play, before=290 after=290
+testing return value
+Test Passed
+Test: 217 
+Initial States
+number of actions 1 handcount 264
+States after play
+number of actions 2 handcount 264
+testing handcounts end up equal after play, before=264 after=264
+testing return value
+Test Passed
+Test: 218 
+Initial States
+number of actions 2 handcount 313
+States after play
+number of actions 3 handcount 313
+testing handcounts end up equal after play, before=313 after=313
+testing return value
+Test Passed
+Test: 219 
+Initial States
+number of actions 1 handcount 155
+States after play
+number of actions 2 handcount 155
+testing handcounts end up equal after play, before=155 after=155
+testing return value
+Test Passed
+Test: 220 
+Initial States
+number of actions 2 handcount 433
+States after play
+number of actions 3 handcount 433
+testing handcounts end up equal after play, before=433 after=433
+testing return value
+Test Passed
+Test: 221 
+Initial States
+number of actions 1 handcount 177
+States after play
+number of actions 2 handcount 177
+testing handcounts end up equal after play, before=177 after=177
+testing return value
+Test Passed
+Test: 222 
+Initial States
+number of actions 1 handcount 490
+States after play
+number of actions 2 handcount 490
+testing handcounts end up equal after play, before=490 after=490
+testing return value
+Test Passed
+Test: 223 
+Initial States
+number of actions 1 handcount 75
+States after play
+number of actions 2 handcount 75
+testing handcounts end up equal after play, before=75 after=75
+testing return value
+Test Passed
+Test: 224 
+Initial States
+number of actions 1 handcount 419
+States after play
+number of actions 2 handcount 419
+testing handcounts end up equal after play, before=419 after=419
+testing return value
+Test Passed
+Test: 225 
+Initial States
+number of actions 2 handcount 51
+States after play
+number of actions 3 handcount 51
+testing handcounts end up equal after play, before=51 after=51
+testing return value
+Test Passed
+Test: 226 
+Initial States
+number of actions 1 handcount 343
+States after play
+number of actions 2 handcount 343
+testing handcounts end up equal after play, before=343 after=343
+testing return value
+Test Passed
+Test: 227 
+Initial States
+number of actions 2 handcount 166
+States after play
+number of actions 3 handcount 166
+testing handcounts end up equal after play, before=166 after=166
+testing return value
+Test Passed
+Test: 228 
+Initial States
+number of actions 1 handcount 229
+States after play
+number of actions 2 handcount 229
+testing handcounts end up equal after play, before=229 after=229
+testing return value
+Test Passed
+Test: 229 
+Initial States
+number of actions 2 handcount 174
+States after play
+number of actions 3 handcount 174
+testing handcounts end up equal after play, before=174 after=174
+testing return value
+Test Passed
+Test: 230 
+Initial States
+number of actions 1 handcount 377
+States after play
+number of actions 2 handcount 377
+testing handcounts end up equal after play, before=377 after=377
+testing return value
+Test Passed
+Test: 231 
+Initial States
+number of actions 2 handcount 62
+States after play
+number of actions 3 handcount 62
+testing handcounts end up equal after play, before=62 after=62
+testing return value
+Test Passed
+Test: 232 
+Initial States
+number of actions 1 handcount 418
+States after play
+number of actions 2 handcount 418
+testing handcounts end up equal after play, before=418 after=418
+testing return value
+Test Passed
+Test: 233 
+Initial States
+number of actions 1 handcount 480
+States after play
+number of actions 2 handcount 480
+testing handcounts end up equal after play, before=480 after=480
+testing return value
+Test Passed
+Test: 234 
+Initial States
+number of actions 1 handcount 30
+States after play
+number of actions 2 handcount 30
+testing handcounts end up equal after play, before=30 after=30
+testing return value
+Test Passed
+Test: 235 
+Initial States
+number of actions 1 handcount 62
+States after play
+number of actions 2 handcount 62
+testing handcounts end up equal after play, before=62 after=62
+testing return value
+Test Passed
+Test: 236 
+Initial States
+number of actions 1 handcount 402
+States after play
+number of actions 2 handcount 402
+testing handcounts end up equal after play, before=402 after=402
+testing return value
+Test Passed
+Test: 237 
+Initial States
+number of actions 2 handcount 289
+States after play
+number of actions 3 handcount 289
+testing handcounts end up equal after play, before=289 after=289
+testing return value
+Test Passed
+Test: 238 
+Initial States
+number of actions 3 handcount 57
+States after play
+number of actions 4 handcount 57
+testing handcounts end up equal after play, before=57 after=57
+testing return value
+Test Passed
+Test: 239 
+Initial States
+number of actions 1 handcount 405
+States after play
+number of actions 2 handcount 405
+testing handcounts end up equal after play, before=405 after=405
+testing return value
+Test Passed
+Test: 240 
+Initial States
+number of actions 1 handcount 270
+States after play
+number of actions 2 handcount 270
+testing handcounts end up equal after play, before=270 after=270
+testing return value
+Test Passed
+Test: 241 
+Initial States
+number of actions 1 handcount 180
+States after play
+number of actions 2 handcount 180
+testing handcounts end up equal after play, before=180 after=180
+testing return value
+Test Passed
+Test: 242 
+Initial States
+number of actions 1 handcount 88
+States after play
+number of actions 2 handcount 88
+testing handcounts end up equal after play, before=88 after=88
+testing return value
+Test Passed
+Test: 243 
+Initial States
+number of actions 1 handcount 469
+States after play
+number of actions 2 handcount 469
+testing handcounts end up equal after play, before=469 after=469
+testing return value
+Test Passed
+Test: 244 
+Initial States
+number of actions 1 handcount 163
+States after play
+number of actions 2 handcount 163
+testing handcounts end up equal after play, before=163 after=163
+testing return value
+Test Passed
+Test: 245 
+Initial States
+number of actions 1 handcount 499
+States after play
+number of actions 2 handcount 499
+testing handcounts end up equal after play, before=499 after=499
+testing return value
+Test Passed
+Test: 246 
+Initial States
+number of actions 1 handcount 330
+States after play
+number of actions 2 handcount 330
+testing handcounts end up equal after play, before=330 after=330
+testing return value
+Test Passed
+Test: 247 
+Initial States
+number of actions 1 handcount 186
+States after play
+number of actions 2 handcount 186
+testing handcounts end up equal after play, before=186 after=186
+testing return value
+Test Passed
+Test: 248 
+Initial States
+number of actions 1 handcount 387
+States after play
+number of actions 2 handcount 387
+testing handcounts end up equal after play, before=387 after=387
+testing return value
+Test Passed
+Test: 249 
+Initial States
+number of actions 1 handcount 19
+States after play
+number of actions 2 handcount 19
+testing handcounts end up equal after play, before=19 after=19
+testing return value
+Test Passed
+Test: 250 
+Initial States
+number of actions 1 handcount 139
+States after play
+number of actions 2 handcount 139
+testing handcounts end up equal after play, before=139 after=139
+testing return value
+Test Passed
+Test: 251 
+Initial States
+number of actions 1 handcount 212
+States after play
+number of actions 2 handcount 212
+testing handcounts end up equal after play, before=212 after=212
+testing return value
+Test Passed
+Test: 252 
+Initial States
+number of actions 1 handcount 299
+States after play
+number of actions 2 handcount 299
+testing handcounts end up equal after play, before=299 after=299
+testing return value
+Test Passed
+Test: 253 
+Initial States
+number of actions 1 handcount 87
+States after play
+number of actions 2 handcount 87
+testing handcounts end up equal after play, before=87 after=87
+testing return value
+Test Passed
+Test: 254 
+Initial States
+number of actions 1 handcount 302
+States after play
+number of actions 2 handcount 302
+testing handcounts end up equal after play, before=302 after=302
+testing return value
+Test Passed
+Test: 255 
+Initial States
+number of actions 1 handcount 205
+States after play
+number of actions 2 handcount 205
+testing handcounts end up equal after play, before=205 after=205
+testing return value
+Test Passed
+Test: 256 
+Initial States
+number of actions 2 handcount 329
+States after play
+number of actions 3 handcount 329
+testing handcounts end up equal after play, before=329 after=329
+testing return value
+Test Passed
+Test: 257 
+Initial States
+number of actions 3 handcount 22
+States after play
+number of actions 4 handcount 22
+testing handcounts end up equal after play, before=22 after=22
+testing return value
+Test Passed
+Test: 258 
+Initial States
+number of actions 1 handcount 28
+States after play
+number of actions 2 handcount 28
+testing handcounts end up equal after play, before=28 after=28
+testing return value
+Test Passed
+Test: 259 
+Initial States
+number of actions 1 handcount 382
+States after play
+number of actions 2 handcount 382
+testing handcounts end up equal after play, before=382 after=382
+testing return value
+Test Passed
+Test: 260 
+Initial States
+number of actions 1 handcount 386
+States after play
+number of actions 2 handcount 386
+testing handcounts end up equal after play, before=386 after=386
+testing return value
+Test Passed
+Test: 261 
+Initial States
+number of actions 1 handcount 36
+States after play
+number of actions 2 handcount 36
+testing handcounts end up equal after play, before=36 after=36
+testing return value
+Test Passed
+Test: 262 
+Initial States
+number of actions 1 handcount 164
+States after play
+number of actions 2 handcount 164
+testing handcounts end up equal after play, before=164 after=164
+testing return value
+Test Passed
+Test: 263 
+Initial States
+number of actions 2 handcount 494
+States after play
+number of actions 3 handcount 494
+testing handcounts end up equal after play, before=494 after=494
+testing return value
+Test Passed
+Test: 264 
+Initial States
+number of actions 1 handcount 484
+States after play
+number of actions 2 handcount 484
+testing handcounts end up equal after play, before=484 after=484
+testing return value
+Test Passed
+Test: 265 
+Initial States
+number of actions 2 handcount 209
+States after play
+number of actions 3 handcount 209
+testing handcounts end up equal after play, before=209 after=209
+testing return value
+Test Passed
+Test: 266 
+Initial States
+number of actions 3 handcount 245
+States after play
+number of actions 4 handcount 245
+testing handcounts end up equal after play, before=245 after=245
+testing return value
+Test Passed
+Test: 267 
+Initial States
+number of actions 1 handcount 69
+States after play
+number of actions 2 handcount 69
+testing handcounts end up equal after play, before=69 after=69
+testing return value
+Test Passed
+Test: 268 
+Initial States
+number of actions 1 handcount 71
+States after play
+number of actions 2 handcount 71
+testing handcounts end up equal after play, before=71 after=71
+testing return value
+Test Passed
+Test: 269 
+Initial States
+number of actions 1 handcount 91
+States after play
+number of actions 2 handcount 91
+testing handcounts end up equal after play, before=91 after=91
+testing return value
+Test Passed
+Test: 270 
+Initial States
+number of actions 1 handcount 312
+States after play
+number of actions 2 handcount 312
+testing handcounts end up equal after play, before=312 after=312
+testing return value
+Test Passed
+Test: 271 
+Initial States
+number of actions 2 handcount 213
+States after play
+number of actions 3 handcount 213
+testing handcounts end up equal after play, before=213 after=213
+testing return value
+Test Passed
+Test: 272 
+Initial States
+number of actions 1 handcount 68
+States after play
+number of actions 2 handcount 68
+testing handcounts end up equal after play, before=68 after=68
+testing return value
+Test Passed
+Test: 273 
+Initial States
+number of actions 1 handcount 437
+States after play
+number of actions 2 handcount 437
+testing handcounts end up equal after play, before=437 after=437
+testing return value
+Test Passed
+Test: 274 
+Initial States
+number of actions 1 handcount 202
+States after play
+number of actions 2 handcount 202
+testing handcounts end up equal after play, before=202 after=202
+testing return value
+Test Passed
+Test: 275 
+Initial States
+number of actions 1 handcount 304
+States after play
+number of actions 2 handcount 304
+testing handcounts end up equal after play, before=304 after=304
+testing return value
+Test Passed
+Test: 276 
+Initial States
+number of actions 1 handcount 225
+States after play
+number of actions 2 handcount 225
+testing handcounts end up equal after play, before=225 after=225
+testing return value
+Test Passed
+Test: 277 
+Initial States
+number of actions 2 handcount 226
+States after play
+number of actions 3 handcount 226
+testing handcounts end up equal after play, before=226 after=226
+testing return value
+Test Passed
+Test: 278 
+Initial States
+number of actions 1 handcount 452
+States after play
+number of actions 2 handcount 452
+testing handcounts end up equal after play, before=452 after=452
+testing return value
+Test Passed
+Test: 279 
+Initial States
+number of actions 2 handcount 111
+States after play
+number of actions 3 handcount 111
+testing handcounts end up equal after play, before=111 after=111
+testing return value
+Test Passed
+Test: 280 
+Initial States
+number of actions 1 handcount 42
+States after play
+number of actions 2 handcount 42
+testing handcounts end up equal after play, before=42 after=42
+testing return value
+Test Passed
+Test: 281 
+Initial States
+number of actions 1 handcount 96
+States after play
+number of actions 2 handcount 96
+testing handcounts end up equal after play, before=96 after=96
+testing return value
+Test Passed
+Test: 282 
+Initial States
+number of actions 1 handcount 257
+States after play
+number of actions 2 handcount 257
+testing handcounts end up equal after play, before=257 after=257
+testing return value
+Test Passed
+Test: 283 
+Initial States
+number of actions 2 handcount 332
+States after play
+number of actions 3 handcount 332
+testing handcounts end up equal after play, before=332 after=332
+testing return value
+Test Passed
+Test: 284 
+Initial States
+number of actions 1 handcount 135
+States after play
+number of actions 2 handcount 135
+testing handcounts end up equal after play, before=135 after=135
+testing return value
+Test Passed
+Test: 285 
+Initial States
+number of actions 1 handcount 437
+States after play
+number of actions 2 handcount 437
+testing handcounts end up equal after play, before=437 after=437
+testing return value
+Test Passed
+Test: 286 
+Initial States
+number of actions 2 handcount 301
+States after play
+number of actions 3 handcount 301
+testing handcounts end up equal after play, before=301 after=301
+testing return value
+Test Passed
+Test: 287 
+Initial States
+number of actions 3 handcount 496
+States after play
+number of actions 4 handcount 496
+testing handcounts end up equal after play, before=496 after=496
+testing return value
+Test Passed
+Test: 288 
+Initial States
+number of actions 1 handcount 304
+States after play
+number of actions 2 handcount 304
+testing handcounts end up equal after play, before=304 after=304
+testing return value
+Test Passed
+Test: 289 
+Initial States
+number of actions 1 handcount 251
+States after play
+number of actions 2 handcount 251
+testing handcounts end up equal after play, before=251 after=251
+testing return value
+Test Passed
+Test: 290 
+Initial States
+number of actions 1 handcount 204
+States after play
+number of actions 2 handcount 204
+testing handcounts end up equal after play, before=204 after=204
+testing return value
+Test Passed
+Test: 291 
+Initial States
+number of actions 1 handcount 79
+States after play
+number of actions 2 handcount 79
+testing handcounts end up equal after play, before=79 after=79
+testing return value
+Test Passed
+Test: 292 
+Initial States
+number of actions 1 handcount 131
+States after play
+number of actions 2 handcount 131
+testing handcounts end up equal after play, before=131 after=131
+testing return value
+Test Passed
+Test: 293 
+Initial States
+number of actions 1 handcount 28
+States after play
+number of actions 2 handcount 28
+testing handcounts end up equal after play, before=28 after=28
+testing return value
+Test Passed
+Test: 294 
+Initial States
+number of actions 1 handcount 81
+States after play
+number of actions 2 handcount 81
+testing handcounts end up equal after play, before=81 after=81
+testing return value
+Test Passed
+Test: 295 
+Initial States
+number of actions 2 handcount 143
+States after play
+number of actions 3 handcount 143
+testing handcounts end up equal after play, before=143 after=143
+testing return value
+Test Passed
+Test: 296 
+Initial States
+number of actions 3 handcount 180
+States after play
+number of actions 4 handcount 180
+testing handcounts end up equal after play, before=180 after=180
+testing return value
+Test Passed
+Test: 297 
+Initial States
+number of actions 1 handcount 463
+States after play
+number of actions 2 handcount 463
+testing handcounts end up equal after play, before=463 after=463
+testing return value
+Test Passed
+Test: 298 
+Initial States
+number of actions 1 handcount 179
+States after play
+number of actions 2 handcount 179
+testing handcounts end up equal after play, before=179 after=179
+testing return value
+Test Passed
+Test: 299 
+Initial States
+number of actions 1 handcount 472
+States after play
+number of actions 2 handcount 472
+testing handcounts end up equal after play, before=472 after=472
+testing return value
+Test Passed
+Test: 300 
+Initial States
+number of actions 1 handcount 248
+States after play
+number of actions 2 handcount 248
+testing handcounts end up equal after play, before=248 after=248
+testing return value
+Test Passed
+Test: 301 
+Initial States
+number of actions 2 handcount 412
+States after play
+number of actions 3 handcount 412
+testing handcounts end up equal after play, before=412 after=412
+testing return value
+Test Passed
+Test: 302 
+Initial States
+number of actions 1 handcount 197
+States after play
+number of actions 2 handcount 197
+testing handcounts end up equal after play, before=197 after=197
+testing return value
+Test Passed
+Test: 303 
+Initial States
+number of actions 1 handcount 107
+States after play
+number of actions 2 handcount 107
+testing handcounts end up equal after play, before=107 after=107
+testing return value
+Test Passed
+Test: 304 
+Initial States
+number of actions 1 handcount 406
+States after play
+number of actions 2 handcount 406
+testing handcounts end up equal after play, before=406 after=406
+testing return value
+Test Passed
+Test: 305 
+Initial States
+number of actions 1 handcount 428
+States after play
+number of actions 2 handcount 428
+testing handcounts end up equal after play, before=428 after=428
+testing return value
+Test Passed
+Test: 306 
+Initial States
+number of actions 1 handcount 60
+States after play
+number of actions 2 handcount 60
+testing handcounts end up equal after play, before=60 after=60
+testing return value
+Test Passed
+Test: 307 
+Initial States
+number of actions 1 handcount 100
+States after play
+number of actions 2 handcount 100
+testing handcounts end up equal after play, before=100 after=100
+testing return value
+Test Passed
+Test: 308 
+Initial States
+number of actions 2 handcount 313
+States after play
+number of actions 3 handcount 313
+testing handcounts end up equal after play, before=313 after=313
+testing return value
+Test Passed
+Test: 309 
+Initial States
+number of actions 1 handcount 85
+States after play
+number of actions 2 handcount 85
+testing handcounts end up equal after play, before=85 after=85
+testing return value
+Test Passed
+Test: 310 
+Initial States
+number of actions 1 handcount 126
+States after play
+number of actions 2 handcount 126
+testing handcounts end up equal after play, before=126 after=126
+testing return value
+Test Passed
+Test: 311 
+Initial States
+number of actions 2 handcount 252
+States after play
+number of actions 3 handcount 252
+testing handcounts end up equal after play, before=252 after=252
+testing return value
+Test Passed
+Test: 312 
+Initial States
+number of actions 1 handcount 333
+States after play
+number of actions 2 handcount 333
+testing handcounts end up equal after play, before=333 after=333
+testing return value
+Test Passed
+Test: 313 
+Initial States
+number of actions 2 handcount 26
+States after play
+number of actions 3 handcount 26
+testing handcounts end up equal after play, before=26 after=26
+testing return value
+Test Passed
+Test: 314 
+Initial States
+number of actions 1 handcount 263
+States after play
+number of actions 2 handcount 263
+testing handcounts end up equal after play, before=263 after=263
+testing return value
+Test Passed
+Test: 315 
+Initial States
+number of actions 2 handcount 275
+States after play
+number of actions 3 handcount 275
+testing handcounts end up equal after play, before=275 after=275
+testing return value
+Test Passed
+Test: 316 
+Initial States
+number of actions 3 handcount 326
+States after play
+number of actions 4 handcount 326
+testing handcounts end up equal after play, before=326 after=326
+testing return value
+Test Passed
+Test: 317 
+Initial States
+number of actions 1 handcount 134
+States after play
+number of actions 2 handcount 134
+testing handcounts end up equal after play, before=134 after=134
+testing return value
+Test Passed
+Test: 318 
+Initial States
+number of actions 2 handcount 303
+States after play
+number of actions 3 handcount 303
+testing handcounts end up equal after play, before=303 after=303
+testing return value
+Test Passed
+Test: 319 
+Initial States
+number of actions 1 handcount 307
+States after play
+number of actions 2 handcount 307
+testing handcounts end up equal after play, before=307 after=307
+testing return value
+Test Passed
+Test: 320 
+Initial States
+number of actions 1 handcount 315
+States after play
+number of actions 2 handcount 315
+testing handcounts end up equal after play, before=315 after=315
+testing return value
+Test Passed
+Test: 321 
+Initial States
+number of actions 2 handcount 465
+States after play
+number of actions 3 handcount 465
+testing handcounts end up equal after play, before=465 after=465
+testing return value
+Test Passed
+Test: 322 
+Initial States
+number of actions 3 handcount 37
+States after play
+number of actions 4 handcount 37
+testing handcounts end up equal after play, before=37 after=37
+testing return value
+Test Passed
+Test: 323 
+Initial States
+number of actions 1 handcount 360
+States after play
+number of actions 2 handcount 360
+testing handcounts end up equal after play, before=360 after=360
+testing return value
+Test Passed
+Test: 324 
+Initial States
+number of actions 1 handcount 293
+States after play
+number of actions 2 handcount 293
+testing handcounts end up equal after play, before=293 after=293
+testing return value
+Test Passed
+Test: 325 
+Initial States
+number of actions 2 handcount 162
+States after play
+number of actions 3 handcount 162
+testing handcounts end up equal after play, before=162 after=162
+testing return value
+Test Passed
+Test: 326 
+Initial States
+number of actions 1 handcount 466
+States after play
+number of actions 2 handcount 466
+testing handcounts end up equal after play, before=466 after=466
+testing return value
+Test Passed
+Test: 327 
+Initial States
+number of actions 2 handcount 234
+States after play
+number of actions 3 handcount 234
+testing handcounts end up equal after play, before=234 after=234
+testing return value
+Test Passed
+Test: 328 
+Initial States
+number of actions 1 handcount 133
+States after play
+number of actions 2 handcount 133
+testing handcounts end up equal after play, before=133 after=133
+testing return value
+Test Passed
+Test: 329 
+Initial States
+number of actions 2 handcount 213
+States after play
+number of actions 3 handcount 213
+testing handcounts end up equal after play, before=213 after=213
+testing return value
+Test Passed
+Test: 330 
+Initial States
+number of actions 1 handcount 323
+States after play
+number of actions 2 handcount 323
+testing handcounts end up equal after play, before=323 after=323
+testing return value
+Test Passed
+Test: 331 
+Initial States
+number of actions 1 handcount 311
+States after play
+number of actions 2 handcount 311
+testing handcounts end up equal after play, before=311 after=311
+testing return value
+Test Passed
+Test: 332 
+Initial States
+number of actions 2 handcount 183
+States after play
+number of actions 3 handcount 183
+testing handcounts end up equal after play, before=183 after=183
+testing return value
+Test Passed
+Test: 333 
+Initial States
+number of actions 1 handcount 464
+States after play
+number of actions 2 handcount 464
+testing handcounts end up equal after play, before=464 after=464
+testing return value
+Test Passed
+Test: 334 
+Initial States
+number of actions 1 handcount 391
+States after play
+number of actions 2 handcount 391
+testing handcounts end up equal after play, before=391 after=391
+testing return value
+Test Passed
+Test: 335 
+Initial States
+number of actions 1 handcount 57
+States after play
+number of actions 2 handcount 57
+testing handcounts end up equal after play, before=57 after=57
+testing return value
+Test Passed
+Test: 336 
+Initial States
+number of actions 1 handcount 120
+States after play
+number of actions 2 handcount 120
+testing handcounts end up equal after play, before=120 after=120
+testing return value
+Test Passed
+Test: 337 
+Initial States
+number of actions 1 handcount 96
+States after play
+number of actions 2 handcount 96
+testing handcounts end up equal after play, before=96 after=96
+testing return value
+Test Passed
+Test: 338 
+Initial States
+number of actions 1 handcount 197
+States after play
+number of actions 2 handcount 197
+testing handcounts end up equal after play, before=197 after=197
+testing return value
+Test Passed
+Test: 339 
+Initial States
+number of actions 1 handcount 433
+States after play
+number of actions 2 handcount 433
+testing handcounts end up equal after play, before=433 after=433
+testing return value
+Test Passed
+Test: 340 
+Initial States
+number of actions 1 handcount 29
+States after play
+number of actions 2 handcount 29
+testing handcounts end up equal after play, before=29 after=29
+testing return value
+Test Passed
+Test: 341 
+Initial States
+number of actions 1 handcount 129
+States after play
+number of actions 2 handcount 129
+testing handcounts end up equal after play, before=129 after=129
+testing return value
+Test Passed
+Test: 342 
+Initial States
+number of actions 1 handcount 468
+States after play
+number of actions 2 handcount 468
+testing handcounts end up equal after play, before=468 after=468
+testing return value
+Test Passed
+Test: 343 
+Initial States
+number of actions 1 handcount 25
+States after play
+number of actions 2 handcount 25
+testing handcounts end up equal after play, before=25 after=25
+testing return value
+Test Passed
+Test: 344 
+Initial States
+number of actions 1 handcount 220
+States after play
+number of actions 2 handcount 220
+testing handcounts end up equal after play, before=220 after=220
+testing return value
+Test Passed
+Test: 345 
+Initial States
+number of actions 2 handcount 40
+States after play
+number of actions 3 handcount 40
+testing handcounts end up equal after play, before=40 after=40
+testing return value
+Test Passed
+Test: 346 
+Initial States
+number of actions 1 handcount 127
+States after play
+number of actions 2 handcount 127
+testing handcounts end up equal after play, before=127 after=127
+testing return value
+Test Passed
+Test: 347 
+Initial States
+number of actions 2 handcount 227
+States after play
+number of actions 3 handcount 227
+testing handcounts end up equal after play, before=227 after=227
+testing return value
+Test Passed
+Test: 348 
+Initial States
+number of actions 3 handcount 160
+States after play
+number of actions 4 handcount 160
+testing handcounts end up equal after play, before=160 after=160
+testing return value
+Test Passed
+Test: 349 
+Initial States
+number of actions 4 handcount 382
+States after play
+number of actions 5 handcount 382
+testing handcounts end up equal after play, before=382 after=382
+testing return value
+Test Passed
+Test: 350 
+Initial States
+number of actions 1 handcount 63
+States after play
+number of actions 2 handcount 63
+testing handcounts end up equal after play, before=63 after=63
+testing return value
+Test Passed
+Test: 351 
+Initial States
+number of actions 1 handcount 198
+States after play
+number of actions 2 handcount 198
+testing handcounts end up equal after play, before=198 after=198
+testing return value
+Test Passed
+Test: 352 
+Initial States
+number of actions 2 handcount 173
+States after play
+number of actions 3 handcount 173
+testing handcounts end up equal after play, before=173 after=173
+testing return value
+Test Passed
+Test: 353 
+Initial States
+number of actions 1 handcount 57
+States after play
+number of actions 2 handcount 57
+testing handcounts end up equal after play, before=57 after=57
+testing return value
+Test Passed
+Test: 354 
+Initial States
+number of actions 1 handcount 44
+States after play
+number of actions 2 handcount 44
+testing handcounts end up equal after play, before=44 after=44
+testing return value
+Test Passed
+Test: 355 
+Initial States
+number of actions 2 handcount 355
+States after play
+number of actions 3 handcount 355
+testing handcounts end up equal after play, before=355 after=355
+testing return value
+Test Passed
+Test: 356 
+Initial States
+number of actions 1 handcount 259
+States after play
+number of actions 2 handcount 259
+testing handcounts end up equal after play, before=259 after=259
+testing return value
+Test Passed
+Test: 357 
+Initial States
+number of actions 1 handcount 138
+States after play
+number of actions 2 handcount 138
+testing handcounts end up equal after play, before=138 after=138
+testing return value
+Test Passed
+Test: 358 
+Initial States
+number of actions 1 handcount 422
+States after play
+number of actions 2 handcount 422
+testing handcounts end up equal after play, before=422 after=422
+testing return value
+Test Passed
+Test: 359 
+Initial States
+number of actions 1 handcount 280
+States after play
+number of actions 2 handcount 280
+testing handcounts end up equal after play, before=280 after=280
+testing return value
+Test Passed
+Test: 360 
+Initial States
+number of actions 1 handcount 320
+States after play
+number of actions 2 handcount 320
+testing handcounts end up equal after play, before=320 after=320
+testing return value
+Test Passed
+Test: 361 
+Initial States
+number of actions 1 handcount 4
+States after play
+number of actions 2 handcount 4
+testing handcounts end up equal after play, before=4 after=4
+testing return value
+Test Passed
+Test: 362 
+Initial States
+number of actions 1 handcount 394
+States after play
+number of actions 2 handcount 394
+testing handcounts end up equal after play, before=394 after=394
+testing return value
+Test Passed
+Test: 363 
+Initial States
+number of actions 1 handcount 60
+States after play
+number of actions 2 handcount 60
+testing handcounts end up equal after play, before=60 after=60
+testing return value
+Test Passed
+Test: 364 
+Initial States
+number of actions 1 handcount 365
+States after play
+number of actions 2 handcount 365
+testing handcounts end up equal after play, before=365 after=365
+testing return value
+Test Passed
+Test: 365 
+Initial States
+number of actions 1 handcount 363
+States after play
+number of actions 2 handcount 363
+testing handcounts end up equal after play, before=363 after=363
+testing return value
+Test Passed
+Test: 366 
+Initial States
+number of actions 2 handcount 333
+States after play
+number of actions 3 handcount 333
+testing handcounts end up equal after play, before=333 after=333
+testing return value
+Test Passed
+Test: 367 
+Initial States
+number of actions 3 handcount 368
+States after play
+number of actions 4 handcount 368
+testing handcounts end up equal after play, before=368 after=368
+testing return value
+Test Passed
+Test: 368 
+Initial States
+number of actions 1 handcount 446
+States after play
+number of actions 2 handcount 446
+testing handcounts end up equal after play, before=446 after=446
+testing return value
+Test Passed
+Test: 369 
+Initial States
+number of actions 1 handcount 401
+States after play
+number of actions 2 handcount 401
+testing handcounts end up equal after play, before=401 after=401
+testing return value
+Test Passed
+Test: 370 
+Initial States
+number of actions 1 handcount 426
+States after play
+number of actions 2 handcount 426
+testing handcounts end up equal after play, before=426 after=426
+testing return value
+Test Passed
+Test: 371 
+Initial States
+number of actions 1 handcount 0
+States after play
+number of actions 2 handcount 0
+testing handcounts end up equal after play, before=0 after=0
+testing return value
+Test Passed
+Test: 372 
+Initial States
+number of actions 1 handcount 461
+States after play
+number of actions 2 handcount 461
+testing handcounts end up equal after play, before=461 after=461
+testing return value
+Test Passed
+Test: 373 
+Initial States
+number of actions 1 handcount 69
+States after play
+number of actions 2 handcount 69
+testing handcounts end up equal after play, before=69 after=69
+testing return value
+Test Passed
+Test: 374 
+Initial States
+number of actions 2 handcount 470
+States after play
+number of actions 3 handcount 470
+testing handcounts end up equal after play, before=470 after=470
+testing return value
+Test Passed
+Test: 375 
+Initial States
+number of actions 3 handcount 254
+States after play
+number of actions 4 handcount 254
+testing handcounts end up equal after play, before=254 after=254
+testing return value
+Test Passed
+Test: 376 
+Initial States
+number of actions 1 handcount 50
+States after play
+number of actions 2 handcount 50
+testing handcounts end up equal after play, before=50 after=50
+testing return value
+Test Passed
+Test: 377 
+Initial States
+number of actions 1 handcount 190
+States after play
+number of actions 2 handcount 190
+testing handcounts end up equal after play, before=190 after=190
+testing return value
+Test Passed
+Test: 378 
+Initial States
+number of actions 1 handcount 483
+States after play
+number of actions 2 handcount 483
+testing handcounts end up equal after play, before=483 after=483
+testing return value
+Test Passed
+Test: 379 
+Initial States
+number of actions 1 handcount 191
+States after play
+number of actions 2 handcount 191
+testing handcounts end up equal after play, before=191 after=191
+testing return value
+Test Passed
+Test: 380 
+Initial States
+number of actions 2 handcount 38
+States after play
+number of actions 3 handcount 38
+testing handcounts end up equal after play, before=38 after=38
+testing return value
+Test Passed
+Test: 381 
+Initial States
+number of actions 3 handcount 34
+States after play
+number of actions 4 handcount 34
+testing handcounts end up equal after play, before=34 after=34
+testing return value
+Test Passed
+Test: 382 
+Initial States
+number of actions 4 handcount 208
+States after play
+number of actions 5 handcount 208
+testing handcounts end up equal after play, before=208 after=208
+testing return value
+Test Passed
+Test: 383 
+Initial States
+number of actions 1 handcount 22
+States after play
+number of actions 2 handcount 22
+testing handcounts end up equal after play, before=22 after=22
+testing return value
+Test Passed
+Test: 384 
+Initial States
+number of actions 1 handcount 102
+States after play
+number of actions 2 handcount 102
+testing handcounts end up equal after play, before=102 after=102
+testing return value
+Test Passed
+Test: 385 
+Initial States
+number of actions 2 handcount 30
+States after play
+number of actions 3 handcount 30
+testing handcounts end up equal after play, before=30 after=30
+testing return value
+Test Passed
+Test: 386 
+Initial States
+number of actions 1 handcount 456
+States after play
+number of actions 2 handcount 456
+testing handcounts end up equal after play, before=456 after=456
+testing return value
+Test Passed
+Test: 387 
+Initial States
+number of actions 1 handcount 428
+States after play
+number of actions 2 handcount 428
+testing handcounts end up equal after play, before=428 after=428
+testing return value
+Test Passed
+Test: 388 
+Initial States
+number of actions 1 handcount 337
+States after play
+number of actions 2 handcount 337
+testing handcounts end up equal after play, before=337 after=337
+testing return value
+Test Passed
+Test: 389 
+Initial States
+number of actions 2 handcount 5
+States after play
+number of actions 3 handcount 5
+testing handcounts end up equal after play, before=5 after=5
+testing return value
+Test Passed
+Test: 390 
+Initial States
+number of actions 1 handcount 369
+States after play
+number of actions 2 handcount 369
+testing handcounts end up equal after play, before=369 after=369
+testing return value
+Test Passed
+Test: 391 
+Initial States
+number of actions 1 handcount 353
+States after play
+number of actions 2 handcount 353
+testing handcounts end up equal after play, before=353 after=353
+testing return value
+Test Passed
+Test: 392 
+Initial States
+number of actions 2 handcount 236
+States after play
+number of actions 3 handcount 236
+testing handcounts end up equal after play, before=236 after=236
+testing return value
+Test Passed
+Test: 393 
+Initial States
+number of actions 3 handcount 164
+States after play
+number of actions 4 handcount 164
+testing handcounts end up equal after play, before=164 after=164
+testing return value
+Test Passed
+Test: 394 
+Initial States
+number of actions 1 handcount 69
+States after play
+number of actions 2 handcount 69
+testing handcounts end up equal after play, before=69 after=69
+testing return value
+Test Passed
+Test: 395 
+Initial States
+number of actions 2 handcount 455
+States after play
+number of actions 3 handcount 455
+testing handcounts end up equal after play, before=455 after=455
+testing return value
+Test Passed
+Test: 396 
+Initial States
+number of actions 3 handcount 439
+States after play
+number of actions 4 handcount 439
+testing handcounts end up equal after play, before=439 after=439
+testing return value
+Test Passed
+Test: 397 
+Initial States
+number of actions 1 handcount 401
+States after play
+number of actions 2 handcount 401
+testing handcounts end up equal after play, before=401 after=401
+testing return value
+Test Passed
+Test: 398 
+Initial States
+number of actions 1 handcount 377
+States after play
+number of actions 2 handcount 377
+testing handcounts end up equal after play, before=377 after=377
+testing return value
+Test Passed
+Test: 399 
+Initial States
+number of actions 2 handcount 134
+States after play
+number of actions 3 handcount 134
+testing handcounts end up equal after play, before=134 after=134
+testing return value
+Test Passed
+Test: 400 
+Initial States
+number of actions 3 handcount 499
+States after play
+number of actions 4 handcount 499
+testing handcounts end up equal after play, before=499 after=499
+testing return value
+Test Passed
+Test: 401 
+Initial States
+number of actions 4 handcount 70
+States after play
+number of actions 5 handcount 70
+testing handcounts end up equal after play, before=70 after=70
+testing return value
+Test Passed
+Test: 402 
+Initial States
+number of actions 1 handcount 267
+States after play
+number of actions 2 handcount 267
+testing handcounts end up equal after play, before=267 after=267
+testing return value
+Test Passed
+Test: 403 
+Initial States
+number of actions 1 handcount 193
+States after play
+number of actions 2 handcount 193
+testing handcounts end up equal after play, before=193 after=193
+testing return value
+Test Passed
+Test: 404 
+Initial States
+number of actions 1 handcount 212
+States after play
+number of actions 2 handcount 212
+testing handcounts end up equal after play, before=212 after=212
+testing return value
+Test Passed
+Test: 405 
+Initial States
+number of actions 1 handcount 95
+States after play
+number of actions 2 handcount 95
+testing handcounts end up equal after play, before=95 after=95
+testing return value
+Test Passed
+Test: 406 
+Initial States
+number of actions 1 handcount 208
+States after play
+number of actions 2 handcount 208
+testing handcounts end up equal after play, before=208 after=208
+testing return value
+Test Passed
+Test: 407 
+Initial States
+number of actions 1 handcount 190
+States after play
+number of actions 2 handcount 190
+testing handcounts end up equal after play, before=190 after=190
+testing return value
+Test Passed
+Test: 408 
+Initial States
+number of actions 1 handcount 169
+States after play
+number of actions 2 handcount 169
+testing handcounts end up equal after play, before=169 after=169
+testing return value
+Test Passed
+Test: 409 
+Initial States
+number of actions 1 handcount 351
+States after play
+number of actions 2 handcount 351
+testing handcounts end up equal after play, before=351 after=351
+testing return value
+Test Passed
+Test: 410 
+Initial States
+number of actions 2 handcount 188
+States after play
+number of actions 3 handcount 188
+testing handcounts end up equal after play, before=188 after=188
+testing return value
+Test Passed
+Test: 411 
+Initial States
+number of actions 3 handcount 114
+States after play
+number of actions 4 handcount 114
+testing handcounts end up equal after play, before=114 after=114
+testing return value
+Test Passed
+Test: 412 
+Initial States
+number of actions 4 handcount 82
+States after play
+number of actions 5 handcount 82
+testing handcounts end up equal after play, before=82 after=82
+testing return value
+Test Passed
+Test: 413 
+Initial States
+number of actions 1 handcount 277
+States after play
+number of actions 2 handcount 277
+testing handcounts end up equal after play, before=277 after=277
+testing return value
+Test Passed
+Test: 414 
+Initial States
+number of actions 1 handcount 235
+States after play
+number of actions 2 handcount 235
+testing handcounts end up equal after play, before=235 after=235
+testing return value
+Test Passed
+Test: 415 
+Initial States
+number of actions 1 handcount 229
+States after play
+number of actions 2 handcount 229
+testing handcounts end up equal after play, before=229 after=229
+testing return value
+Test Passed
+Test: 416 
+Initial States
+number of actions 2 handcount 28
+States after play
+number of actions 3 handcount 28
+testing handcounts end up equal after play, before=28 after=28
+testing return value
+Test Passed
+Test: 417 
+Initial States
+number of actions 1 handcount 266
+States after play
+number of actions 2 handcount 266
+testing handcounts end up equal after play, before=266 after=266
+testing return value
+Test Passed
+Test: 418 
+Initial States
+number of actions 2 handcount 36
+States after play
+number of actions 3 handcount 36
+testing handcounts end up equal after play, before=36 after=36
+testing return value
+Test Passed
+Test: 419 
+Initial States
+number of actions 3 handcount 238
+States after play
+number of actions 4 handcount 238
+testing handcounts end up equal after play, before=238 after=238
+testing return value
+Test Passed
+Test: 420 
+Initial States
+number of actions 4 handcount 335
+States after play
+number of actions 5 handcount 335
+testing handcounts end up equal after play, before=335 after=335
+testing return value
+Test Passed
+Test: 421 
+Initial States
+number of actions 1 handcount 250
+States after play
+number of actions 2 handcount 250
+testing handcounts end up equal after play, before=250 after=250
+testing return value
+Test Passed
+Test: 422 
+Initial States
+number of actions 2 handcount 79
+States after play
+number of actions 3 handcount 79
+testing handcounts end up equal after play, before=79 after=79
+testing return value
+Test Passed
+Test: 423 
+Initial States
+number of actions 1 handcount 269
+States after play
+number of actions 2 handcount 269
+testing handcounts end up equal after play, before=269 after=269
+testing return value
+Test Passed
+Test: 424 
+Initial States
+number of actions 1 handcount 236
+States after play
+number of actions 2 handcount 236
+testing handcounts end up equal after play, before=236 after=236
+testing return value
+Test Passed
+Test: 425 
+Initial States
+number of actions 1 handcount 95
+States after play
+number of actions 2 handcount 95
+testing handcounts end up equal after play, before=95 after=95
+testing return value
+Test Passed
+Test: 426 
+Initial States
+number of actions 1 handcount 107
+States after play
+number of actions 2 handcount 107
+testing handcounts end up equal after play, before=107 after=107
+testing return value
+Test Passed
+Test: 427 
+Initial States
+number of actions 2 handcount 302
+States after play
+number of actions 3 handcount 302
+testing handcounts end up equal after play, before=302 after=302
+testing return value
+Test Passed
+Test: 428 
+Initial States
+number of actions 1 handcount 227
+States after play
+number of actions 2 handcount 227
+testing handcounts end up equal after play, before=227 after=227
+testing return value
+Test Passed
+Test: 429 
+Initial States
+number of actions 2 handcount 430
+States after play
+number of actions 3 handcount 430
+testing handcounts end up equal after play, before=430 after=430
+testing return value
+Test Passed
+Test: 430 
+Initial States
+number of actions 1 handcount 427
+States after play
+number of actions 2 handcount 427
+testing handcounts end up equal after play, before=427 after=427
+testing return value
+Test Passed
+Test: 431 
+Initial States
+number of actions 1 handcount 218
+States after play
+number of actions 2 handcount 218
+testing handcounts end up equal after play, before=218 after=218
+testing return value
+Test Passed
+Test: 432 
+Initial States
+number of actions 1 handcount 131
+States after play
+number of actions 2 handcount 131
+testing handcounts end up equal after play, before=131 after=131
+testing return value
+Test Passed
+Test: 433 
+Initial States
+number of actions 2 handcount 313
+States after play
+number of actions 3 handcount 313
+testing handcounts end up equal after play, before=313 after=313
+testing return value
+Test Passed
+Test: 434 
+Initial States
+number of actions 1 handcount 51
+States after play
+number of actions 2 handcount 51
+testing handcounts end up equal after play, before=51 after=51
+testing return value
+Test Passed
+Test: 435 
+Initial States
+number of actions 1 handcount 69
+States after play
+number of actions 2 handcount 69
+testing handcounts end up equal after play, before=69 after=69
+testing return value
+Test Passed
+Test: 436 
+Initial States
+number of actions 1 handcount 354
+States after play
+number of actions 2 handcount 354
+testing handcounts end up equal after play, before=354 after=354
+testing return value
+Test Passed
+Test: 437 
+Initial States
+number of actions 2 handcount 204
+States after play
+number of actions 3 handcount 204
+testing handcounts end up equal after play, before=204 after=204
+testing return value
+Test Passed
+Test: 438 
+Initial States
+number of actions 1 handcount 187
+States after play
+number of actions 2 handcount 187
+testing handcounts end up equal after play, before=187 after=187
+testing return value
+Test Passed
+Test: 439 
+Initial States
+number of actions 1 handcount 210
+States after play
+number of actions 2 handcount 210
+testing handcounts end up equal after play, before=210 after=210
+testing return value
+Test Passed
+Test: 440 
+Initial States
+number of actions 1 handcount 334
+States after play
+number of actions 2 handcount 334
+testing handcounts end up equal after play, before=334 after=334
+testing return value
+Test Passed
+Test: 441 
+Initial States
+number of actions 1 handcount 394
+States after play
+number of actions 2 handcount 394
+testing handcounts end up equal after play, before=394 after=394
+testing return value
+Test Passed
+Test: 442 
+Initial States
+number of actions 1 handcount 47
+States after play
+number of actions 2 handcount 47
+testing handcounts end up equal after play, before=47 after=47
+testing return value
+Test Passed
+Test: 443 
+Initial States
+number of actions 1 handcount 360
+States after play
+number of actions 2 handcount 360
+testing handcounts end up equal after play, before=360 after=360
+testing return value
+Test Passed
+Test: 444 
+Initial States
+number of actions 1 handcount 148
+States after play
+number of actions 2 handcount 148
+testing handcounts end up equal after play, before=148 after=148
+testing return value
+Test Passed
+Test: 445 
+Initial States
+number of actions 1 handcount 366
+States after play
+number of actions 2 handcount 366
+testing handcounts end up equal after play, before=366 after=366
+testing return value
+Test Passed
+Test: 446 
+Initial States
+number of actions 1 handcount 408
+States after play
+number of actions 2 handcount 408
+testing handcounts end up equal after play, before=408 after=408
+testing return value
+Test Passed
+Test: 447 
+Initial States
+number of actions 2 handcount 93
+States after play
+number of actions 3 handcount 93
+testing handcounts end up equal after play, before=93 after=93
+testing return value
+Test Passed
+Test: 448 
+Initial States
+number of actions 1 handcount 410
+States after play
+number of actions 2 handcount 410
+testing handcounts end up equal after play, before=410 after=410
+testing return value
+Test Passed
+Test: 449 
+Initial States
+number of actions 1 handcount 447
+States after play
+number of actions 2 handcount 447
+testing handcounts end up equal after play, before=447 after=447
+testing return value
+Test Passed
+Test: 450 
+Initial States
+number of actions 1 handcount 200
+States after play
+number of actions 2 handcount 200
+testing handcounts end up equal after play, before=200 after=200
+testing return value
+Test Passed
+Test: 451 
+Initial States
+number of actions 1 handcount 449
+States after play
+number of actions 2 handcount 449
+testing handcounts end up equal after play, before=449 after=449
+testing return value
+Test Passed
+Test: 452 
+Initial States
+number of actions 1 handcount 43
+States after play
+number of actions 2 handcount 43
+testing handcounts end up equal after play, before=43 after=43
+testing return value
+Test Passed
+Test: 453 
+Initial States
+number of actions 1 handcount 42
+States after play
+number of actions 2 handcount 42
+testing handcounts end up equal after play, before=42 after=42
+testing return value
+Test Passed
+Test: 454 
+Initial States
+number of actions 2 handcount 136
+States after play
+number of actions 3 handcount 136
+testing handcounts end up equal after play, before=136 after=136
+testing return value
+Test Passed
+Test: 455 
+Initial States
+number of actions 1 handcount 297
+States after play
+number of actions 2 handcount 297
+testing handcounts end up equal after play, before=297 after=297
+testing return value
+Test Passed
+Test: 456 
+Initial States
+number of actions 1 handcount 250
+States after play
+number of actions 2 handcount 250
+testing handcounts end up equal after play, before=250 after=250
+testing return value
+Test Passed
+Test: 457 
+Initial States
+number of actions 1 handcount 71
+States after play
+number of actions 2 handcount 71
+testing handcounts end up equal after play, before=71 after=71
+testing return value
+Test Passed
+Test: 458 
+Initial States
+number of actions 2 handcount 396
+States after play
+number of actions 3 handcount 396
+testing handcounts end up equal after play, before=396 after=396
+testing return value
+Test Passed
+Test: 459 
+Initial States
+number of actions 3 handcount 229
+States after play
+number of actions 4 handcount 229
+testing handcounts end up equal after play, before=229 after=229
+testing return value
+Test Passed
+Test: 460 
+Initial States
+number of actions 1 handcount 145
+States after play
+number of actions 2 handcount 145
+testing handcounts end up equal after play, before=145 after=145
+testing return value
+Test Passed
+Test: 461 
+Initial States
+number of actions 2 handcount 198
+States after play
+number of actions 3 handcount 198
+testing handcounts end up equal after play, before=198 after=198
+testing return value
+Test Passed
+Test: 462 
+Initial States
+number of actions 1 handcount 421
+States after play
+number of actions 2 handcount 421
+testing handcounts end up equal after play, before=421 after=421
+testing return value
+Test Passed
+Test: 463 
+Initial States
+number of actions 1 handcount 378
+States after play
+number of actions 2 handcount 378
+testing handcounts end up equal after play, before=378 after=378
+testing return value
+Test Passed
+Test: 464 
+Initial States
+number of actions 1 handcount 179
+States after play
+number of actions 2 handcount 179
+testing handcounts end up equal after play, before=179 after=179
+testing return value
+Test Passed
+Test: 465 
+Initial States
+number of actions 2 handcount 302
+States after play
+number of actions 3 handcount 302
+testing handcounts end up equal after play, before=302 after=302
+testing return value
+Test Passed
+Test: 466 
+Initial States
+number of actions 3 handcount 402
+States after play
+number of actions 4 handcount 402
+testing handcounts end up equal after play, before=402 after=402
+testing return value
+Test Passed
+Test: 467 
+Initial States
+number of actions 1 handcount 123
+States after play
+number of actions 2 handcount 123
+testing handcounts end up equal after play, before=123 after=123
+testing return value
+Test Passed
+Test: 468 
+Initial States
+number of actions 1 handcount 333
+States after play
+number of actions 2 handcount 333
+testing handcounts end up equal after play, before=333 after=333
+testing return value
+Test Passed
+Test: 469 
+Initial States
+number of actions 2 handcount 0
+States after play
+number of actions 3 handcount 0
+testing handcounts end up equal after play, before=0 after=0
+testing return value
+Test Passed
+Test: 470 
+Initial States
+number of actions 1 handcount 56
+States after play
+number of actions 2 handcount 56
+testing handcounts end up equal after play, before=56 after=56
+testing return value
+Test Passed
+Test: 471 
+Initial States
+number of actions 2 handcount 451
+States after play
+number of actions 3 handcount 451
+testing handcounts end up equal after play, before=451 after=451
+testing return value
+Test Passed
+Test: 472 
+Initial States
+number of actions 1 handcount 345
+States after play
+number of actions 2 handcount 345
+testing handcounts end up equal after play, before=345 after=345
+testing return value
+Test Passed
+Test: 473 
+Initial States
+number of actions 1 handcount 307
+States after play
+number of actions 2 handcount 307
+testing handcounts end up equal after play, before=307 after=307
+testing return value
+Test Passed
+Test: 474 
+Initial States
+number of actions 1 handcount 130
+States after play
+number of actions 2 handcount 130
+testing handcounts end up equal after play, before=130 after=130
+testing return value
+Test Passed
+Test: 475 
+Initial States
+number of actions 1 handcount 126
+States after play
+number of actions 2 handcount 126
+testing handcounts end up equal after play, before=126 after=126
+testing return value
+Test Passed
+Test: 476 
+Initial States
+number of actions 2 handcount 141
+States after play
+number of actions 3 handcount 141
+testing handcounts end up equal after play, before=141 after=141
+testing return value
+Test Passed
+Test: 477 
+Initial States
+number of actions 1 handcount 139
+States after play
+number of actions 2 handcount 139
+testing handcounts end up equal after play, before=139 after=139
+testing return value
+Test Passed
+Test: 478 
+Initial States
+number of actions 2 handcount 123
+States after play
+number of actions 3 handcount 123
+testing handcounts end up equal after play, before=123 after=123
+testing return value
+Test Passed
+Test: 479 
+Initial States
+number of actions 1 handcount 283
+States after play
+number of actions 2 handcount 283
+testing handcounts end up equal after play, before=283 after=283
+testing return value
+Test Passed
+Test: 480 
+Initial States
+number of actions 1 handcount 393
+States after play
+number of actions 2 handcount 393
+testing handcounts end up equal after play, before=393 after=393
+testing return value
+Test Passed
+Test: 481 
+Initial States
+number of actions 2 handcount 289
+States after play
+number of actions 3 handcount 289
+testing handcounts end up equal after play, before=289 after=289
+testing return value
+Test Passed
+Test: 482 
+Initial States
+number of actions 1 handcount 237
+States after play
+number of actions 2 handcount 237
+testing handcounts end up equal after play, before=237 after=237
+testing return value
+Test Passed
+Test: 483 
+Initial States
+number of actions 1 handcount 458
+States after play
+number of actions 2 handcount 458
+testing handcounts end up equal after play, before=458 after=458
+testing return value
+Test Passed
+Test: 484 
+Initial States
+number of actions 1 handcount 54
+States after play
+number of actions 2 handcount 54
+testing handcounts end up equal after play, before=54 after=54
+testing return value
+Test Passed
+Test: 485 
+Initial States
+number of actions 1 handcount 260
+States after play
+number of actions 2 handcount 260
+testing handcounts end up equal after play, before=260 after=260
+testing return value
+Test Passed
+Test: 486 
+Initial States
+number of actions 1 handcount 318
+States after play
+number of actions 2 handcount 318
+testing handcounts end up equal after play, before=318 after=318
+testing return value
+Test Passed
+Test: 487 
+Initial States
+number of actions 1 handcount 277
+States after play
+number of actions 2 handcount 277
+testing handcounts end up equal after play, before=277 after=277
+testing return value
+Test Passed
+Test: 488 
+Initial States
+number of actions 1 handcount 186
+States after play
+number of actions 2 handcount 186
+testing handcounts end up equal after play, before=186 after=186
+testing return value
+Test Passed
+Test: 489 
+Initial States
+number of actions 1 handcount 479
+States after play
+number of actions 2 handcount 479
+testing handcounts end up equal after play, before=479 after=479
+testing return value
+Test Passed
+Test: 490 
+Initial States
+number of actions 1 handcount 353
+States after play
+number of actions 2 handcount 353
+testing handcounts end up equal after play, before=353 after=353
+testing return value
+Test Passed
+Test: 491 
+Initial States
+number of actions 2 handcount 499
+States after play
+number of actions 3 handcount 499
+testing handcounts end up equal after play, before=499 after=499
+testing return value
+Test Passed
+Test: 492 
+Initial States
+number of actions 1 handcount 326
+States after play
+number of actions 2 handcount 326
+testing handcounts end up equal after play, before=326 after=326
+testing return value
+Test Passed
+Test: 493 
+Initial States
+number of actions 1 handcount 96
+States after play
+number of actions 2 handcount 96
+testing handcounts end up equal after play, before=96 after=96
+testing return value
+Test Passed
+Test: 494 
+Initial States
+number of actions 1 handcount 231
+States after play
+number of actions 2 handcount 231
+testing handcounts end up equal after play, before=231 after=231
+testing return value
+Test Passed
+Test: 495 
+Initial States
+number of actions 1 handcount 394
+States after play
+number of actions 2 handcount 394
+testing handcounts end up equal after play, before=394 after=394
+testing return value
+Test Passed
+Test: 496 
+Initial States
+number of actions 1 handcount 82
+States after play
+number of actions 2 handcount 82
+testing handcounts end up equal after play, before=82 after=82
+testing return value
+Test Passed
+Test: 497 
+Initial States
+number of actions 1 handcount 117
+States after play
+number of actions 2 handcount 117
+testing handcounts end up equal after play, before=117 after=117
+testing return value
+Test Passed
+Test: 498 
+Initial States
+number of actions 1 handcount 141
+States after play
+number of actions 2 handcount 141
+testing handcounts end up equal after play, before=141 after=141
+testing return value
+Test Passed
+Test: 499 
+Initial States
+number of actions 2 handcount 23
+States after play
+number of actions 3 handcount 23
+testing handcounts end up equal after play, before=23 after=23
+testing return value
+Test Passed
+File 'dominion.c'
+Lines executed:25.00% of 560
+Creating 'dominion.c.gcov'
+
+        -:    0:Source:dominion.c
+        -:    0:Graph:dominion.gcno
+        -:    0:Data:dominion.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include "rngs.h"
+        -:    4:#include <stdio.h>
+        -:    5:#include <math.h>
+        -:    6:#include <stdlib.h>
+        -:    7:
+    16500:    8:int compare(const void* a, const void* b) {
+    16500:    9:  if (*(int*)a > *(int*)b)
+    #####:   10:    return 1;
+    16500:   11:  if (*(int*)a < *(int*)b)
+     4400:   12:    return -1;
+    12100:   13:  return 0;
+        -:   14:}
+        -:   15:
+    #####:   16:struct gameState* newGame() {
+    #####:   17:  struct gameState* g = malloc(sizeof(struct gameState));
+    #####:   18:  return g;
+        -:   19:}
+        -:   20:
+    #####:   21:int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
+        -:   22:		  int k8, int k9, int k10) {
+    #####:   23:  int* k = malloc(10 * sizeof(int));
+    #####:   24:  k[0] = k1;
+    #####:   25:  k[1] = k2;
+    #####:   26:  k[2] = k3;
+    #####:   27:  k[3] = k4;
+    #####:   28:  k[4] = k5;
+    #####:   29:  k[5] = k6;
+    #####:   30:  k[6] = k7;
+    #####:   31:  k[7] = k8;
+    #####:   32:  k[8] = k9;
+    #####:   33:  k[9] = k10;
+    #####:   34:  return k;
+        -:   35:}
+        -:   36:
+      500:   37:int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
+        -:   38:		   struct gameState *state) {
+        -:   39:
+        -:   40:  int i;
+        -:   41:  int j;
+        -:   42:  int it;			
+        -:   43:  //set up random number generator
+      500:   44:  SelectStream(1);
+      500:   45:  PutSeed((long)randomSeed);
+        -:   46:  
+        -:   47:  //check number of players
+      500:   48:  if (numPlayers > MAX_PLAYERS || numPlayers < 2)
+        -:   49:    {
+      135:   50:      return -1;
+        -:   51:    }
+        -:   52:
+        -:   53:  //set number of players
+      365:   54:  state->numPlayers = numPlayers;
+        -:   55:
+        -:   56:  //check selected kingdom cards are different
+     4015:   57:  for (i = 0; i < 10; i++)
+        -:   58:    {
+    40150:   59:      for (j = 0; j < 10; j++)
+        -:   60:        {
+    36500:   61:	  if (j != i && kingdomCards[j] == kingdomCards[i])
+        -:   62:	    {
+    #####:   63:	      return -1;
+        -:   64:	    }
+        -:   65:        }
+        -:   66:    }
+        -:   67:
+        -:   68:
+        -:   69:  //initialize supply
+        -:   70:  ///////////////////////////////
+        -:   71:
+        -:   72:  //set number of Curse cards
+      365:   73:  if (numPlayers == 2)
+        -:   74:    {
+      115:   75:      state->supplyCount[curse] = 10;
+        -:   76:    }
+      250:   77:  else if (numPlayers == 3)
+        -:   78:    {
+      130:   79:      state->supplyCount[curse] = 20;
+        -:   80:    }
+        -:   81:  else
+        -:   82:    {
+      120:   83:      state->supplyCount[curse] = 30;
+        -:   84:    }
+        -:   85:
+        -:   86:  //set number of Victory cards
+      365:   87:  if (numPlayers == 2)
+        -:   88:    {
+      115:   89:      state->supplyCount[estate] = 8;
+      115:   90:      state->supplyCount[duchy] = 8;
+      115:   91:      state->supplyCount[province] = 8;
+        -:   92:    }
+        -:   93:  else
+        -:   94:    {
+      250:   95:      state->supplyCount[estate] = 12;
+      250:   96:      state->supplyCount[duchy] = 12;
+      250:   97:      state->supplyCount[province] = 12;
+        -:   98:    }
+        -:   99:
+        -:  100:  //set number of Treasure cards
+      365:  101:  state->supplyCount[copper] = 60 - (7 * numPlayers);
+      365:  102:  state->supplyCount[silver] = 40;
+      365:  103:  state->supplyCount[gold] = 30;
+        -:  104:
+        -:  105:  //set number of Kingdom cards
+     7665:  106:  for (i = adventurer; i <= treasure_map; i++)       	//loop all cards
+        -:  107:    {
+    60225:  108:      for (j = 0; j < 10; j++)           		//loop chosen cards
+        -:  109:	{
+    56575:  110:	  if (kingdomCards[j] == i)
+        -:  111:	    {
+        -:  112:	      //check if card is a 'Victory' Kingdom card
+     3650:  113:	      if (kingdomCards[j] == great_hall || kingdomCards[j] == gardens)
+        -:  114:		{
+      730:  115:		  if (numPlayers == 2){ 
+      115:  116:		    state->supplyCount[i] = 8; 
+        -:  117:		  }
+      250:  118:		  else{ state->supplyCount[i] = 12; }
+        -:  119:		}
+        -:  120:	      else
+        -:  121:		{
+     3285:  122:		  state->supplyCount[i] = 10;
+        -:  123:		}
+     3650:  124:	      break;
+        -:  125:	    }
+        -:  126:	  else    //card is not in the set choosen for the game
+        -:  127:	    {
+    52925:  128:	      state->supplyCount[i] = -1;
+        -:  129:	    }
+        -:  130:	}
+        -:  131:
+        -:  132:    }
+        -:  133:
+        -:  134:  ////////////////////////
+        -:  135:  //supply intilization complete
+        -:  136:
+        -:  137:  //set player decks
+     1465:  138:  for (i = 0; i < numPlayers; i++)
+        -:  139:    {
+     1100:  140:      state->deckCount[i] = 0;
+     4400:  141:      for (j = 0; j < 3; j++)
+        -:  142:	{
+     3300:  143:	  state->deck[i][j] = estate;
+     3300:  144:	  state->deckCount[i]++;
+        -:  145:	}
+     8800:  146:      for (j = 3; j < 10; j++)
+        -:  147:	{
+     7700:  148:	  state->deck[i][j] = copper;
+     7700:  149:	  state->deckCount[i]++;		
+        -:  150:	}
+        -:  151:    }
+        -:  152:
+        -:  153:  //shuffle player decks
+     1465:  154:  for (i = 0; i < numPlayers; i++)
+        -:  155:    {
+     1100:  156:      if ( shuffle(i, state) < 0 )
+        -:  157:	{
+    #####:  158:	  return -1;
+        -:  159:	}
+        -:  160:    }
+        -:  161:
+        -:  162:  //draw player hands
+     1465:  163:  for (i = 0; i < numPlayers; i++)
+        -:  164:    {  
+        -:  165:      //initialize hand size to zero
+     1100:  166:      state->handCount[i] = 0;
+     1100:  167:      state->discardCount[i] = 0;
+        -:  168:      //draw 5 cards
+        -:  169:      // for (j = 0; j < 5; j++)
+        -:  170:      //	{
+        -:  171:      //	  drawCard(i, state);
+        -:  172:      //	}
+        -:  173:    }
+        -:  174:  
+        -:  175:  //set embargo tokens to 0 for all supply piles
+    10220:  176:  for (i = 0; i <= treasure_map; i++)
+        -:  177:    {
+     9855:  178:      state->embargoTokens[i] = 0;
+        -:  179:    }
+        -:  180:
+        -:  181:  //initialize first player's turn
+      365:  182:  state->outpostPlayed = 0;
+      365:  183:  state->phase = 0;
+      365:  184:  state->numActions = 1;
+      365:  185:  state->numBuys = 1;
+      365:  186:  state->playedCardCount = 0;
+      365:  187:  state->whoseTurn = 0;
+      365:  188:  state->handCount[state->whoseTurn] = 0;
+        -:  189:  //int it; move to top
+        -:  190:
+        -:  191:  //Moved draw cards to here, only drawing at the start of a turn
+     2190:  192:  for (it = 0; it < 5; it++){
+     1825:  193:    drawCard(state->whoseTurn, state);
+        -:  194:  }
+        -:  195:
+      365:  196:  updateCoins(state->whoseTurn, state, 0);
+        -:  197:
+      365:  198:  return 0;
+        -:  199:}
+        -:  200:
+     1100:  201:int shuffle(int player, struct gameState *state) {
+        -:  202: 
+        -:  203:
+        -:  204:  int newDeck[MAX_DECK];
+     1100:  205:  int newDeckPos = 0;
+        -:  206:  int card;
+        -:  207:  int i;
+        -:  208:
+     1100:  209:  if (state->deckCount[player] < 1)
+    #####:  210:    return -1;
+     1100:  211:  qsort ((void*)(state->deck[player]), state->deckCount[player], sizeof(int), compare); 
+        -:  212:  /* SORT CARDS IN DECK TO ENSURE DETERMINISM! */
+        -:  213:
+    13200:  214:  while (state->deckCount[player] > 0) {
+    11000:  215:    card = floor(Random() * state->deckCount[player]);
+    11000:  216:    newDeck[newDeckPos] = state->deck[player][card];
+    11000:  217:    newDeckPos++;
+    35740:  218:    for (i = card; i < state->deckCount[player]-1; i++) {
+    24740:  219:      state->deck[player][i] = state->deck[player][i+1];
+        -:  220:    }
+    11000:  221:    state->deckCount[player]--;
+        -:  222:  }
+    12100:  223:  for (i = 0; i < newDeckPos; i++) {
+    11000:  224:    state->deck[player][i] = newDeck[i];
+    11000:  225:    state->deckCount[player]++;
+        -:  226:  }
+        -:  227:
+     1100:  228:  return 0;
+        -:  229:}
+        -:  230:
+      500:  231:int playCard(int handPos, int choice1, int choice2, int choice3, struct gameState *state) 
+        -:  232:{	
+        -:  233:  int card;
+      500:  234:  int coin_bonus = 0; 		//tracks coins gain from actions
+        -:  235:
+        -:  236:  //check if it is the right phase
+      500:  237:  if (state->phase != 0)
+        -:  238:    {
+    #####:  239:      return -1;
+        -:  240:    }
+        -:  241:	
+        -:  242:  //check if player has enough actions
+      500:  243:  if ( state->numActions < 1 )
+        -:  244:    {
+    #####:  245:      return -1;
+        -:  246:    }
+        -:  247:	
+        -:  248:  //get card played
+      500:  249:  card = handCard(handPos, state);
+        -:  250:	
+        -:  251:  //check if selected card is an action
+      500:  252:  if ( card < adventurer || card > treasure_map )
+        -:  253:    {
+    #####:  254:      return -1;
+        -:  255:    }
+        -:  256:	
+        -:  257:  //play card
+      500:  258:  if ( cardEffect(card, choice1, choice2, choice3, state, handPos, &coin_bonus) < 0 )
+        -:  259:    {
+    #####:  260:      return -1;
+        -:  261:    }
+        -:  262:	
+        -:  263:  //reduce number of actions
+      500:  264:  state->numActions--;
+        -:  265:
+        -:  266:  //update coins (Treasure cards may be added with card draws)
+      500:  267:  updateCoins(state->whoseTurn, state, coin_bonus);
+        -:  268:	
+      500:  269:  return 0;
+        -:  270:}
+        -:  271:
+    #####:  272:int buyCard(int supplyPos, struct gameState *state) {
+        -:  273:  int who;
+        -:  274:  if (DEBUG){
+        -:  275:    printf("Entering buyCard...\n");
+        -:  276:  }
+        -:  277:
+        -:  278:  // I don't know what to do about the phase thing.
+        -:  279:
+    #####:  280:  who = state->whoseTurn;
+        -:  281:
+    #####:  282:  if (state->numBuys < 1){
+        -:  283:    if (DEBUG)
+        -:  284:      printf("You do not have any buys left\n");
+    #####:  285:    return -1;
+    #####:  286:  } else if (supplyCount(supplyPos, state) <1){
+        -:  287:    if (DEBUG)
+        -:  288:      printf("There are not any of that type of card left\n");
+    #####:  289:    return -1;
+    #####:  290:  } else if (state->coins < getCost(supplyPos)){
+        -:  291:    if (DEBUG) 
+        -:  292:      printf("You do not have enough money to buy that. You have %d coins.\n", state->coins);
+    #####:  293:    return -1;
+        -:  294:  } else {
+    #####:  295:    state->phase=1;
+        -:  296:    //state->supplyCount[supplyPos]--;
+    #####:  297:    gainCard(supplyPos, state, 0, who); //card goes in discard, this might be wrong.. (2 means goes into hand, 0 goes into discard)
+        -:  298:  
+    #####:  299:    state->coins = (state->coins) - (getCost(supplyPos));
+    #####:  300:    state->numBuys--;
+        -:  301:    if (DEBUG)
+        -:  302:      printf("You bought card number %d for %d coins. You now have %d buys and %d coins.\n", supplyPos, getCost(supplyPos), state->numBuys, state->coins);
+        -:  303:  }
+        -:  304:
+        -:  305:  //state->discard[who][state->discardCount[who]] = supplyPos;
+        -:  306:  //state->discardCount[who]++;
+        -:  307:    
+    #####:  308:  return 0;
+        -:  309:}
+        -:  310:
+    #####:  311:int numHandCards(struct gameState *state) {
+    #####:  312:  return state->handCount[ whoseTurn(state) ];
+        -:  313:}
+        -:  314:
+      500:  315:int handCard(int handPos, struct gameState *state) {
+      500:  316:  int currentPlayer = whoseTurn(state);
+      500:  317:  return state->hand[currentPlayer][handPos];
+        -:  318:}
+        -:  319:
+    #####:  320:int supplyCount(int card, struct gameState *state) {
+    #####:  321:  return state->supplyCount[card];
+        -:  322:}
+        -:  323:
+    #####:  324:int fullDeckCount(int player, int card, struct gameState *state) {
+        -:  325:  int i;
+    #####:  326:  int count = 0;
+        -:  327:
+    #####:  328:  for (i = 0; i < state->deckCount[player]; i++)
+        -:  329:    {
+    #####:  330:      if (state->deck[player][i] == card) count++;
+        -:  331:    }
+        -:  332:
+    #####:  333:  for (i = 0; i < state->handCount[player]; i++)
+        -:  334:    {
+    #####:  335:      if (state->hand[player][i] == card) count++;
+        -:  336:    }
+        -:  337:
+    #####:  338:  for (i = 0; i < state->discardCount[player]; i++)
+        -:  339:    {
+    #####:  340:      if (state->discard[player][i] == card) count++;
+        -:  341:    }
+        -:  342:
+    #####:  343:  return count;
+        -:  344:}
+        -:  345:
+     1000:  346:int whoseTurn(struct gameState *state) {
+     1000:  347:  return state->whoseTurn;
+        -:  348:}
+        -:  349:
+    #####:  350:int endTurn(struct gameState *state) {
+        -:  351:  int k;
+        -:  352:  int i;
+    #####:  353:  int currentPlayer = whoseTurn(state);
+        -:  354:  
+        -:  355:  //Discard hand
+    #####:  356:  for (i = 0; i < state->handCount[currentPlayer]; i++){
+    #####:  357:    state->discard[currentPlayer][state->discardCount[currentPlayer]++] = state->hand[currentPlayer][i];//Discard
+    #####:  358:    state->hand[currentPlayer][i] = -1;//Set card to -1
+        -:  359:  }
+    #####:  360:  state->handCount[currentPlayer] = 0;//Reset hand count
+        -:  361:    
+        -:  362:  //Code for determining the player
+    #####:  363:  if (currentPlayer < (state->numPlayers - 1)){ 
+    #####:  364:    state->whoseTurn = currentPlayer + 1;//Still safe to increment
+        -:  365:  }
+        -:  366:  else{
+    #####:  367:    state->whoseTurn = 0;//Max player has been reached, loop back around to player 1
+        -:  368:  }
+        -:  369:
+    #####:  370:  state->outpostPlayed = 0;
+    #####:  371:  state->phase = 0;
+    #####:  372:  state->numActions = 1;
+    #####:  373:  state->coins = 0;
+    #####:  374:  state->numBuys = 1;
+    #####:  375:  state->playedCardCount = 0;
+    #####:  376:  state->handCount[state->whoseTurn] = 0;
+        -:  377:
+        -:  378:  //int k; move to top
+        -:  379:  //Next player draws hand
+    #####:  380:  for (k = 0; k < 5; k++){
+    #####:  381:    drawCard(state->whoseTurn, state);//Draw a card
+        -:  382:  }
+        -:  383:
+        -:  384:  //Update money
+    #####:  385:  updateCoins(state->whoseTurn, state , 0);
+        -:  386:
+    #####:  387:  return 0;
+        -:  388:}
+        -:  389:
+    #####:  390:int isGameOver(struct gameState *state) {
+        -:  391:  int i;
+        -:  392:  int j;
+        -:  393:	
+        -:  394:  //if stack of Province cards is empty, the game ends
+    #####:  395:  if (state->supplyCount[province] == 0)
+        -:  396:    {
+    #####:  397:      return 1;
+        -:  398:    }
+        -:  399:
+        -:  400:  //if three supply pile are at 0, the game ends
+    #####:  401:  j = 0;
+    #####:  402:  for (i = 0; i < 25; i++)
+        -:  403:    {
+    #####:  404:      if (state->supplyCount[i] == 0)
+        -:  405:	{
+    #####:  406:	  j++;
+        -:  407:	}
+        -:  408:    }
+    #####:  409:  if ( j >= 3)
+        -:  410:    {
+    #####:  411:      return 1;
+        -:  412:    }
+        -:  413:
+    #####:  414:  return 0;
+        -:  415:}
+        -:  416:
+    #####:  417:int scoreFor (int player, struct gameState *state) {
+        -:  418:
+        -:  419:  int i;
+    #####:  420:  int score = 0;
+        -:  421:  //score from hand
+    #####:  422:  for (i = 0; i < state->handCount[player]; i++)
+        -:  423:    {
+    #####:  424:      if (state->hand[player][i] == curse) { score = score - 1; };
+    #####:  425:      if (state->hand[player][i] == estate) { score = score + 1; };
+    #####:  426:      if (state->hand[player][i] == duchy) { score = score + 3; };
+    #####:  427:      if (state->hand[player][i] == province) { score = score + 6; };
+    #####:  428:      if (state->hand[player][i] == great_hall) { score = score + 1; };
+    #####:  429:      if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+        -:  430:    }
+        -:  431:
+        -:  432:  //score from discard
+    #####:  433:  for (i = 0; i < state->discardCount[player]; i++)
+        -:  434:    {
+    #####:  435:      if (state->discard[player][i] == curse) { score = score - 1; };
+    #####:  436:      if (state->discard[player][i] == estate) { score = score + 1; };
+    #####:  437:      if (state->discard[player][i] == duchy) { score = score + 3; };
+    #####:  438:      if (state->discard[player][i] == province) { score = score + 6; };
+    #####:  439:      if (state->discard[player][i] == great_hall) { score = score + 1; };
+    #####:  440:      if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+        -:  441:    }
+        -:  442:
+        -:  443:  //score from deck
+    #####:  444:  for (i = 0; i < state->discardCount[player]; i++)
+        -:  445:    {
+    #####:  446:      if (state->deck[player][i] == curse) { score = score - 1; };
+    #####:  447:      if (state->deck[player][i] == estate) { score = score + 1; };
+    #####:  448:      if (state->deck[player][i] == duchy) { score = score + 3; };
+    #####:  449:      if (state->deck[player][i] == province) { score = score + 6; };
+    #####:  450:      if (state->deck[player][i] == great_hall) { score = score + 1; };
+    #####:  451:      if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+        -:  452:    }
+        -:  453:
+    #####:  454:  return score;
+        -:  455:}
+        -:  456:
+    #####:  457:int getWinners(int players[MAX_PLAYERS], struct gameState *state) {
+        -:  458:  int i;	
+        -:  459:  int j;
+        -:  460:  int highScore;
+        -:  461:  int currentPlayer;
+        -:  462:
+        -:  463:  //get score for each player
+    #####:  464:  for (i = 0; i < MAX_PLAYERS; i++)
+        -:  465:    {
+        -:  466:      //set unused player scores to -9999
+    #####:  467:      if (i >= state->numPlayers)
+        -:  468:	{
+    #####:  469:	  players[i] = -9999;
+        -:  470:	}
+        -:  471:      else
+        -:  472:	{
+    #####:  473:	  players[i] = scoreFor (i, state);
+        -:  474:	}
+        -:  475:    }
+        -:  476:
+        -:  477:  //find highest score
+    #####:  478:  j = 0;
+    #####:  479:  for (i = 0; i < MAX_PLAYERS; i++)
+        -:  480:    {
+    #####:  481:      if (players[i] > players[j])
+        -:  482:	{
+    #####:  483:	  j = i;
+        -:  484:	}
+        -:  485:    }
+    #####:  486:  highScore = players[j];
+        -:  487:
+        -:  488:  //add 1 to players who had less turns
+    #####:  489:  currentPlayer = whoseTurn(state);
+    #####:  490:  for (i = 0; i < MAX_PLAYERS; i++)
+        -:  491:    {
+    #####:  492:      if ( players[i] == highScore && i > currentPlayer )
+        -:  493:	{
+    #####:  494:	  players[i]++;
+        -:  495:	}
+        -:  496:    }
+        -:  497:
+        -:  498:  //find new highest score
+    #####:  499:  j = 0;
+    #####:  500:  for (i = 0; i < MAX_PLAYERS; i++)
+        -:  501:    {
+    #####:  502:      if ( players[i] > players[j] )
+        -:  503:	{
+    #####:  504:	  j = i;
+        -:  505:	}
+        -:  506:    }
+    #####:  507:  highScore = players[j];
+        -:  508:
+        -:  509:  //set winners in array to 1 and rest to 0
+    #####:  510:  for (i = 0; i < MAX_PLAYERS; i++)
+        -:  511:    {
+    #####:  512:      if ( players[i] == highScore )
+        -:  513:	{
+    #####:  514:	  players[i] = 1;
+        -:  515:	}
+        -:  516:      else
+        -:  517:	{
+    #####:  518:	  players[i] = 0;
+        -:  519:	}
+        -:  520:    }
+        -:  521:
+    #####:  522:  return 0;
+        -:  523:}
+        -:  524:
+     2325:  525:int drawCard(int player, struct gameState *state)
+        -:  526:{	int count;
+        -:  527:  int deckCounter;
+     2325:  528:  if (state->deckCount[player] <= 0){//Deck is empty
+        -:  529:    
+        -:  530:    //Step 1 Shuffle the discard pile back into a deck
+        -:  531:    int i;
+        -:  532:    //Move discard to deck
+    #####:  533:    for (i = 0; i < state->discardCount[player];i++){
+    #####:  534:      state->deck[player][i] = state->discard[player][i];
+    #####:  535:      state->discard[player][i] = -1;
+        -:  536:    }
+        -:  537:
+    #####:  538:    state->deckCount[player] = state->discardCount[player];
+    #####:  539:    state->discardCount[player] = 0;//Reset discard
+        -:  540:
+        -:  541:    //Shufffle the deck
+    #####:  542:    shuffle(player, state);//Shuffle the deck up and make it so that we can draw
+        -:  543:   
+        -:  544:    if (DEBUG){//Debug statements
+        -:  545:      printf("Deck count now: %d\n", state->deckCount[player]);
+        -:  546:    }
+        -:  547:    
+    #####:  548:    state->discardCount[player] = 0;
+        -:  549:
+        -:  550:    //Step 2 Draw Card
+    #####:  551:    count = state->handCount[player];//Get current player's hand count
+        -:  552:    
+        -:  553:    if (DEBUG){//Debug statements
+        -:  554:      printf("Current hand count: %d\n", count);
+        -:  555:    }
+        -:  556:    
+    #####:  557:    deckCounter = state->deckCount[player];//Create a holder for the deck count
+        -:  558:
+    #####:  559:    if (deckCounter == 0)
+    #####:  560:      return -1;
+        -:  561:
+    #####:  562:    state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to hand
+    #####:  563:    state->deckCount[player]--;
+    #####:  564:    state->handCount[player]++;//Increment hand count
+        -:  565:  }
+        -:  566:
+        -:  567:  else{
+     2325:  568:    int count = state->handCount[player];//Get current hand count for player
+        -:  569:    int deckCounter;
+        -:  570:    if (DEBUG){//Debug statements
+        -:  571:      printf("Current hand count: %d\n", count);
+        -:  572:    }
+        -:  573:
+     2325:  574:    deckCounter = state->deckCount[player];//Create holder for the deck count
+     2325:  575:    state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to the hand
+     2325:  576:    state->deckCount[player]--;
+     2325:  577:    state->handCount[player]++;//Increment hand count
+        -:  578:  }
+        -:  579:
+     2325:  580:  return 0;
+        -:  581:}
+        -:  582:
+    #####:  583:int getCost(int cardNumber)
+        -:  584:{
+    #####:  585:  switch( cardNumber ) 
+        -:  586:    {
+        -:  587:    case curse:
+    #####:  588:      return 0;
+        -:  589:    case estate:
+    #####:  590:      return 2;
+        -:  591:    case duchy:
+    #####:  592:      return 5;
+        -:  593:    case province:
+    #####:  594:      return 8;
+        -:  595:    case copper:
+    #####:  596:      return 0;
+        -:  597:    case silver:
+    #####:  598:      return 3;
+        -:  599:    case gold:
+    #####:  600:      return 6;
+        -:  601:    case adventurer:
+    #####:  602:      return 6;
+        -:  603:    case council_room:
+    #####:  604:      return 5;
+        -:  605:    case feast:
+    #####:  606:      return 4;
+        -:  607:    case gardens:
+    #####:  608:      return 4;
+        -:  609:    case mine:
+    #####:  610:      return 5;
+        -:  611:    case remodel:
+    #####:  612:      return 4;
+        -:  613:    case smithy:
+    #####:  614:      return 4;
+        -:  615:    case village:
+    #####:  616:      return 3;
+        -:  617:    case baron:
+    #####:  618:      return 4;
+        -:  619:    case great_hall:
+    #####:  620:      return 3;
+        -:  621:    case minion:
+    #####:  622:      return 5;
+        -:  623:    case steward:
+    #####:  624:      return 3;
+        -:  625:    case tribute:
+    #####:  626:      return 5;
+        -:  627:    case ambassador:
+    #####:  628:      return 3;
+        -:  629:    case cutpurse:
+    #####:  630:      return 4;
+        -:  631:    case embargo: 
+    #####:  632:      return 2;
+        -:  633:    case outpost:
+    #####:  634:      return 5;
+        -:  635:    case salvager:
+    #####:  636:      return 4;
+        -:  637:    case sea_hag:
+    #####:  638:      return 4;
+        -:  639:    case treasure_map:
+    #####:  640:      return 4;
+        -:  641:    }
+        -:  642:	
+    #####:  643:  return -1;
+        -:  644:}
+        -:  645:
+    #####:  646:int smithyfunc(int currentPlayer, struct gameState *state, int handPos)
+        -:  647:{
+        -:  648:	 int i;
+        -:  649:	 //+3 Cards
+    #####:  650:      for (i = 0; i < 3; i++)
+        -:  651:	{
+    #####:  652:	  drawCard(currentPlayer, state);
+        -:  653:	}
+        -:  654:			
+        -:  655:      //discard card from hand
+    #####:  656:      discardCard(handPos, currentPlayer, state, 0);
+    #####:  657:      return 0;
+        -:  658:}
+        -:  659:
+    #####:  660:int adventurerfunc(int currentPlayer, struct gameState *state, int drawntreasure, int cardDrawn)
+        -:  661:{
+    #####:  662:	int z=0;
+        -:  663:	int temphand[MAX_HAND];
+    #####:  664:	while(drawntreasure<2){
+    #####:  665:	if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+    #####:  666:	  shuffle(currentPlayer, state);
+        -:  667:	}
+    #####:  668:	drawCard(currentPlayer, state);
+    #####:  669:	cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
+    #####:  670:	if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+    #####:  671:	  drawntreasure+=2;
+        -:  672:	else{
+    #####:  673:	  temphand[z]=cardDrawn;
+    #####:  674:	  state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
+    #####:  675:	  z++;
+        -:  676:	}
+        -:  677:      }
+    #####:  678:      while(z-1>=0){
+    #####:  679:	state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]; // discard all cards in play that have been drawn
+    #####:  680:	z=z-1;
+        -:  681:      }
+    #####:  682:      return 0;
+        -:  683:}
+        -:  684:
+    #####:  685:int gardfunc()
+        -:  686:{
+    #####:  687:	return 0;
+        -:  688:}
+        -:  689:
+    #####:  690:int greathallfunc(int currentPlayer, struct gameState *state, int handPos)
+        -:  691:{
+        -:  692:	   //+1 Card
+    #####:  693:      drawCard(currentPlayer, state);
+        -:  694:			
+        -:  695:      //+1 Actions
+    #####:  696:      state->numActions++;
+        -:  697:			
+        -:  698:      //discard card from hand
+    #####:  699:	  handPos++;
+    #####:  700:      discardCard(handPos, currentPlayer, state, 0);
+    #####:  701:      return 0;
+        -:  702:}
+        -:  703:
+        -:  704:
+      500:  705:int villagefunc(int currentPlayer, struct gameState *state, int handPos)
+        -:  706:{
+        -:  707:	  //+1 Card
+      500:  708:      drawCard(currentPlayer, state);
+        -:  709:			
+        -:  710:      //+2 Actions
+      500:  711:      state->numActions = state->numActions + 2;
+        -:  712:			
+        -:  713:      //discard played card from hand
+      500:  714:      discardCard(handPos, currentPlayer, state, 0);
+      500:  715:      return 0;
+        -:  716:}
+        -:  717:
+        -:  718:
+      500:  719:int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
+        -:  720:{
+        -:  721:  int i;
+        -:  722:  int j;
+        -:  723:  int k;
+        -:  724:  int x;
+        -:  725:  int index;
+      500:  726:  int currentPlayer = whoseTurn(state);
+      500:  727:  int nextPlayer = currentPlayer + 1;
+        -:  728:
+      500:  729:  int tributeRevealedCards[2] = {-1, -1};
+        -:  730:  int temphand[MAX_HAND];// moved above the if statement
+      500:  731:  int drawntreasure=0;
+        -:  732:  int cardDrawn;
+      500:  733:  int z = 0;// this is the counter for the temp hand
+      500:  734:  if (nextPlayer > (state->numPlayers - 1)){
+      124:  735:    nextPlayer = 0;
+        -:  736:  }
+        -:  737:  
+        -:  738:	
+        -:  739:  //uses switch to select card and perform actions
+      500:  740:  switch( card ) 
+        -:  741:    {
+        -:  742:    case adventurer:
+    #####:  743:      return adventurerfunc(currentPlayer, state, drawntreasure, cardDrawn);
+        -:  744:			
+        -:  745:    case council_room:
+        -:  746:      //+4 Cards
+    #####:  747:      for (i = 0; i < 4; i++)
+        -:  748:	{
+    #####:  749:	  drawCard(currentPlayer, state);
+        -:  750:	}
+        -:  751:			
+        -:  752:      //+1 Buy
+    #####:  753:      state->numBuys++;
+        -:  754:			
+        -:  755:      //Each other player draws a card
+    #####:  756:      for (i = 0; i < state->numPlayers; i++)
+        -:  757:	{
+    #####:  758:	  if ( i != currentPlayer )
+        -:  759:	    {
+    #####:  760:	      drawCard(i, state);
+        -:  761:	    }
+        -:  762:	}
+        -:  763:			
+        -:  764:      //put played card in played card pile
+    #####:  765:      discardCard(handPos, currentPlayer, state, 0);
+        -:  766:			
+    #####:  767:      return 0;
+        -:  768:			
+        -:  769:    case feast:
+        -:  770:      //gain card with cost up to 5
+        -:  771:      //Backup hand
+    #####:  772:      for (i = 0; i <= state->handCount[currentPlayer]; i++){
+    #####:  773:	temphand[i] = state->hand[currentPlayer][i];//Backup card
+    #####:  774:	state->hand[currentPlayer][i] = -1;//Set to nothing
+        -:  775:      }
+        -:  776:      //Backup hand
+        -:  777:
+        -:  778:      //Update Coins for Buy
+    #####:  779:      updateCoins(currentPlayer, state, 5);
+    #####:  780:      x = 1;//Condition to loop on
+    #####:  781:      while( x == 1) {//Buy one card
+    #####:  782:	if (supplyCount(choice1, state) <= 0){
+        -:  783:	  if (DEBUG)
+        -:  784:	    printf("None of that card left, sorry!\n");
+        -:  785:
+        -:  786:	  if (DEBUG){
+        -:  787:	    printf("Cards Left: %d\n", supplyCount(choice1, state));
+        -:  788:	  }
+        -:  789:	}
+    #####:  790:	else if (state->coins < getCost(choice1)){
+    #####:  791:	  printf("That card is too expensive!\n");
+        -:  792:
+        -:  793:	  if (DEBUG){
+        -:  794:	    printf("Coins: %d < %d\n", state->coins, getCost(choice1));
+        -:  795:	  }
+        -:  796:	}
+        -:  797:	else{
+        -:  798:
+        -:  799:	  if (DEBUG){
+        -:  800:	    printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
+        -:  801:	  }
+        -:  802:
+    #####:  803:	  gainCard(choice1, state, 0, currentPlayer);//Gain the card
+    #####:  804:	  x = 0;//No more buying cards
+        -:  805:
+        -:  806:	  if (DEBUG){
+        -:  807:	    printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
+        -:  808:	  }
+        -:  809:
+        -:  810:	}
+        -:  811:      }     
+        -:  812:
+        -:  813:      //Reset Hand
+    #####:  814:      for (i = 0; i <= state->handCount[currentPlayer]; i++){
+    #####:  815:	state->hand[currentPlayer][i] = temphand[i];
+    #####:  816:	temphand[i] = -1;
+        -:  817:      }
+        -:  818:      //Reset Hand
+        -:  819:      			
+    #####:  820:      return 0;
+        -:  821:			
+        -:  822:    case gardens:
+    #####:  823:      return gardfunc();
+        -:  824:			
+        -:  825:    case mine:
+    #####:  826:      j = state->hand[currentPlayer][choice1];  //store card we will trash
+        -:  827:
+    #####:  828:      if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold)
+        -:  829:	{
+    #####:  830:	  return -1;
+        -:  831:	}
+        -:  832:		
+    #####:  833:      if (choice2 > treasure_map || choice2 < curse)
+        -:  834:	{
+    #####:  835:	  return -1;
+        -:  836:	}
+        -:  837:
+    #####:  838:      if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )
+        -:  839:	{
+    #####:  840:	  return -1;
+        -:  841:	}
+        -:  842:
+    #####:  843:      gainCard(choice2, state, 2, currentPlayer);
+        -:  844:
+        -:  845:      //discard card from hand
+    #####:  846:      discardCard(handPos, currentPlayer, state, 0);
+        -:  847:
+        -:  848:      //discard trashed card
+    #####:  849:      for (i = 0; i < state->handCount[currentPlayer]; i++)
+        -:  850:	{
+    #####:  851:	  if (state->hand[currentPlayer][i] == j)
+        -:  852:	    {
+    #####:  853:	      discardCard(i, currentPlayer, state, 0);			
+    #####:  854:	      break;
+        -:  855:	    }
+        -:  856:	}
+        -:  857:			
+    #####:  858:      return 0;
+        -:  859:			
+        -:  860:    case remodel:
+    #####:  861:      j = state->hand[currentPlayer][choice1];  //store card we will trash
+        -:  862:
+    #####:  863:      if ( (getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2) )
+        -:  864:	{
+    #####:  865:	  return -1;
+        -:  866:	}
+        -:  867:
+    #####:  868:      gainCard(choice2, state, 0, currentPlayer);
+        -:  869:
+        -:  870:      //discard card from hand
+    #####:  871:      discardCard(handPos, currentPlayer, state, 0);
+        -:  872:
+        -:  873:      //discard trashed card
+    #####:  874:      for (i = 0; i < state->handCount[currentPlayer]; i++)
+        -:  875:	{
+    #####:  876:	  if (state->hand[currentPlayer][i] == j)
+        -:  877:	    {
+    #####:  878:	      discardCard(i, currentPlayer, state, 0);			
+    #####:  879:	      break;
+        -:  880:	    }
+        -:  881:	}
+        -:  882:
+        -:  883:
+    #####:  884:      return 0;
+        -:  885:		
+        -:  886:    case smithy:
+    #####:  887:		return smithyfunc(currentPlayer, state, handPos);
+        -:  888:		
+        -:  889:    case village:
+      500:  890:      return villagefunc(currentPlayer, state, handPos);
+        -:  891:		
+        -:  892:    case baron:
+    #####:  893:      state->numBuys++;//Increase buys by 1!
+    #####:  894:      if (choice1 > 0){//Boolean true or going to discard an estate
+    #####:  895:	int p = 0;//Iterator for hand!
+    #####:  896:	int card_not_discarded = 1;//Flag for discard set!
+    #####:  897:	while(card_not_discarded){
+    #####:  898:	  if (state->hand[currentPlayer][p] == estate){//Found an estate card!
+    #####:  899:	    state->coins += 4;//Add 4 coins to the amount of coins
+    #####:  900:	    state->discard[currentPlayer][state->discardCount[currentPlayer]] = state->hand[currentPlayer][p];
+    #####:  901:	    state->discardCount[currentPlayer]++;
+    #####:  902:	    for (;p < state->handCount[currentPlayer]; p++){
+    #####:  903:	      state->hand[currentPlayer][p] = state->hand[currentPlayer][p+1];
+        -:  904:	    }
+    #####:  905:	    state->hand[currentPlayer][state->handCount[currentPlayer]] = -1;
+    #####:  906:	    state->handCount[currentPlayer]--;
+    #####:  907:	    card_not_discarded = 0;//Exit the loop
+        -:  908:	  }
+    #####:  909:	  else if (p > state->handCount[currentPlayer]){
+        -:  910:	    if(DEBUG) {
+        -:  911:	      printf("No estate cards in your hand, invalid choice\n");
+        -:  912:	      printf("Must gain an estate if there are any\n");
+        -:  913:	    }
+    #####:  914:	    if (supplyCount(estate, state) > 0){
+    #####:  915:	      gainCard(estate, state, 0, currentPlayer);
+    #####:  916:	      state->supplyCount[estate]--;//Decrement estates
+    #####:  917:	      if (supplyCount(estate, state) == 0){
+    #####:  918:		isGameOver(state);
+        -:  919:	      }
+        -:  920:	    }
+    #####:  921:	    card_not_discarded = 0;//Exit the loop
+        -:  922:	  }
+        -:  923:			    
+        -:  924:	  else{
+    #####:  925:	    p++;//Next card
+        -:  926:	  }
+        -:  927:	}
+        -:  928:      }
+        -:  929:			    
+        -:  930:      else{
+    #####:  931:	if (supplyCount(estate, state) > 0){
+    #####:  932:	  gainCard(estate, state, 0, currentPlayer);//Gain an estate
+    #####:  933:	  state->supplyCount[estate]--;//Decrement Estates
+    #####:  934:	  if (supplyCount(estate, state) == 0){
+    #####:  935:	    isGameOver(state);
+        -:  936:	  }
+        -:  937:	}
+        -:  938:      }
+        -:  939:	    
+        -:  940:      
+    #####:  941:      return 0;
+        -:  942:		
+        -:  943:    case great_hall:
+    #####:  944:		return greathallfunc(currentPlayer, state, handPos);
+        -:  945:		
+        -:  946:    case minion:
+        -:  947:      //+1 action
+    #####:  948:      state->numActions++;
+        -:  949:			
+        -:  950:      //discard card from hand
+    #####:  951:      discardCard(handPos, currentPlayer, state, 0);
+        -:  952:			
+    #####:  953:      if (choice1)		//+2 coins
+        -:  954:	{
+    #####:  955:	  state->coins = state->coins + 2;
+        -:  956:	}
+        -:  957:			
+    #####:  958:      else if (choice2)		//discard hand, redraw 4, other players with 5+ cards discard hand and draw 4
+        -:  959:	{
+        -:  960:	  //discard hand
+    #####:  961:	  while(numHandCards(state) > 0)
+        -:  962:	    {
+    #####:  963:	      discardCard(handPos, currentPlayer, state, 0);
+        -:  964:	    }
+        -:  965:				
+        -:  966:	  //draw 4
+    #####:  967:	  for (i = 0; i < 4; i++)
+        -:  968:	    {
+    #####:  969:	      drawCard(currentPlayer, state);
+        -:  970:	    }
+        -:  971:				
+        -:  972:	  //other players discard hand and redraw if hand size > 4
+    #####:  973:	  for (i = 0; i < state->numPlayers; i++)
+        -:  974:	    {
+    #####:  975:	      if (i != currentPlayer)
+        -:  976:		{
+    #####:  977:		  if ( state->handCount[i] > 4 )
+        -:  978:		    {
+        -:  979:		      //discard hand
+    #####:  980:		      while( state->handCount[i] > 0 )
+        -:  981:			{
+    #####:  982:			  discardCard(handPos, i, state, 0);
+        -:  983:			}
+        -:  984:							
+        -:  985:		      //draw 4
+    #####:  986:		      for (j = 0; j < 4; j++)
+        -:  987:			{
+    #####:  988:			  drawCard(i, state);
+        -:  989:			}
+        -:  990:		    }
+        -:  991:		}
+        -:  992:	    }
+        -:  993:				
+        -:  994:	}
+    #####:  995:      return 0;
+        -:  996:		
+        -:  997:    case steward:
+    #####:  998:      if (choice1 == 1)
+        -:  999:	{
+        -: 1000:	  //+2 cards
+    #####: 1001:	  drawCard(currentPlayer, state);
+    #####: 1002:	  drawCard(currentPlayer, state);
+        -: 1003:	}
+    #####: 1004:      else if (choice1 == 2)
+        -: 1005:	{
+        -: 1006:	  //+2 coins
+    #####: 1007:	  state->coins = state->coins + 2;
+        -: 1008:	}
+        -: 1009:      else
+        -: 1010:	{
+        -: 1011:	  //trash 2 cards in hand
+    #####: 1012:	  discardCard(choice2, currentPlayer, state, 1);
+    #####: 1013:	  discardCard(choice3, currentPlayer, state, 1);
+        -: 1014:	}
+        -: 1015:			
+        -: 1016:      //discard card from hand
+    #####: 1017:      discardCard(handPos, currentPlayer, state, 0);
+    #####: 1018:      return 0;
+        -: 1019:		
+        -: 1020:    case tribute:
+    #####: 1021:      if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) <= 1){
+    #####: 1022:	if (state->deckCount[nextPlayer] > 0){
+    #####: 1023:	  tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+    #####: 1024:	  state->deckCount[nextPlayer]--;
+        -: 1025:	}
+    #####: 1026:	else if (state->discardCount[nextPlayer] > 0){
+    #####: 1027:	  tributeRevealedCards[0] = state->discard[nextPlayer][state->discardCount[nextPlayer]-1];
+    #####: 1028:	  state->discardCount[nextPlayer]--;
+        -: 1029:	}
+        -: 1030:	else{
+        -: 1031:	  //No Card to Reveal
+        -: 1032:	  if (DEBUG){
+        -: 1033:	    printf("No cards to reveal\n");
+        -: 1034:	  }
+        -: 1035:	}
+        -: 1036:      }
+        -: 1037:	    
+        -: 1038:      else{
+    #####: 1039:	if (state->deckCount[nextPlayer] == 0){
+    #####: 1040:	  for (i = 0; i < state->discardCount[nextPlayer]; i++){
+    #####: 1041:	    state->deck[nextPlayer][i] = state->discard[nextPlayer][i];//Move to deck
+    #####: 1042:	    state->deckCount[nextPlayer]++;
+    #####: 1043:	    state->discard[nextPlayer][i] = -1;
+    #####: 1044:	    state->discardCount[nextPlayer]--;
+        -: 1045:	  }
+        -: 1046:			    
+    #####: 1047:	  shuffle(nextPlayer,state);//Shuffle the deck
+        -: 1048:	} 
+    #####: 1049:	tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+    #####: 1050:	state->deck[nextPlayer][state->deckCount[nextPlayer]--] = -1;
+    #####: 1051:	state->deckCount[nextPlayer]--;
+    #####: 1052:	tributeRevealedCards[1] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+    #####: 1053:	state->deck[nextPlayer][state->deckCount[nextPlayer]--] = -1;
+    #####: 1054:	state->deckCount[nextPlayer]--;
+        -: 1055:      }    
+        -: 1056:		       
+    #####: 1057:      if (tributeRevealedCards[0] == tributeRevealedCards[1]){//If we have a duplicate card, just drop one 
+    #####: 1058:	state->playedCards[state->playedCardCount] = tributeRevealedCards[1];
+    #####: 1059:	state->playedCardCount++;
+    #####: 1060:	tributeRevealedCards[1] = -1;
+        -: 1061:      }
+        -: 1062:
+    #####: 1063:      for (i = 0; i <= 2; i ++){
+    #####: 1064:	if (tributeRevealedCards[i] == copper || tributeRevealedCards[i] == silver || tributeRevealedCards[i] == gold){//Treasure cards
+    #####: 1065:	  state->coins += 2;
+        -: 1066:	}
+        -: 1067:		    
+    #####: 1068:	else if (tributeRevealedCards[i] == estate || tributeRevealedCards[i] == duchy || tributeRevealedCards[i] == province || tributeRevealedCards[i] == gardens || tributeRevealedCards[i] == great_hall){//Victory Card Found
+    #####: 1069:	  drawCard(currentPlayer, state);
+    #####: 1070:	  drawCard(currentPlayer, state);
+        -: 1071:	}
+        -: 1072:	else{//Action Card
+    #####: 1073:	  state->numActions = state->numActions + 2;
+        -: 1074:	}
+        -: 1075:      }
+        -: 1076:	    
+    #####: 1077:      return 0;
+        -: 1078:		
+        -: 1079:    case ambassador:
+    #####: 1080:      j = 0;		//used to check if player has enough cards to discard
+        -: 1081:
+    #####: 1082:      if (choice2 > 2 || choice2 < 0)
+        -: 1083:	{
+    #####: 1084:	  return -1;				
+        -: 1085:	}
+        -: 1086:
+    #####: 1087:      if (choice1 == handPos)
+        -: 1088:	{
+    #####: 1089:	  return -1;
+        -: 1090:	}
+        -: 1091:
+    #####: 1092:      for (i = 0; i < state->handCount[currentPlayer]; i++)
+        -: 1093:	{
+    #####: 1094:	  if (i != handPos && i == state->hand[currentPlayer][choice1] && i != choice1)
+        -: 1095:	    {
+    #####: 1096:	      j++;
+        -: 1097:	    }
+        -: 1098:	}
+    #####: 1099:      if (j < choice2)
+        -: 1100:	{
+    #####: 1101:	  return -1;				
+        -: 1102:	}
+        -: 1103:
+        -: 1104:      if (DEBUG) 
+        -: 1105:	printf("Player %d reveals card number: %d\n", currentPlayer, state->hand[currentPlayer][choice1]);
+        -: 1106:
+        -: 1107:      //increase supply count for choosen card by amount being discarded
+    #####: 1108:      state->supplyCount[state->hand[currentPlayer][choice1]] += choice2;
+        -: 1109:			
+        -: 1110:      //each other player gains a copy of revealed card
+    #####: 1111:      for (i = 0; i < state->numPlayers; i++)
+        -: 1112:	{
+    #####: 1113:	  if (i != currentPlayer)
+        -: 1114:	    {
+    #####: 1115:	      gainCard(state->hand[currentPlayer][choice1], state, 0, i);
+        -: 1116:	    }
+        -: 1117:	}
+        -: 1118:
+        -: 1119:      //discard played card from hand
+    #####: 1120:      discardCard(handPos, currentPlayer, state, 0);			
+        -: 1121:
+        -: 1122:      //trash copies of cards returned to supply
+    #####: 1123:      for (j = 0; j < choice2; j++)
+        -: 1124:	{
+    #####: 1125:	  for (i = 0; i < state->handCount[currentPlayer]; i++)
+        -: 1126:	    {
+    #####: 1127:	      if (state->hand[currentPlayer][i] == state->hand[currentPlayer][choice1])
+        -: 1128:		{
+    #####: 1129:		  discardCard(i, currentPlayer, state, 1);
+    #####: 1130:		  break;
+        -: 1131:		}
+        -: 1132:	    }
+        -: 1133:	}			
+        -: 1134:
+    #####: 1135:      return 0;
+        -: 1136:		
+        -: 1137:    case cutpurse:
+        -: 1138:
+    #####: 1139:      updateCoins(currentPlayer, state, 2);
+    #####: 1140:      for (i = 0; i < state->numPlayers; i++)
+        -: 1141:	{
+    #####: 1142:	  if (i != currentPlayer)
+        -: 1143:	    {
+    #####: 1144:	      for (j = 0; j < state->handCount[i]; j++)
+        -: 1145:		{
+    #####: 1146:		  if (state->hand[i][j] == copper)
+        -: 1147:		    {
+    #####: 1148:		      discardCard(j, i, state, 0);
+    #####: 1149:		      break;
+        -: 1150:		    }
+    #####: 1151:		  if (j == state->handCount[i])
+        -: 1152:		    {
+    #####: 1153:		      for (k = 0; k < state->handCount[i]; k++)
+        -: 1154:			{
+        -: 1155:			  if (DEBUG)
+        -: 1156:			    printf("Player %d reveals card number %d\n", i, state->hand[i][k]);
+        -: 1157:			}	
+    #####: 1158:		      break;
+        -: 1159:		    }		
+        -: 1160:		}
+        -: 1161:					
+        -: 1162:	    }
+        -: 1163:				
+        -: 1164:	}				
+        -: 1165:
+        -: 1166:      //discard played card from hand
+    #####: 1167:      discardCard(handPos, currentPlayer, state, 0);			
+        -: 1168:
+    #####: 1169:      return 0;
+        -: 1170:
+        -: 1171:		
+        -: 1172:    case embargo: 
+        -: 1173:      //+2 Coins
+    #####: 1174:      state->coins = state->coins + 2;
+        -: 1175:			
+        -: 1176:      //see if selected pile is in play
+    #####: 1177:      if ( state->supplyCount[choice1] == -1 )
+        -: 1178:	{
+    #####: 1179:	  return -1;
+        -: 1180:	}
+        -: 1181:			
+        -: 1182:      //add embargo token to selected supply pile
+    #####: 1183:      state->embargoTokens[choice1]++;
+        -: 1184:			
+        -: 1185:      //trash card
+    #####: 1186:      discardCard(handPos, currentPlayer, state, 1);		
+    #####: 1187:      return 0;
+        -: 1188:		
+        -: 1189:    case outpost:
+        -: 1190:      //set outpost flag
+    #####: 1191:      state->outpostPlayed++;
+        -: 1192:			
+        -: 1193:      //discard card
+    #####: 1194:      discardCard(handPos, currentPlayer, state, 0);
+    #####: 1195:      return 0;
+        -: 1196:		
+        -: 1197:    case salvager:
+        -: 1198:      //+1 buy
+    #####: 1199:      state->numBuys++;
+        -: 1200:			
+    #####: 1201:      if (choice1)
+        -: 1202:	{
+        -: 1203:	  //gain coins equal to trashed card
+    #####: 1204:	  state->coins = state->coins + getCost( handCard(choice1, state) );
+        -: 1205:	  //trash card
+    #####: 1206:	  discardCard(choice1, currentPlayer, state, 1);	
+        -: 1207:	}
+        -: 1208:			
+        -: 1209:      //discard card
+    #####: 1210:      discardCard(handPos, currentPlayer, state, 0);
+    #####: 1211:      return 0;
+        -: 1212:		
+        -: 1213:    case sea_hag:
+    #####: 1214:      for (i = 0; i < state->numPlayers; i++){
+    #####: 1215:	if (i != currentPlayer){
+    #####: 1216:	  state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]--];			    state->deckCount[i]--;
+    #####: 1217:	  state->discardCount[i]++;
+    #####: 1218:	  state->deck[i][state->deckCount[i]--] = curse;//Top card now a curse
+        -: 1219:	}
+        -: 1220:      }
+    #####: 1221:      return 0;
+        -: 1222:		
+        -: 1223:    case treasure_map:
+        -: 1224:      //search hand for another treasure_map
+    #####: 1225:      index = -1;
+    #####: 1226:      for (i = 0; i < state->handCount[currentPlayer]; i++)
+        -: 1227:	{
+    #####: 1228:	  if (state->hand[currentPlayer][i] == treasure_map && i != handPos)
+        -: 1229:	    {
+    #####: 1230:	      index = i;
+    #####: 1231:	      break;
+        -: 1232:	    }
+        -: 1233:	}
+    #####: 1234:      if (index > -1)
+        -: 1235:	{
+        -: 1236:	  //trash both treasure cards
+    #####: 1237:	  discardCard(handPos, currentPlayer, state, 1);
+    #####: 1238:	  discardCard(index, currentPlayer, state, 1);
+        -: 1239:
+        -: 1240:	  //gain 4 Gold cards
+    #####: 1241:	  for (i = 0; i < 4; i++)
+        -: 1242:	    {
+    #####: 1243:	      gainCard(gold, state, 1, currentPlayer);
+        -: 1244:	    }
+        -: 1245:				
+        -: 1246:	  //return success
+    #####: 1247:	  return 1;
+        -: 1248:	}
+        -: 1249:			
+        -: 1250:      //no second treasure_map found in hand
+    #####: 1251:      return -1;
+        -: 1252:    }
+        -: 1253:	
+    #####: 1254:  return -1;
+        -: 1255:}
+        -: 1256:
+      500: 1257:int discardCard(int handPos, int currentPlayer, struct gameState *state, int trashFlag)
+        -: 1258:{
+        -: 1259:	
+        -: 1260:  //if card is not trashed, added to Played pile 
+      500: 1261:  if (trashFlag < 1)
+        -: 1262:    {
+        -: 1263:      //add card to played pile
+      500: 1264:      state->playedCards[state->playedCardCount] = state->hand[currentPlayer][handPos]; 
+      500: 1265:      state->playedCardCount++;
+        -: 1266:    }
+        -: 1267:	
+        -: 1268:  //set played card to -1
+      500: 1269:  state->hand[currentPlayer][handPos] = -1;
+        -: 1270:	
+        -: 1271:  //remove card from player's hand
+      500: 1272:  if ( handPos == (state->handCount[currentPlayer] - 1) ) 	//last card in hand array is played
+        -: 1273:    {
+        -: 1274:      //reduce number of cards in hand
+        4: 1275:      state->handCount[currentPlayer]--;
+        -: 1276:    }
+      496: 1277:  else if ( state->handCount[currentPlayer] == 1 ) //only one card in hand
+        -: 1278:    {
+        -: 1279:      //reduce number of cards in hand
+        2: 1280:      state->handCount[currentPlayer]--;
+        -: 1281:    }
+        -: 1282:  else 	
+        -: 1283:    {
+        -: 1284:      //replace discarded card with last card in hand
+      494: 1285:      state->hand[currentPlayer][handPos] = state->hand[currentPlayer][ (state->handCount[currentPlayer] - 1)];
+        -: 1286:      //set last card to -1
+      494: 1287:      state->hand[currentPlayer][state->handCount[currentPlayer] - 1] = -1;
+        -: 1288:      //reduce number of cards in hand
+      494: 1289:      state->handCount[currentPlayer]--;
+        -: 1290:    }
+        -: 1291:	
+      500: 1292:  return 0;
+        -: 1293:}
+        -: 1294:
+    #####: 1295:int gainCard(int supplyPos, struct gameState *state, int toFlag, int player)
+        -: 1296:{
+        -: 1297:  //Note: supplyPos is enum of choosen card
+        -: 1298:	
+        -: 1299:  //check if supply pile is empty (0) or card is not used in game (-1)
+    #####: 1300:  if ( supplyCount(supplyPos, state) < 1 )
+        -: 1301:    {
+    #####: 1302:      return -1;
+        -: 1303:    }
+        -: 1304:	
+        -: 1305:  //added card for [whoseTurn] current player:
+        -: 1306:  // toFlag = 0 : add to discard
+        -: 1307:  // toFlag = 1 : add to deck
+        -: 1308:  // toFlag = 2 : add to hand
+        -: 1309:
+    #####: 1310:  if (toFlag == 1)
+        -: 1311:    {
+    #####: 1312:      state->deck[ player ][ state->deckCount[player] ] = supplyPos;
+    #####: 1313:      state->deckCount[player]++;
+        -: 1314:    }
+    #####: 1315:  else if (toFlag == 2)
+        -: 1316:    {
+    #####: 1317:      state->hand[ player ][ state->handCount[player] ] = supplyPos;
+    #####: 1318:      state->handCount[player]++;
+        -: 1319:    }
+        -: 1320:  else
+        -: 1321:    {
+    #####: 1322:      state->discard[player][ state->discardCount[player] ] = supplyPos;
+    #####: 1323:      state->discardCount[player]++;
+        -: 1324:    }
+        -: 1325:	
+        -: 1326:  //decrease number in supply pile
+    #####: 1327:  state->supplyCount[supplyPos]--;
+        -: 1328:	 
+    #####: 1329:  return 0;
+        -: 1330:}
+        -: 1331:
+      865: 1332:int updateCoins(int player, struct gameState *state, int bonus)
+        -: 1333:{
+        -: 1334:  int i;
+        -: 1335:	
+        -: 1336:  //reset coin count
+      865: 1337:  state->coins = 0;
+        -: 1338:
+        -: 1339:  //add coins for each Treasure card in player's hand
+   128802: 1340:  for (i = 0; i < state->handCount[player]; i++)
+        -: 1341:    {
+   127937: 1342:      if (state->hand[player][i] == copper)
+        -: 1343:	{
+    14546: 1344:	  state->coins += 1;
+        -: 1345:	}
+   113391: 1346:      else if (state->hand[player][i] == silver)
+        -: 1347:	{
+    #####: 1348:	  state->coins += 2;
+        -: 1349:	}
+   113391: 1350:      else if (state->hand[player][i] == gold)
+        -: 1351:	{
+    #####: 1352:	  state->coins += 3;
+        -: 1353:	}	
+        -: 1354:    }	
+        -: 1355:
+        -: 1356:  //add bonus
+      865: 1357:  state->coins += bonus;
+        -: 1358:
+      865: 1359:  return 0;
+        -: 1360:}
+        -: 1361:
+        -: 1362:
+        -: 1363://end of dominion.c
+        -: 1364:
