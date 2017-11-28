@@ -43,26 +43,44 @@ public class UrlValidatorTest extends TestCase {
 	   boolean result = urlVal.isValid(url);
 	   
 	   if ( result != expected) {
-		   System.out.println( "Fault found. UrlValidator returned " + result + " for " + url + " expected " + expected);
+		   System.out.println( "Fault found. UrlValidator returned " + result + " for " + url + " expected " + expected );
 	   }
    }
+   
    
    public void testManualTest()
    {
 	   UrlValidator urlVal = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
 	   
-	   manualTestHelper("http://www.amazon.com", true);
-	   
-	   manualTestHelper("abc://username:password@example.com:123/path/data?key=value&key2=value2#fragid1", true);
-	   
 	   manualTestHelper("http://www.home.com", true);
+	   
+	   manualTestHelper("ftp://www.home.com", true);
+	   manualTestHelper("mailto://www.home.com", true);
 	   manualTestHelper("https://www.home.com", true);
+	   
 	   manualTestHelper("http://www.home.io", true);
-	   manualTestHelper("https://andrius:password@home.com", true);
-	   manualTestHelper("http://www.home.com:1234", true);
-	   manualTestHelper("http://0.0.0.0:80/test1?action=view", true);
+	   manualTestHelper("http://www.home.org", true);
+	   manualTestHelper("http://www.home.net", true);
+	   manualTestHelper("http://www.home.edu", true);
+	   manualTestHelper("http://www.home.int", true);
+	   manualTestHelper("http://www.home.gov", true);
+	   manualTestHelper("http://www.home.mil", true);
 	   
+	   manualTestHelper("http://www.home.com:999", true);
+	   manualTestHelper("http://www.home.com:1000", true);
 	   
+	   manualTestHelper("http://www.home.com/?action=view", true);
+	   manualTestHelper("http://www.home.com/?action=view&name1=2", true);
+	   manualTestHelper("http://www.home.com/?action=view;name1=2", true);
+	   
+	   manualTestHelper("https://192.168.1.0", true);	   
+	   
+	   manualTestHelper("http://0.0.0.0", true);
+	   manualTestHelper("http://0.0.0.0", true);
+	   manualTestHelper("http://0.0.0.0:80/test1", true);
+	   	   
+	   manualTestHelper("http://www.home.dhw", false);
+	   manualTestHelper("http://www.home.com:-1", false);
    }
    
    
@@ -78,10 +96,20 @@ public class UrlValidatorTest extends TestCase {
    
    public void testIsValid()
    {
-	   for(int i = 0;i<10000;i++)
-	   {
-		   
-	   }
+	   
+	   //partition arrays pair-values
+	   		//scheme
+	   		//hostname or IP address
+	   		//port
+	   
+	   		//path / filename
+	   		//query
+	   		//fragment identifier
+	   
+	   //function to loop through arrays and combine elements
+	   		//concatenates each partition element and &&'s boolean
+	   
+	   
    }
    
    public void testAnyOtherUnitTest()
